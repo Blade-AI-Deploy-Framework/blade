@@ -1,0 +1,114 @@
+[
+    {
+        "address": "0x17bc", 
+        "instruction": "b.eq", 
+        "registers": [
+            "x0", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x18b0", 
+        "instruction": "b.le", 
+        "registers": [
+            "w0", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x18c0", 
+        "instruction": "b.ne", 
+        "registers": [
+            "w1", 
+            "w0"
+        ]
+    }, 
+    {
+        "address": "0x1984", 
+        "instruction": "b.gt", 
+        "registers": [
+            "d0", 
+            "d1"
+        ]
+    }, 
+    {
+        "address": "0x19e8", 
+        "instruction": "b.lt", 
+        "registers": [
+            "w1", 
+            "w0"
+        ]
+    }, 
+    {
+        "address": "0x1a38", 
+        "instruction": "b.eq", 
+        "registers": [
+            "UNNAMED(UniquePcode[0x3e480])", 
+            "0x0)"
+        ]
+    }, 
+    {
+        "address": "0x166c", 
+        "instruction": "b.eq", 
+        "registers": [
+            "x0", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x16e0", 
+        "instruction": "b.eq", 
+        "registers": [
+            "x0", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x1728", 
+        "instruction": "b.le", 
+        "registers": [
+            "w0", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x1774", 
+        "instruction": "b.eq", 
+        "registers": [
+            "x0", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x1598", 
+        "instruction": "b.eq", 
+        "registers": [
+            "x0", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x15f8", 
+        "instruction": "b.eq", 
+        "registers": [
+            "w0", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x13b8", 
+        "instruction": "b.eq", 
+        "registers": [
+            "w0", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x13e4", 
+        "instruction": "b.eq", 
+        "registers": [
+            "w0", 
+            "0x0"
+        ]
+    }
+]

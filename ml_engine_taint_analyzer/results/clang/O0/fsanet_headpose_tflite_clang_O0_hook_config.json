@@ -1,0 +1,137 @@
+[
+    {
+        "address": "0x23d8", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x2544", 
+        "instruction": "subs w8,w8,#0x40", 
+        "registers": [
+            {
+                "register": "local_5ec(StackDirect[Stack[-0x5ec]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x23dc"
+    }, 
+    {
+        "address": "0x23f0", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x2530", 
+        "instruction": "subs w8,w8,#0x40", 
+        "registers": [
+            {
+                "register": "local_5f0(StackDirect[Stack[-0x5f0]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x23f4"
+    }, 
+    {
+        "address": "0x2408", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x251c", 
+        "instruction": "subs w8,w8,#0x3", 
+        "registers": [
+            {
+                "register": "local_5f4(StackDirect[Stack[-0x5f4]])"
+            }, 
+            {
+                "register": "0x3"
+            }
+        ], 
+        "original_branch_address": "0x240c"
+    }, 
+    {
+        "address": "0x25c4", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x26a8", 
+        "instruction": "subs w8,w8,#0x40", 
+        "registers": [
+            {
+                "register": "local_60c(StackDirect[Stack[-0x60c]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x25c8"
+    }, 
+    {
+        "address": "0x25dc", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x2694", 
+        "instruction": "subs w8,w8,#0x40", 
+        "registers": [
+            {
+                "register": "local_610(StackDirect[Stack[-0x610]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x25e0"
+    }, 
+    {
+        "address": "0x25f4", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x2680", 
+        "instruction": "subs w8,w8,#0x3", 
+        "registers": [
+            {
+                "register": "local_614(StackDirect[Stack[-0x614]])"
+            }, 
+            {
+                "register": "0x3"
+            }
+        ], 
+        "original_branch_address": "0x25f8"
+    }, 
+    {
+        "address": "0x275c", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x27c4", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x2760"
+    }, 
+    {
+        "address": "0x2780", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x27c4", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x2784"
+    }, 
+    {
+        "address": "0x27a4", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x27c4", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x27a8"
+    }
+]

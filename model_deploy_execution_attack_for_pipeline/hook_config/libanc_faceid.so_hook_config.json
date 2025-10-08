@@ -1,0 +1,1422 @@
+[
+    {
+        "address": "0x32844",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x32bac",
+        "instruction": "cmp w19,#0x3",
+        "registers": [
+            {
+                "register": "w19"
+            },
+            {
+                "register": "0x3"
+            }
+        ],
+        "original_branch_address": "0x32848",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x3)",
+            "param_3(w2)"
+        ]
+    },
+    {
+        "address": "0x32854",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x32bac",
+        "instruction": "cmp w8,w19",
+        "registers": [
+            {
+                "register": "w8"
+            },
+            {
+                "register": "w19"
+            }
+        ],
+        "original_branch_address": "0x32858",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "param_3(w2)",
+            "DAT_00193e00(GlobalMem[ram:00193e00])"
+        ]
+    },
+    {
+        "address": "0x32cf8",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x32d84",
+        "instruction": "cmn x8,#0x10",
+        "registers": [
+            {
+                "register": "x8"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x32cfc",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "uVar4(x25)",
+            "UnnamedHighVar(Constant: 0x-10)"
+        ]
+    },
+    {
+        "address": "0x32d00",
+        "original_branch_instruction": "b.hi",
+        "branch_target": "0x32d5c",
+        "instruction": "cmp x8,#0x16",
+        "registers": [
+            {
+                "register": "x8"
+            },
+            {
+                "register": "0x16"
+            }
+        ],
+        "original_branch_address": "0x32d04",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "uVar4(x25)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0xce40",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0xce6c",
+        "instruction": "cmp x9,x20",
+        "registers": [
+            {
+                "register": "x9"
+            },
+            {
+                "register": "x20"
+            }
+        ],
+        "original_branch_address": "0xce44",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "UNNAMED(x9)",
+            "param_3(x2)"
+        ]
+    },
+    {
+        "address": "0xce58",
+        "original_branch_instruction": "b.cc",
+        "branch_target": "0xcf6c",
+        "instruction": "cmp x9,x10",
+        "registers": [
+            {
+                "register": "x9"
+            },
+            {
+                "register": "x10"
+            }
+        ],
+        "original_branch_address": "0xce5c",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "UNNAMED(x9)",
+            "UNNAMED(x10)"
+        ]
+    },
+    {
+        "address": "0xce88",
+        "original_branch_instruction": "b.hi",
+        "branch_target": "0xceac",
+        "instruction": "cmp x26,x8",
+        "registers": [
+            {
+                "register": "x26"
+            },
+            {
+                "register": "x8"
+            }
+        ],
+        "original_branch_address": "0xce8c",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "uVar6(x26)",
+            "UnnamedHighVar(Constant: 0x7fffffffffffffe7)"
+        ]
+    },
+    {
+        "address": "0xce9c",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0xcef0",
+        "instruction": "cmp x8,#0x17",
+        "registers": [
+            {
+                "register": "x8"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0xcea0",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "uVar5(x24)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x32958",
+        "original_branch_instruction": "b.hi",
+        "branch_target": "0x32978",
+        "instruction": "cmp w20,#0x6",
+        "registers": [
+            {
+                "register": "w20"
+            },
+            {
+                "register": "0x6"
+            }
+        ],
+        "original_branch_address": "0x32964",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "param_2(w1)",
+            "UnnamedHighVar(Constant: 0x7)"
+        ]
+    },
+    {
+        "address": "0x2eaf0",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x2eb4c",
+        "instruction": "fcmp s0,s1",
+        "registers": [
+            {
+                "register": "s0"
+            },
+            {
+                "register": "s1"
+            }
+        ],
+        "original_branch_address": "0x2eaf8",
+        "set_id": "ANC_LIVE_ir_classify",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x3f000000)",
+            "fVar4(s0)"
+        ]
+    },
+    {
+        "address": "0x2f680",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x2f6dc",
+        "instruction": "fcmp s0,s1",
+        "registers": [
+            {
+                "register": "s0"
+            },
+            {
+                "register": "s1"
+            }
+        ],
+        "original_branch_address": "0x2f688",
+        "set_id": "ANC_LIVE_depth_classify",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x3f000000)",
+            "fVar4(s0)"
+        ]
+    },
+    {
+        "address": "0x31a60",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x32124",
+        "instruction": "cmn x20,#0x10",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x31a64",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar8(x0)"
+        ]
+    },
+    {
+        "address": "0x31a68",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x31ad0",
+        "instruction": "cmp x20,#0x17",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x31a6c",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar8(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x31aa8",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x3212c",
+        "instruction": "cmn x23,#0x10",
+        "registers": [
+            {
+                "register": "x23"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x31aac",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar8(x0)"
+        ]
+    },
+    {
+        "address": "0x31ab0",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x31b70",
+        "instruction": "cmp x23,#0x17",
+        "registers": [
+            {
+                "register": "x23"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x31ab4",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar8(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x31bd0",
+        "original_branch_instruction": "b.lt",
+        "branch_target": "0x31c7c",
+        "instruction": "cmp w21,#0x1",
+        "registers": [
+            {
+                "register": "w21"
+            },
+            {
+                "register": "0x1"
+            }
+        ],
+        "original_branch_address": "0x31bd4",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "iVar7(w0)",
+            "UnnamedHighVar(Constant: 0x1)"
+        ]
+    },
+    {
+        "address": "0x31ca0",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x32134",
+        "instruction": "cmn x24,#0x10",
+        "registers": [
+            {
+                "register": "x24"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x31ca4",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar8(x0)"
+        ]
+    },
+    {
+        "address": "0x31ca8",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x31cc8",
+        "instruction": "cmp x24,#0x17",
+        "registers": [
+            {
+                "register": "x24"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x31cac",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar8(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x31d30",
+        "original_branch_instruction": "b.lt",
+        "branch_target": "0x31dbc",
+        "instruction": "cmp w22,#0x2",
+        "registers": [
+            {
+                "register": "w22"
+            },
+            {
+                "register": "0x2"
+            }
+        ],
+        "original_branch_address": "0x31d34",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x1)",
+            "iVar17(w22)"
+        ]
+    },
+    {
+        "address": "0x31d54",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x32144",
+        "instruction": "cmn x20,#0x10",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x31d58",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar8(x0)"
+        ]
+    },
+    {
+        "address": "0x31d5c",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x31eb0",
+        "instruction": "cmp x20,#0x17",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x31d60",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar8(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x31d94",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x3213c",
+        "instruction": "cmn x20,#0x10",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x31d98",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar8(x0)"
+        ]
+    },
+    {
+        "address": "0x31d9c",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x31e0c",
+        "instruction": "cmp x20,#0x17",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x31da0",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar8(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x31dc4",
+        "original_branch_instruction": "b.ge",
+        "branch_target": "0x31e70",
+        "instruction": "fcmp s8,s0",
+        "registers": [
+            {
+                "register": "s8"
+            },
+            {
+                "register": "s0"
+            }
+        ],
+        "original_branch_address": "0x31dc8",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x3f666666)",
+            "fVar22(s1)"
+        ]
+    },
+    {
+        "address": "0x31de4",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x3214c",
+        "instruction": "cmn x20,#0x10",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x31de8",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar8(x0)"
+        ]
+    },
+    {
+        "address": "0x31dec",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x31f14",
+        "instruction": "cmp x20,#0x17",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x31df0",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar8(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x31e88",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x32154",
+        "instruction": "cmn x22,#0x10",
+        "registers": [
+            {
+                "register": "x22"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x31e8c",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar8(x0)"
+        ]
+    },
+    {
+        "address": "0x31e90",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x31f64",
+        "instruction": "cmp x22,#0x17",
+        "registers": [
+            {
+                "register": "x22"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x31e94",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar8(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x31ffc",
+        "original_branch_instruction": "b.lt",
+        "branch_target": "0x320cc",
+        "instruction": "cmp w10,#0x1",
+        "registers": [
+            {
+                "register": "w10"
+            },
+            {
+                "register": "0x1"
+            }
+        ],
+        "original_branch_address": "0x32000",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "iVar7(w0)",
+            "UnnamedHighVar(Constant: 0x1)"
+        ]
+    },
+    {
+        "address": "0x2e554",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x2e5b0",
+        "instruction": "fcmp s0,s1",
+        "registers": [
+            {
+                "register": "s0"
+            },
+            {
+                "register": "s1"
+            }
+        ],
+        "original_branch_address": "0x2e55c",
+        "set_id": "ANC_LIVE_fmp_classify",
+        "pcode_compared_ops": [
+            "UNNAMED(s1)",
+            "fVar4(s0)"
+        ]
+    },
+    {
+        "address": "0x2f0e4",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x2f140",
+        "instruction": "fcmp s0,s1",
+        "registers": [
+            {
+                "register": "s0"
+            },
+            {
+                "register": "s1"
+            }
+        ],
+        "original_branch_address": "0x2f0ec",
+        "set_id": "ANC_LIVE_idmix_classify",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x3f000000)",
+            "fVar4(s0)"
+        ]
+    },
+    {
+        "address": "0x143ec",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x143fc",
+        "instruction": "cmp x10,#0x2, LSL #12",
+        "registers": [
+            {
+                "register": "x10"
+            },
+            {
+                "register": "0x2, LSL #12"
+            }
+        ],
+        "original_branch_address": "0x143f0",
+        "set_id": "ANC_extract_for_snpe",
+        "pcode_compared_ops": [
+            "UNNAMED(x10)",
+            "UnnamedHighVar(Constant: 0x2000)"
+        ]
+    },
+    {
+        "address": "0x302d8",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30ddc",
+        "instruction": "cmn x19,#0x10",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x302dc",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar14(x0)"
+        ]
+    },
+    {
+        "address": "0x302e0",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x303b8",
+        "instruction": "cmp x19,#0x17",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x302e4",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x3031c",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30dd4",
+        "instruction": "cmn x28,#0x10",
+        "registers": [
+            {
+                "register": "x28"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x30320",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar14(x0)"
+        ]
+    },
+    {
+        "address": "0x30324",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30340",
+        "instruction": "cmp x28,#0x17",
+        "registers": [
+            {
+                "register": "x28"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x30328",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x3045c",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30de4",
+        "instruction": "cmn x28,#0x10",
+        "registers": [
+            {
+                "register": "x28"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x30460",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar14(x0)"
+        ]
+    },
+    {
+        "address": "0x30464",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30500",
+        "instruction": "cmp x28,#0x17",
+        "registers": [
+            {
+                "register": "x28"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x30468",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x3049c",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x30610",
+        "instruction": "fcmp s10,s9",
+        "registers": [
+            {
+                "register": "s10"
+            },
+            {
+                "register": "s9"
+            }
+        ],
+        "original_branch_address": "0x304a0",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "fVar30(s10)",
+            "fVar29(s1)"
+        ]
+    },
+    {
+        "address": "0x315f8",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x315ec",
+        "instruction": "cmp x9,#0x180",
+        "registers": [
+            {
+                "register": "x9"
+            },
+            {
+                "register": "0x180"
+            }
+        ],
+        "original_branch_address": "0x31604",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x180)",
+            "uVar5(x9)"
+        ]
+    },
+    {
+        "address": "0x31624",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x31618",
+        "instruction": "cmp x9,#0x180",
+        "registers": [
+            {
+                "register": "x9"
+            },
+            {
+                "register": "0x180"
+            }
+        ],
+        "original_branch_address": "0x31630",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "uVar5(x9)",
+            "UnnamedHighVar(Constant: 0x181)"
+        ]
+    },
+    {
+        "address": "0x32630",
+        "original_branch_instruction": "b.lt",
+        "branch_target": "0x32680",
+        "instruction": "cmp w0,w26",
+        "registers": [
+            {
+                "register": "w0"
+            },
+            {
+                "register": "w26"
+            }
+        ],
+        "original_branch_address": "0x32634",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "iVar2(w0)",
+            "iVar4(w26)"
+        ]
+    },
+    {
+        "address": "0x32694",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x32744",
+        "instruction": "cmn x21,#0x10",
+        "registers": [
+            {
+                "register": "x21"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x32698",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "__n(x0)"
+        ]
+    },
+    {
+        "address": "0x3269c",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x326b4",
+        "instruction": "cmp x21,#0x17",
+        "registers": [
+            {
+                "register": "x21"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x326a0",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "__n(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x305fc",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x301fc",
+        "instruction": "cmn x25,#0x11",
+        "registers": [
+            {
+                "register": "x25"
+            },
+            {
+                "register": "0x11"
+            }
+        ],
+        "original_branch_address": "0x30608",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x-10)"
+        ]
+    },
+    {
+        "address": "0x30618",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x30684",
+        "instruction": "fcmp s0,s8",
+        "registers": [
+            {
+                "register": "s0"
+            },
+            {
+                "register": "s8"
+            }
+        ],
+        "original_branch_address": "0x3061c",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x3f666666)",
+            "fVar30(s10)"
+        ]
+    },
+    {
+        "address": "0x30618",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30630",
+        "instruction": "fcmp s0,s8",
+        "registers": [
+            {
+                "register": "s0"
+            },
+            {
+                "register": "s8"
+            }
+        ],
+        "original_branch_address": "0x30624",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "pfVar17(x9)",
+            "UNNAMED(x10)"
+        ]
+    },
+    {
+        "address": "0x30664",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x30684",
+        "instruction": "fcmp s0,s8",
+        "registers": [
+            {
+                "register": "s0"
+            },
+            {
+                "register": "s8"
+            }
+        ],
+        "original_branch_address": "0x30668",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UNNAMED(s0)",
+            "UnnamedHighVar(Constant: 0x3f666666)"
+        ]
+    },
+    {
+        "address": "0x31784",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x31778",
+        "instruction": "cmp x9,#0x180",
+        "registers": [
+            {
+                "register": "x9"
+            },
+            {
+                "register": "0x180"
+            }
+        ],
+        "original_branch_address": "0x31790",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "uVar8(x22)",
+            "UnnamedHighVar(Constant: 0x181)"
+        ]
+    },
+    {
+        "address": "0x317b0",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x317a4",
+        "instruction": "cmp x9,#0x180",
+        "registers": [
+            {
+                "register": "x9"
+            },
+            {
+                "register": "0x180"
+            }
+        ],
+        "original_branch_address": "0x317bc",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x180)",
+            "uVar8(x22)"
+        ]
+    },
+    {
+        "address": "0x317f4",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x3198c",
+        "instruction": "cmn x20,#0x10",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x317f8",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar4(x0)"
+        ]
+    },
+    {
+        "address": "0x317fc",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x3181c",
+        "instruction": "cmp x20,#0x17",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x31800",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar4(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x318a0",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x3198c",
+        "instruction": "cmn x20,#0x10",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x318a4",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar4(x0)"
+        ]
+    },
+    {
+        "address": "0x318ac",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x318d0",
+        "instruction": "cmp x20,#0x17",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x318b4",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar4(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x31950",
+        "original_branch_instruction": "csinc",
+        "branch_target": "0x0",
+        "instruction": "fcmp s8,#0.0",
+        "registers": [
+            {
+                "register": "s8"
+            },
+            {
+                "register": "0.0"
+            }
+        ],
+        "original_branch_address": "0x31958",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x0)",
+            "fVar11(s10)"
+        ]
+    },
+    {
+        "address": "0x30688",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x305b0",
+        "instruction": "cmp x23,#0x2",
+        "registers": [
+            {
+                "register": "x23"
+            },
+            {
+                "register": "0x2"
+            }
+        ],
+        "original_branch_address": "0x3068c",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x2)",
+            "uVar25(x23)"
+        ]
+    },
+    {
+        "address": "0x306c4",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30df8",
+        "instruction": "cmn x20,#0x10",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x306c8",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar14(x0)"
+        ]
+    },
+    {
+        "address": "0x306cc",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x307ac",
+        "instruction": "cmp x20,#0x17",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x306d0",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x30784",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30e00",
+        "instruction": "cmn x19,#0x10",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x30788",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar14(x0)"
+        ]
+    },
+    {
+        "address": "0x3078c",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30818",
+        "instruction": "cmp x19,#0x17",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x30790",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x30894",
+        "original_branch_instruction": "b.cc",
+        "branch_target": "0x30b28",
+        "instruction": "cmp x8,#0x2",
+        "registers": [
+            {
+                "register": "x8"
+            },
+            {
+                "register": "0x2"
+            }
+        ],
+        "original_branch_address": "0x30898",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UNNAMED(x8)",
+            "UnnamedHighVar(Constant: 0x2)"
+        ]
+    },
+    {
+        "address": "0x308e4",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30dec",
+        "instruction": "cmn x23,#0x10",
+        "registers": [
+            {
+                "register": "x23"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x308e8",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar14(x0)"
+        ]
+    },
+    {
+        "address": "0x308ec",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30908",
+        "instruction": "cmp x23,#0x17",
+        "registers": [
+            {
+                "register": "x23"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x308f0",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x309bc",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30e18",
+        "instruction": "cmn x21,#0x10",
+        "registers": [
+            {
+                "register": "x21"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x309c0",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar14(x0)"
+        ]
+    },
+    {
+        "address": "0x309c4",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30ab4",
+        "instruction": "cmp x21,#0x17",
+        "registers": [
+            {
+                "register": "x21"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x309c8",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x30a0c",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30e10",
+        "instruction": "cmn x20,#0x10",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x30a10",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar14(x0)"
+        ]
+    },
+    {
+        "address": "0x30a14",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30a54",
+        "instruction": "cmp x20,#0x17",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x30a18",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    },
+    {
+        "address": "0x30b20",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x30dbc",
+        "instruction": "cmp w19,#0x1",
+        "registers": [
+            {
+                "register": "w19"
+            },
+            {
+                "register": "0x1"
+            }
+        ],
+        "original_branch_address": "0x30b24",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x1)",
+            "iVar19(w10)"
+        ]
+    },
+    {
+        "address": "0x30b58",
+        "original_branch_instruction": "b.lt",
+        "branch_target": "0x30c28",
+        "instruction": "cmp w10,#0x1",
+        "registers": [
+            {
+                "register": "w10"
+            },
+            {
+                "register": "0x1"
+            }
+        ],
+        "original_branch_address": "0x30b5c",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "iVar19(w10)",
+            "UnnamedHighVar(Constant: 0x1)"
+        ]
+    },
+    {
+        "address": "0x30c94",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30e08",
+        "instruction": "cmn x20,#0x10",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x10"
+            }
+        ],
+        "original_branch_address": "0x30c98",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "UnnamedHighVar(Constant: 0x-11)",
+            "sVar14(x0)"
+        ]
+    },
+    {
+        "address": "0x30c9c",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x30cbc",
+        "instruction": "cmp x20,#0x17",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "0x17"
+            }
+        ],
+        "original_branch_address": "0x30ca0",
+        "set_id": "ANC_detect",
+        "pcode_compared_ops": [
+            "sVar14(x0)",
+            "UnnamedHighVar(Constant: 0x17)"
+        ]
+    }
+]

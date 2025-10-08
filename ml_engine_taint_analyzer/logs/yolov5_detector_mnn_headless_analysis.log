@@ -1,0 +1,1175 @@
+2025-08-10 05:16:06 INFO  (LoggingInitialization) Using log config file: jar:file:/Applications/ghidra_11.0.3_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-08-10 05:16:06 INFO  (LoggingInitialization) Using log file: /Users/chenkexin/Desktop/kk/test_taint/logs/yolov5_detector_mnn_headless_analysis.log  
+2025-08-10 05:16:06 INFO  (Preferences) Loading user preferences: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/preferences  
+2025-08-10 05:16:06 INFO  (Preferences) Loading previous preferences: /Users/chenkexin/.ghidra/.ghidra_10.4_PUBLIC/preferences  
+2025-08-10 05:16:06 INFO  (ClassSearcher) Searching for classes...  
+2025-08-10 05:16:07 INFO  (ClassSearcher) Class search complete (1458 ms)  
+2025-08-10 05:16:07 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-08-10 05:16:07 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-08-10 05:16:07 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-08-10 05:16:08 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-08-10 05:16:08 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Python/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-frida/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/chenkexin/ghidra_scripts
+    /Users/chenkexin/Desktop/kk/test_taint
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-dbgmodel-traceloader/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts  
+2025-08-10 05:16:08 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2025-08-10 05:16:08 INFO  (HeadlessAnalyzer) Opening existing project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/yolov5_detector_mnn  
+2025-08-10 05:16:08 INFO  (HeadlessProject) Opening project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/yolov5_detector_mnn  
+2025-08-10 05:16:11 INFO  (HeadlessAnalyzer) REPORT: Processing project file: /yolov5_detector_mnn  
+2025-08-10 05:16:11 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: /yolov5_detector_mnn  
+2025-08-10 05:16:11 INFO  (ExternalDebugFilesService) DWARF external debug information found: ExternalDebugInfo [filename=null, crc=0, hash=32b107b583997088a413d398e0c83fa85e05ac4b]  
+2025-08-10 05:16:11 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2025-08-10 05:16:13 INFO  (PackedDatabaseCache) Packed database cache: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/chenkexin-Ghidra/packed-db-cache  
+2025-08-10 05:16:13 DEBUG (PackedDatabaseCache) Using cached packed database: /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-08-10 05:16:14 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib_64  
+2025-08-10 05:16:15 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    AARCH64 ELF PLT Thunks                     0.018 secs
+    ASCII Strings                              0.288 secs
+    Apply Data Archives                        1.209 secs
+    Basic Constant Reference Analyzer          0.646 secs
+    Call Convention ID                         0.103 secs
+    Call-Fixup Installer                       0.007 secs
+    Create Address Tables                      0.034 secs
+    Create Function                            0.000 secs
+    DWARF                                      0.008 secs
+    Data Reference                             0.025 secs
+    Decompiler Switch Analysis                 0.219 secs
+    Demangler GNU                              0.032 secs
+    Disassemble Entry Points                   0.025 secs
+    Embedded Media                             0.010 secs
+    External Entry References                  0.001 secs
+    External Symbol Resolver                   0.013 secs
+    Function Start Search                      0.096 secs
+    Function Start Search After Code           0.031 secs
+    Function Start Search After Data           0.005 secs
+    GCC Exception Handlers                     0.554 secs
+    Non-Returning Functions - Discovered       0.040 secs
+    Non-Returning Functions - Known            0.039 secs
+    Reference                                  0.072 secs
+    Shared Return Calls                        0.042 secs
+    Stack                                      0.082 secs
+    Subroutine References                      0.037 secs
+-----------------------------------------------------
+     Total Time   3 secs
+-----------------------------------------------------
+  
+2025-08-10 05:16:15 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: /yolov5_detector_mnn  
+2025-08-10 05:16:15 INFO  (HeadlessAnalyzer) SCRIPT: /Users/chenkexin/Desktop/kk/test_taint/mnn_analyzer.py  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> INFO: Searching for functions, thunks, and call sites related to keyword 'getSessionOutput'  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found function 'getSessionOutput'. Searching for its thunks.  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found thunk 'getSessionOutput' at 00101f20 for function.  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found thunk 'getSessionOutput' at 001210f8 for function.  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found 2 unique call sites. Analyzing each...  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Starting Stage 1 Taint Analysis from 'getSessionOutput' call sites ---  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Analyzing Call Site #1056556 at 00101f2c ---  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: Parent (caller): getSessionOutput at 00101f20  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> INFO: Call at 00101f2c has no output varnode. Nothing to taint. Skipping.  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Analyzing Call Site #1057920 at 00102480 ---  
+2025-08-10 05:16:19 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: Parent (caller): main at 00102100  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 00102480) ---  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: Taint source is the return value of the call: UNNAMED(UniquePcode[0x10001239])  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> \n>>> Analyzing function: main (Depth: 0) at 00102100 (Originating from: getSessionOutput) with initial taints: UNNAMED(UniquePcode[0x10001239])  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (unique, 0x10001239, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=unique:10001239, isStackAddress=0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>   - [STACK_SEARCH.0] Def P-Code Op: (unique, 0x10001239, 8) CALL (ram, 0x101f20, 8) , (unique, 0x10001231, 8) , (register, 0x4000, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>   - [STACK_SEARCH.0] Mnemonic 'CALL' is not a handled case. Aborting path.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> \nDEBUG: Reached specified start PcodeOp (unique, 0x10001239, 8) CALL (ram, 0x101f20, 8) , (unique, 0x10001231, 8) , (register, 0x4000, 8) at 00102480 in main, subsequent ops will be processed.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: getSessionOutput  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@3191d502  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: getSessionOutput, Prototype: ghidra.program.model.pcode.FunctionPrototype@f331ac6, Num formal params: 2  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102480] Taint propagated from UNNAMED(UniquePcode[0x10001239]) to pTVar13(x0) via CAST.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: P-code for propagation is: (register, 0x4000, 8) CAST (unique, 0x10001239, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102488] Taint propagated from pTVar13(x0) to UNNAMED(UniquePcode[0x18f80]) via INT_EQUAL.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: P-code for propagation is: (unique, 0x18f80, 1) INT_EQUAL (register, 0x4000, 8) , (const, 0x0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102488] Taint reached COMPARISON op (INT_EQUAL). Operands: ['pTVar13(x0)', 'UnnamedHighVar(Constant: 0x0)'].  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18f80, 1) INT_EQUAL (register, 0x4000, 8) , (const, 0x0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102488 from instruction 'cbz'.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: getDimensionType  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@21b00c2f  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: getDimensionType, Prototype: ghidra.program.model.pcode.FunctionPrototype@60ea18c, Num formal params: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [MNN_RULE] Found call to 'Tensor' with a tainted argument.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Tracing `this` pointer... At VN: (unique, 0x10001251, 8), Def_Op: (unique, 0x10001251, 8) CAST (unique, 0x11f80, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Tracing `this` pointer... At VN: (unique, 0x11f80, 8), Def_Op: (unique, 0x11f80, 8) PTRSUB (register, 0x8, 8) , (const, 0xfffffffffffffcf0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Identified base register as (register, 0x8, 8) and offset as -0x310  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Found base-relative origin. `this` offset is -0x310. Calculated sink offset: -0x300  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Found matching stack symbol 'local_300' at offset -0x300.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1063: (stack, 0xfffffffffffffc80, 8) INDIRECT (stack, 0xfffffffffffffc80, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1064: (stack, 0xfffffffffffffc88, 8) INDIRECT (stack, 0xfffffffffffffc88, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1065: (stack, 0xfffffffffffffcd0, 8) INDIRECT (stack, 0xfffffffffffffcd0, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1066: (stack, 0xfffffffffffffcd8, 8) INDIRECT (stack, 0xfffffffffffffcd8, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1067: (stack, 0xfffffffffffffce0, 8) INDIRECT (stack, 0xfffffffffffffce0, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1068: (stack, 0xfffffffffffffcf0, 8) INDIRECT (stack, 0xfffffffffffffcf0, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1069: (stack, 0xfffffffffffffcf8, 8) INDIRECT (stack, 0xfffffffffffffcf8, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1070: (stack, 0xfffffffffffffd00, 8) INDIRECT (stack, 0xfffffffffffffd00, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1071: (stack, 0xfffffffffffffd40, 8) INDIRECT (stack, 0xfffffffffffffd40, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1072: (stack, 0xfffffffffffffd48, 8) INDIRECT (stack, 0xfffffffffffffd48, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1073: (stack, 0xfffffffffffffd50, 8) INDIRECT (stack, 0xfffffffffffffd50, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1074: (stack, 0xfffffffffffffd58, 8) INDIRECT (stack, 0xfffffffffffffd58, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1075: (stack, 0xfffffffffffffd60, 8) INDIRECT (stack, 0xfffffffffffffd60, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1076: (stack, 0xfffffffffffffd68, 8) INDIRECT (stack, 0xfffffffffffffd68, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1077: (stack, 0xfffffffffffffd70, 8) INDIRECT (stack, 0xfffffffffffffd70, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1078: (stack, 0xfffffffffffffd78, 8) INDIRECT (stack, 0xfffffffffffffd78, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1079: (stack, 0xfffffffffffffd80, 8) INDIRECT (stack, 0xfffffffffffffd80, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1080: (stack, 0xfffffffffffffd88, 8) INDIRECT (stack, 0xfffffffffffffd88, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1081: (stack, 0xfffffffffffffd90, 4) INDIRECT (stack, 0xfffffffffffffd90, 4) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1082: (stack, 0xfffffffffffffd98, 4) INDIRECT (stack, 0xfffffffffffffd98, 4) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1083: (stack, 0xfffffffffffffda0, 8) INDIRECT (stack, 0xfffffffffffffda0, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1084: (stack, 0xffffffffffffff10, 8) INDIRECT (stack, 0xffffffffffffff10, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1085: (stack, 0xffffffffffffff18, 8) INDIRECT (stack, 0xffffffffffffff18, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1086: (stack, 0xffffffffffffff20, 8) INDIRECT (stack, 0xffffffffffffff20, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1087: (stack, 0xffffffffffffff28, 4) INDIRECT (stack, 0xffffffffffffff28, 4) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1088: (stack, 0xffffffffffffff2c, 4) INDIRECT (stack, 0xffffffffffffff2c, 4) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1089: (stack, 0xffffffffffffff30, 4) INDIRECT (stack, 0xffffffffffffff30, 4) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1090: (stack, 0xffffffffffffff34, 4) INDIRECT (stack, 0xffffffffffffff34, 4) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1091: (stack, 0xffffffffffffff38, 8) INDIRECT (stack, 0xffffffffffffff38, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1092: (stack, 0xffffffffffffff78, 8) INDIRECT (stack, 0xffffffffffffff78, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1093: (ram, 0x1211c8, 8) INDIRECT (ram, 0x1211c8, 8) , (const, 0x278, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1094: (unique, 0x10001251, 8) CAST (unique, 0x11f80, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1095:  ---  CALL (ram, 0x102000, 8) , (register, 0x4000, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1096: (stack, 0xfffffffffffffc80, 8) INDIRECT (stack, 0xfffffffffffffc80, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1097: (stack, 0xfffffffffffffc88, 8) INDIRECT (stack, 0xfffffffffffffc88, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1098: (stack, 0xfffffffffffffcd0, 8) INDIRECT (stack, 0xfffffffffffffcd0, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1099: (stack, 0xfffffffffffffcd8, 8) INDIRECT (stack, 0xfffffffffffffcd8, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1100: (stack, 0xfffffffffffffce0, 8) INDIRECT (stack, 0xfffffffffffffce0, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1101: (stack, 0xfffffffffffffcf0, 8) INDIRECT (stack, 0xfffffffffffffcf0, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1102: (stack, 0xfffffffffffffcf8, 8) INDIRECT (stack, 0xfffffffffffffcf8, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1103: (stack, 0xfffffffffffffd00, 8) INDIRECT (stack, 0xfffffffffffffd00, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1104: (stack, 0xfffffffffffffd40, 8) INDIRECT (stack, 0xfffffffffffffd40, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1105: (stack, 0xfffffffffffffd48, 8) INDIRECT (stack, 0xfffffffffffffd48, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1106: (stack, 0xfffffffffffffd50, 8) INDIRECT (stack, 0xfffffffffffffd50, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1107: (stack, 0xfffffffffffffd58, 8) INDIRECT (stack, 0xfffffffffffffd58, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1108: (stack, 0xfffffffffffffd60, 8) INDIRECT (stack, 0xfffffffffffffd60, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1109: (stack, 0xfffffffffffffd68, 8) INDIRECT (stack, 0xfffffffffffffd68, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1110: (stack, 0xfffffffffffffd70, 8) INDIRECT (stack, 0xfffffffffffffd70, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1111: (stack, 0xfffffffffffffd78, 8) INDIRECT (stack, 0xfffffffffffffd78, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1112: (stack, 0xfffffffffffffd80, 8) INDIRECT (stack, 0xfffffffffffffd80, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1113: (stack, 0xfffffffffffffd88, 8) INDIRECT (stack, 0xfffffffffffffd88, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1114: (stack, 0xfffffffffffffd90, 4) INDIRECT (stack, 0xfffffffffffffd90, 4) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1115: (stack, 0xfffffffffffffd98, 4) INDIRECT (stack, 0xfffffffffffffd98, 4) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1116: (stack, 0xfffffffffffffda0, 8) INDIRECT (stack, 0xfffffffffffffda0, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1117: (stack, 0xffffffffffffff10, 8) INDIRECT (stack, 0xffffffffffffff10, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1118: (stack, 0xffffffffffffff18, 8) INDIRECT (stack, 0xffffffffffffff18, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1119: (stack, 0xffffffffffffff20, 8) INDIRECT (stack, 0xffffffffffffff20, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1120: (stack, 0xffffffffffffff28, 4) INDIRECT (stack, 0xffffffffffffff28, 4) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1121: (stack, 0xffffffffffffff2c, 4) INDIRECT (stack, 0xffffffffffffff2c, 4) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1122: (stack, 0xffffffffffffff30, 4) INDIRECT (stack, 0xffffffffffffff30, 4) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1123: (stack, 0xffffffffffffff34, 4) INDIRECT (stack, 0xffffffffffffff34, 4) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1124: (stack, 0xffffffffffffff38, 8) INDIRECT (stack, 0xffffffffffffff38, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1125: (stack, 0xffffffffffffff78, 8) INDIRECT (stack, 0xffffffffffffff78, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1126: (ram, 0x1211c8, 8) INDIRECT (ram, 0x1211c8, 8) , (const, 0x27c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 1127: (unique, 0x10000e89, 8) COPY (stack, 0xfffffffffffffd00, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [MNN_RULE] Found sink use via COPY operation at address 001024ac: (unique, 0x10000e89, 8) COPY (stack, 0xfffffffffffffd00, 8). Tainting its output: puVar9(x0)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [MNN_RULE] Added puVar9(x0) to current taint set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [RULE copyToHostTensor] Detected call to 'copyToHostTensor' with tainted arguments.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [RULE copyToHostTensor] Call has no return value to taint.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: shape  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@2bb0501f  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: shape, Prototype: ghidra.program.model.pcode.FunctionPrototype@570d2762, Num formal params: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001024d8. Address varnode: (unique, 0x6400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~vector  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@2b972b96  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~vector, Prototype: ghidra.program.model.pcode.FunctionPrototype@4399d3e, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: shape  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@1b32f895  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: shape, Prototype: ghidra.program.model.pcode.FunctionPrototype@9ebbbfe, Num formal params: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001024fc. Address varnode: (unique, 0x6400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~vector  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@1a4076f0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~vector, Prototype: ghidra.program.model.pcode.FunctionPrototype@77562b41, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x1000126d, 4) , (const, 0x1, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102508] Taint reached CBRANCH. Operands: ['UNNAMED(UniquePcode[0x1000126d])', 'UnnamedHighVar(Constant: 0x1)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102510] Taint propagated from puVar9(x0) to UNNAMED(UniquePcode[0x10001279]) via CAST.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: P-code for propagation is: (unique, 0x10001279, 8) CAST (unique, 0x10000e89, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102514] Taint propagated from puVar9(x0) to UNNAMED(UniquePcode[0x10001289]) via CAST.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: P-code for propagation is: (unique, 0x10001289, 8) CAST (unique, 0x10000e89, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102528. Address varnode: (unique, 0x6980, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6980]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6980]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (const, 0x3e800000, 4) , (register, 0x5040, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102530] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x3e800000)', 'UNNAMED(s2)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (unique, 0x24900, 4) , (unique, 0x11b80, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102544] Taint reached CBRANCH. Operands: ['fVar35(s2)', 'fVar29(w21)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (stack, 0xfffffffffffffc98, 8) , (stack, 0xfffffffffffffc90, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102570] Taint reached CBRANCH. Operands: ['local_368(StackDirect[Stack[-0x368]])', 'local_370(StackDirect[Stack[-0x370]])'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __introsort_loop<__gnu_cxx::__normal_iterator<Object*,std::vector<Object,std::allocator<Object>>>,long,__gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(Object_const&,Object_const&)#1}>>  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@36c343a1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __introsort_loop<__gnu_cxx::__normal_iterator<Object*,std::vector<Object,std::allocator<Object>>>,long,__gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(Object_const&,Object_const&)#1}>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@73714f, Num formal params: 4  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) INT_SLESS (register, 0x4090, 8) , (const, 0x181, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102594] Taint reached CBRANCH. Operands: ['extraout_x18(x18)', 'UnnamedHighVar(Constant: 0x181)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __insertion_sort<__gnu_cxx::__normal_iterator<Object*,std::vector<Object,std::allocator<Object>>>,__gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(Object_const&,Object_const&)#1}>>  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@3cae679f  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __insertion_sort<__gnu_cxx::__normal_iterator<Object*,std::vector<Object,std::allocator<Object>>>,__gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(Object_const&,Object_const&)#1}>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@65e264b3, Num formal params: 3  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18880, 1) INT_SLESS (unique, 0x10001351, 8) , (const, 0x0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001025b0] Taint reached CBRANCH. Operands: ['UNNAMED(UniquePcode[0x10001351])', 'UnnamedHighVar(Constant: 0x0)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18f80, 1) INT_EQUAL (register, 0x40c0, 8) , (const, 0x0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001025b8 from instruction 'cbz'.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: operator.new  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@7f0d20a6  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: operator.new, Prototype: ghidra.program.model.pcode.FunctionPrototype@20f3c062, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (register, 0x40c0, 8) , (const, 0x1, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001025f0] Taint reached CBRANCH. Operands: ['lVar33(x24)', 'UnnamedHighVar(Constant: 0x1)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (unique, 0x12480, 8) , (register, 0x4000, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001025f8] Taint reached CBRANCH. Operands: ['pfVar26(x19)', 'pfVar15(x0)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: memset  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@7a34d6d  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: memset, Prototype: ghidra.program.model.pcode.FunctionPrototype@661afd8a, Num formal params: 3  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18f80, 1) INT_NOTEQUAL (register, 0x4090, 8) , (const, 0x0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102614 from instruction 'cbz'.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102620. Address varnode: (unique, 0x10001399, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x10001399]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x10001399]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102620. Address varnode: (unique, 0x7c800, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode pfVar15(x0) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer pfVar15(x0) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (unique, 0x12480, 8) , (register, 0x4008, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102634] Taint reached CBRANCH. Operands: ['pfVar26(x19)', 'pfVar21(x1)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (register, 0x4008, 8) , (register, 0x4040, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 0010266c] Taint reached CBRANCH. Operands: ['piVar22(x1)', 'piVar25(x8)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102670. Address varnode: (unique, 0x100013c1, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x100013c1]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x100013c1]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102678. Address varnode: (unique, 0x7580, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7580]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7580]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102680. Address varnode: (unique, 0x100013c9, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x100013c9]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x100013c9]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (unique, 0x24900, 4) , (unique, 0x24900, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102688] Taint reached CBRANCH. Operands: ['UNNAMED(UniquePcode[0x24900])', 'UNNAMED(UniquePcode[0x24900])'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 0010268c. Address varnode: (register, 0x40a8, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode ppfVar16(x0) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer ppfVar16(x0) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 0010268c. Address varnode: (unique, 0x24400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x24400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x24400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000, 1) FLOAT_LESS (const, 0x0, 4) , (stack, 0xfffffffffffffc88, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 0010269c] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x0)', 'UNNAMED(StackDirect[Stack[-0x378]])'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000, 1) FLOAT_LESS (const, 0x0, 4) , (stack, 0xfffffffffffffc8c, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001026a8] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x0)', 'UNNAMED(StackDirect[Stack[-0x374]])'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001026ac. Address varnode: (unique, 0x100013d9, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x100013d9]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x100013d9]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000, 1) FLOAT_LESS (const, 0x0, 4) , (register, 0x5060, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001026b4] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x0)', 'UNNAMED(s3)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001026b8. Address varnode: (unique, 0x6400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000, 1) FLOAT_LESS (const, 0x0, 4) , (register, 0x5040, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001026c0] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x0)', 'fVar41(s8)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001026c4. Address varnode: (unique, 0x100013f1, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x100013f1]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x100013f1]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000069b, 1) FLOAT_LESSEQUAL (register, 0x5080, 4) , (stack, 0xfffffffffffffc80, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001026d4] Taint reached CBRANCH. Operands: ['fVar38(s4)', 'UNNAMED(StackDirect[Stack[-0x380]])'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001026ec. Address varnode: (unique, 0x6400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100006a7, 1) FLOAT_LESS (stack, 0xfffffffffffffc84, 4) , (register, 0x50c0, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001026f8] Taint reached CBRANCH. Operands: ['UNNAMED(StackDirect[Stack[-0x37c]])', 'fVar40(s6)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100006ab, 1) FLOAT_LESSEQUAL (const, 0x0, 4) , (register, 0x50a0, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102700] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x0)', 'fVar35(s2)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100006af, 1) FLOAT_LESSEQUAL (const, 0x0, 4) , (register, 0x50c0, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102708] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x0)', 'fVar34(s6)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102710. Address varnode: (unique, 0x10001421, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x10001421]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x10001421]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (register, 0x5060, 4) , (register, 0x5080, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 0010271c] Taint reached CBRANCH. Operands: ['fVar29(w21)', 'fVar35(s2)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (register, 0x5020, 4) , (register, 0x5040, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 0010272c] Taint reached CBRANCH. Operands: ['fVar36(s2)', 'fVar41(s8)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000, 1) FLOAT_LESS (const, 0x0, 4) , (register, 0x5080, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102734] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x0)', 'fVar35(s2)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000, 1) FLOAT_LESSEQUAL (register, 0x5040, 4) , (const, 0x0, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 0010273c] Taint reached CBRANCH. Operands: ['fVar41(s8)', 'UnnamedHighVar(Constant: 0x0)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102740. Address varnode: (unique, 0x7e180, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7e180]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7e180]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102748. Address varnode: (unique, 0x7e400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7e400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7e400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (const, 0x3ee66666, 4) , (register, 0x5040, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 0010275c] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x3ee66666)', 'UNNAMED(s2)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0xe80, 1) INT_LESS (unique, 0x11f80, 8) , (unique, 0x10001429, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102768] Taint reached CBRANCH. Operands: ['uVar7(x0)', 'UNNAMED(UniquePcode[0x10001429])'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (stack, 0xfffffffffffffcc0, 8) , (register, 0x4008, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102778] Taint reached CBRANCH. Operands: ['local_340(StackDirect[Stack[-0x340]])', 'piVar22(x1)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (unique, 0x11f80, 8) , (register, 0x40c0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102790] Taint reached CBRANCH. Operands: ['lVar32(x24)', 'lVar33(x24)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~vector  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@26406c1c  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~vector, Prototype: ghidra.program.model.pcode.FunctionPrototype@7c704c59, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (stack, 0xfffffffffffffcb8, 8) , (stack, 0xfffffffffffffcb0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001027a4] Taint reached CBRANCH. Operands: ['local_348(StackDirect[Stack[-0x348]])', 'local_350(StackDirect[Stack[-0x350]])'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001027a8. Address varnode: (stack, 0xfffffffffffffcb0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode local_350(StackDirect[Stack[-0x350]]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer local_350(StackDirect[Stack[-0x350]]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001027b8. Address varnode: (unique, 0x6400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESSEQUAL (register, 0x5020, 4) , (const, 0x3f000000, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001027c0] Taint reached CBRANCH. Operands: ['UNNAMED(s1)', 'UnnamedHighVar(Constant: 0x3f000000)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: puts  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@20b733de  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: puts, Prototype: ghidra.program.model.pcode.FunctionPrototype@7d573a2, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (unique, 0x10000e81, 8) , (unique, 0x10000e79, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001027dc] Taint reached CBRANCH. Operands: ['piVar25(x8)', 'piVar22(x1)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~vector  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@41ffc123  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~vector, Prototype: ghidra.program.model.pcode.FunctionPrototype@3dffa772, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~vector  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@6d02100a  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~vector, Prototype: ghidra.program.model.pcode.FunctionPrototype@59bf18e6, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~Tensor  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@2f6d04ff  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~Tensor, Prototype: ghidra.program.model.pcode.FunctionPrototype@5212c358, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_release  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@734b89d4  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_release, Prototype: ghidra.program.model.pcode.FunctionPrototype@7764a196, Num formal params: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~Mat  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@5b8f3656  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~Mat, Prototype: ghidra.program.model.pcode.FunctionPrototype@9b554a0, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~Mat  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@f286e36  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~Mat, Prototype: ghidra.program.model.pcode.FunctionPrototype@2c1b2b27, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~ScheduleConfig  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@7bfe46d0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~ScheduleConfig, Prototype: ghidra.program.model.pcode.FunctionPrototype@e49089b, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_release  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@696f77eb  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_release, Prototype: ghidra.program.model.pcode.FunctionPrototype@7eb03384, Num formal params: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (register, 0x4098, 8) , (register, 0x40a0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 0010284c] Taint reached CBRANCH. Operands: ['pfVar26(x19)', 'pfVar19(x0)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102858. Address varnode: (register, 0x40a0, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode pfVar19(x0) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer pfVar19(x0) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x10000b28, 1) INT_NOTEQUAL (register, 0x4098, 8) , (unique, 0x10000b1c, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102860] Taint reached CBRANCH. Operands: ['pfVar26(x19)', 'pfVar15(x0)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102868. Address varnode: (unique, 0x10000b1c, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode pfVar15(x0) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer pfVar15(x0) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100009e9, 1) FLOAT_LESS (unique, 0x10000b24, 4) , (register, 0x5000, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102870] Taint reached CBRANCH. Operands: ['fVar38(s4)', 'UNNAMED(s0)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102894. Address varnode: (unique, 0x6980, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6980]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6980]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (const, 0x3e800000, 4) , (register, 0x5040, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001028a0] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x3e800000)', 'fVar38(s4)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001028a8. Address varnode: (unique, 0x7b80, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7b80]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7b80]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001028a8. Address varnode: (unique, 0x7c800, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7c800]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7c800]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001028ac. Address varnode: (unique, 0x7b80, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7b80]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7b80]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001028ac. Address varnode: (unique, 0x7c800, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7c800]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7c800]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (stack, 0xfffffffffffffca0, 8) , (stack, 0xfffffffffffffc98, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102908] Taint reached CBRANCH. Operands: ['local_360(StackDirect[Stack[-0x360]])', 'local_368(StackDirect[Stack[-0x368]])'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __ostream_insert<char,std::char_traits<char>>  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@7b3762cf  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __ostream_insert<char,std::char_traits<char>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@10c44b90, Num formal params: 3  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __ostream_insert<char,std::char_traits<char>>  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@b2606a9  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __ostream_insert<char,std::char_traits<char>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@2a891e00, Num formal params: 3  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: endl<char,std::char_traits<char>>  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@25c73bce  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: endl<char,std::char_traits<char>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@1a034b56, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~Mat  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@3f8fd8f6  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~Mat, Prototype: ghidra.program.model.pcode.FunctionPrototype@3fd66daa, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_dispose  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@68cf0f82  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_dispose, Prototype: ghidra.program.model.pcode.FunctionPrototype@1fc27697, Num formal params: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_dispose  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@5e4b45f1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_dispose, Prototype: ghidra.program.model.pcode.FunctionPrototype@52fcc8af, Num formal params: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (stack, 0xffffffffffffff78, 8) , (ram, 0x1211c8, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001029a4 because it appears to be a stack canary check.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001029c0] Analyzing potential tainted RETURN with value: UNNAMED(x0) (Tainted: 0)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 8) (Size: 8, Def: (register, 0x4000, 8) COPY (register, 0x4098, 8) at 001029ac)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG]     1. UNNAMED(UniquePcode[0x10001239])  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG]     2. UNNAMED(UniquePcode[0x10001279])  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG]     3. UNNAMED(UniquePcode[0x10001289])  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG]     4. UNNAMED(UniquePcode[0x18f80])  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG]     5. pTVar13(x0)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG]     6. puVar9(x0)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py>     [DEBUG] ---------------------------------  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __insertion_sort<__gnu_cxx::__normal_iterator<Object*,std::vector<Object,std::allocator<Object>>>,__gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(Object_const&,Object_const&)#1}>>  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@b31c263  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __insertion_sort<__gnu_cxx::__normal_iterator<Object*,std::vector<Object,std::allocator<Object>>>,__gnu_cxx::__ops::_Iter_comp_iter<main::{lambda(Object_const&,Object_const&)#1}>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@5b848593, Num formal params: 3  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x10000b39, 1) INT_NOTEQUAL (unique, 0x10000e71, 8) , (unique, 0x10000b31, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001029e0] Taint reached CBRANCH. Operands: ['ppfVar16(x0)', 'ppfVar23(x2)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001029e8. Address varnode: (unique, 0x10000b31, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode ppfVar23(x2) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer ppfVar23(x2) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001029e8. Address varnode: (unique, 0x24400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x24400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x24400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001029f4. Address varnode: (unique, 0x6500, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6500]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6500]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102a04. Address varnode: (unique, 0x6980, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6980]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6980]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102a08. Address varnode: (unique, 0x6400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x10000e32, 1) FLOAT_LESS (register, 0x5000, 4) , (register, 0x5020, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102a10] Taint reached CBRANCH. Operands: ['fVar41(s8)', 'fVar35(s2)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102a44. Address varnode: (register, 0x4000, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(x0) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(x0) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102a44. Address varnode: (unique, 0x24400, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x24400]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x24400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102a50. Address varnode: (unique, 0x6500, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6500]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6500]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102a60. Address varnode: (unique, 0x6980, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6980]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6980]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102ab8. Address varnode: (unique, 0x10001419, 8)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x10001419]) is not tainted (recursive check).  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x10001419]) is not in the tainted memory regions set.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000084b, 1) FLOAT_LESSEQUAL (register, 0x5080, 4) , (register, 0x50e0, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102ac4] Taint reached CBRANCH. Operands: ['fVar38(s4)', 'UNNAMED(s7)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000084f, 1) FLOAT_LESSEQUAL (register, 0x5000, 4) , (register, 0x50e0, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102ad4] Taint reached CBRANCH. Operands: ['fVar37(s2)', 'UNNAMED(s7)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000, 1) FLOAT_LESS (const, 0x0, 4) , (register, 0x5080, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102ae0] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x0)', 'fVar29(w21)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (register, 0x5020, 4) , (register, 0x5040, 4)  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102afc] Taint reached CBRANCH. Operands: ['fVar36(s2)', 'fVar41(s8)'].   
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_realloc_insert<int>  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@145fec52  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_realloc_insert<int>, Prototype: ghidra.program.model.pcode.FunctionPrototype@2b6286f1, Num formal params: 3  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: puts  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@3f9d8782  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: puts, Prototype: ghidra.program.model.pcode.FunctionPrototype@54cbd15f, Num formal params: 1  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_realloc_insert<Object_const&>  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@8b5e519  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_realloc_insert<Object_const&>, Prototype: ghidra.program.model.pcode.FunctionPrototype@3a938029, Num formal params: 3  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __ostream_insert<char,std::char_traits<char>>  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@6ca66c86  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __ostream_insert<char,std::char_traits<char>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@38beaef0, Num formal params: 3  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:20 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: endl<char,std::char_traits<char>>  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@9f20cb  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: endl<char,std::char_traits<char>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@2b4cef00, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (register, 0x4098, 8) , (stack, 0xfffffffffffffc38, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102b78] Taint reached CBRANCH. Operands: ['ppfVar28(x19)', 'local_3c8(StackDirect[Stack[-0x3c8]])'].   
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: puts  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@7e94ae72  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: puts, Prototype: ghidra.program.model.pcode.FunctionPrototype@776d8434, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1c80, 1) INT_LESS (const, 0x60, 8) , (stack, 0xfffffffffffffc78, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102ba0] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x60)', 'local_388(StackDirect[Stack[-0x388]])'].   
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102bb0. Address varnode: (unique, 0x10001461, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x10001461]) is not tainted (recursive check).  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x10001461]) is not in the tainted memory regions set.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102bb0. Address varnode: (unique, 0x7c800, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7c800]) is not tainted (recursive check).  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7c800]) is not in the tainted memory regions set.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102bb8. Address varnode: (unique, 0x10001479, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x10001479]) is not tainted (recursive check).  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x10001479]) is not in the tainted memory regions set.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102bb8. Address varnode: (unique, 0x7c800, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7c800]) is not tainted (recursive check).  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7c800]) is not in the tainted memory regions set.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102bc0. Address varnode: (unique, 0x6400, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6400]) is not tainted (recursive check).  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6400]) is not in the tainted memory regions set.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102bc8. Address varnode: (unique, 0x100014a1, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x100014a1]) is not tainted (recursive check).  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x100014a1]) is not in the tainted memory regions set.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __printf_chk  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@6a1932fd  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __printf_chk, Prototype: ghidra.program.model.pcode.FunctionPrototype@30de309, Num formal params: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (register, 0x4098, 8) , (register, 0x40b0, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102bec] Taint reached CBRANCH. Operands: ['ppfVar28(x19)', 'ppfVar16(x0)'].   
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: puts  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@4d605b0b  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: puts, Prototype: ghidra.program.model.pcode.FunctionPrototype@7550de3b, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __ostream_insert<char,std::char_traits<char>>  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@5eeb60f8  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __ostream_insert<char,std::char_traits<char>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@77c9cf87, Num formal params: 3  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102c24. Address varnode: (register, 0x4008, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode param_2(x1) is not tainted (recursive check).  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer param_2(x1) is not in the tainted memory regions set.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: operator<<  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@620a8071  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: operator<<, Prototype: ghidra.program.model.pcode.FunctionPrototype@247b22e7, Num formal params: 2  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __ostream_insert<char,std::char_traits<char>>  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@7a14dfb8  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __ostream_insert<char,std::char_traits<char>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@387ca362, Num formal params: 3  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: endl<char,std::char_traits<char>>  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@5e5a59e6  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: endl<char,std::char_traits<char>>, Prototype: ghidra.program.model.pcode.FunctionPrototype@2efa48a, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __stack_chk_fail  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@56c53595  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __stack_chk_fail, Prototype: ghidra.program.model.pcode.FunctionPrototype@5adcc3c2, Num formal params: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (unique, 0x3e480, 8) , (const, 0x0, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102ca0] Taint reached CBRANCH. Operands: ['puVar18(x0)', 'UnnamedHighVar(Constant: 0x0)'].   
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: __throw_length_error  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@38bb1410  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: __throw_length_error, Prototype: ghidra.program.model.pcode.FunctionPrototype@22e7e144, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~vector  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@67d22e82  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~vector, Prototype: ghidra.program.model.pcode.FunctionPrototype@7a221efd, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~vector  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@46821330  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~vector, Prototype: ghidra.program.model.pcode.FunctionPrototype@5f42d1e4, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~Tensor  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@2dff83e3  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~Tensor, Prototype: ghidra.program.model.pcode.FunctionPrototype@7b320eff, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_release  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@32362d8c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_release, Prototype: ghidra.program.model.pcode.FunctionPrototype@c7afaf6, Num formal params: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~Mat  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@366528a1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~Mat, Prototype: ghidra.program.model.pcode.FunctionPrototype@35bc39ac, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~Mat  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@6e4ac8a7  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~Mat, Prototype: ghidra.program.model.pcode.FunctionPrototype@6f8086f7, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~ScheduleConfig  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@249aad64  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~ScheduleConfig, Prototype: ghidra.program.model.pcode.FunctionPrototype@1c2d46a0, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_release  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@7771ccec  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_release, Prototype: ghidra.program.model.pcode.FunctionPrototype@7b1e1a2f, Num formal params: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: ~Mat  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@a9e79a5  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: ~Mat, Prototype: ghidra.program.model.pcode.FunctionPrototype@7cf03610, Num formal params: 1  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_dispose  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@59f93ce  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_dispose, Prototype: ghidra.program.model.pcode.FunctionPrototype@e5b2e30, Num formal params: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _M_dispose  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@77713d0f  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _M_dispose, Prototype: ghidra.program.model.pcode.FunctionPrototype@a4cd547, Num formal params: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (unique, 0x3e480, 8) , (const, 0x0, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102d6c] Taint reached CBRANCH. Operands: ['puVar18(x0)', 'UnnamedHighVar(Constant: 0x0)'].   
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Attempting to decompile function: _Unwind_Resume  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Decompilation result object: ghidra.app.decompiler.DecompileResults@64f3592e  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: Entering 'if high_called_func' block for recursion.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Callee: _Unwind_Resume, Prototype: ghidra.program.model.pcode.FunctionPrototype@db59e0f, Num formal params: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> USER DEBUG: [PARAM_MAP] Finished param mapping. Size of newly_tainted_callee_hvs: 0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> <<< Finished analyzing function: main.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Stage 1 Complete. Checking for pending multi-stage analysis tasks... ---  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> --- No multi-stage analysis tasks were queued. ---  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Taint Analysis Run Complete ---  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> \n--- All Detected Tainted Value Usages (Interprocedural) ---  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #1:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102488  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:            (unique, 0x18f80, 1) INT_EQUAL (register, 0x4000, 8) , (const, 0x0, 8)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          TAINTED_COMPARISON  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   pTVar13(x0)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted value used in a comparison operation (INT_EQUAL).  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #2:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102508  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102a70, 1) , (unique, 0x1580, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1580])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #3:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102530  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102848, 1) , (unique, 0x1400, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #4:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102544  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102528, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #5:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102570  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102a74, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #6:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102594  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1029c4, 1) , (unique, 0x1400, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #7:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001025b0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102c88, 1) , (unique, 0x18880, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x18880])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #8:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001025f0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10260c, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #9:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001025f8  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102608, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #10:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102634  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102620, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #11:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 0010266c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10276c, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #12:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102688  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #13:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 0010269c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (unique, 0x1000, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #14:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001026a8  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (unique, 0x1000, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #15:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001026b4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (unique, 0x1000, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #16:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001026c0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (unique, 0x1000, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #17:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001026d4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1026ec, 1) , (unique, 0x1000069b, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000069b])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #18:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001026f8  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102a9c, 1) , (unique, 0x100006a7, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100006a7])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #19:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102700  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102ab8, 1) , (unique, 0x100006ab, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100006ab])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #20:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102708  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102acc, 1) , (unique, 0x100006af, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100006af])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #21:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 0010271c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102aec, 1) , (unique, 0x1400, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #22:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 0010272c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102adc, 1) , (unique, 0x1400, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #23:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102734  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (unique, 0x1000, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #24:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 0010273c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (unique, 0x1000, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #25:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 0010275c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102784, 1) , (unique, 0x1400, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #26:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102768  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102678, 1) , (unique, 0xe80, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0xe80])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #27:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102778  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102b04, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #28:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102790  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102660, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #29:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001027a4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1027c4, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #30:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001027c0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102b18, 1) , (unique, 0x1400, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #31:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001027dc  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102b70, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #32:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 0010284c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102934, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #33:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102860  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102880, 1) , (unique, 0x10000b28, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x10000b28])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #34:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102870  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102928, 1) , (unique, 0x100009e9, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100009e9])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #35:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001028a0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1028a8, 1) , (unique, 0x1400, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #36:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102908  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102b30, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #37:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001029e0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102a38, 1) , (unique, 0x10000b39, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x10000b39])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #38:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102a10  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102a44, 1) , (unique, 0x10000e32, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x10000e32])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #39:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102ac4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (unique, 0x1000084b, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000084b])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #40:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102ad4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (unique, 0x1000084f, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000084f])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #41:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102ae0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102760, 1) , (unique, 0x1000, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #42:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102afc  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102adc, 1) , (unique, 0x1400, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #43:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102b78  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102bf4, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #44:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102ba0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (const, 0x2, 1) , (unique, 0x1c80, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1c80])  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #45:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102bec  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102bb0, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #46:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102ca0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102c78, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Usage #47:  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00102100  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102d6c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102c78, 1) , (register, 0x108, 1)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: TAINT_ANALYSIS_JSON_OUTPUT env var found. Saving results to: /Users/chenkexin/Desktop/kk/test_taint/results/yolov5_detector_mnn_taint_analysis_results.json  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> Taint analysis results saved to: /Users/chenkexin/Desktop/kk/test_taint/results/yolov5_detector_mnn_taint_analysis_results.json  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp w24,#0x0' at 00102504 for branch at 00102508  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s2,s9' at 0010252c for branch at 00102530  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp w24,w21' at 00102540 for branch at 00102544  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x1,x19' at 0010256c for branch at 00102570  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x18,#0x180' at 00102590 for branch at 00102594  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x18,#0x180' at 00102590 for branch at 001025b0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x24,#0x1' at 001025ec for branch at 001025f0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x21,x0' at 001025f4 for branch at 001025f8  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x21,x1' at 00102630 for branch at 00102634  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x1,x8' at 00102668 for branch at 0010266c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp w9,w4' at 00102684 for branch at 00102688  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s0,#0.0' at 00102698 for branch at 0010269c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s1,#0.0' at 001026a4 for branch at 001026a8  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s3,#0.0' at 001026b0 for branch at 001026b4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s2,#0.0' at 001026bc for branch at 001026c0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s5,s4' at 001026d0 for branch at 001026d4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s0,s6' at 001026f4 for branch at 001026f8  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s5,#0.0' at 001026fc for branch at 00102700  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s6,#0.0' at 00102704 for branch at 00102708  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s4,s3' at 00102718 for branch at 0010271c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s2,s1' at 00102728 for branch at 0010272c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s4,#0.0' at 00102730 for branch at 00102734  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s2,#0.0' at 00102738 for branch at 0010273c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s2,s8' at 00102758 for branch at 0010275c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x5,x0' at 00102764 for branch at 00102768  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x0,x1' at 00102774 for branch at 00102778  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x22,x24' at 0010278c for branch at 00102790  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x22,x20' at 001027a0 for branch at 001027a4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s1,s0' at 001027bc for branch at 001027c0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x22,x20' at 001027d8 for branch at 001027dc  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x19,x20' at 00102848 for branch at 0010284c  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x19,x0' at 0010285c for branch at 00102860  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s1,s0' at 0010286c for branch at 00102870  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s2,s9' at 0010289c for branch at 001028a0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x1,x2' at 00102904 for branch at 00102908  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x21,x20' at 001029dc for branch at 001029e0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s1,s0' at 00102a0c for branch at 00102a10  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s7,s4' at 00102ac0 for branch at 00102ac4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s7,s0' at 00102ad0 for branch at 00102ad4  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s4,#0.0' at 00102adc for branch at 00102ae0  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'fcmpe s2,s1' at 00102af8 for branch at 00102afc  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x19,x0' at 00102b74 for branch at 00102b78  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x0,#0x60' at 00102b98 for branch at 00102ba0  
+2025-08-10 05:16:21 ERROR (GhidraScript) mnn_analyzer.py> WARN: Could not determine branch target for instruction at '00102ba0'  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found preceding comparison instruction 'cmp x19,x22' at 00102be8 for branch at 00102bec  
+2025-08-10 05:16:21 ERROR (GhidraScript) mnn_analyzer.py> WARN: Could not find preceding comparison instruction for branch at 00102ca0. Skipping.  
+2025-08-10 05:16:21 ERROR (GhidraScript) mnn_analyzer.py> WARN: Could not find preceding comparison instruction for branch at 00102d6c. Skipping.  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> SUCCESS: Hook configuration saved to: /Users/chenkexin/Desktop/kk/test_taint/results/yolov5_detector_mnn_hook_config.json  
+2025-08-10 05:16:21 INFO  (GhidraScript) mnn_analyzer.py> MNN Taint Analyzer finished.  
+2025-08-10 05:16:21 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: /yolov5_detector_mnn  
+2025-08-10 05:16:21 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: /yolov5_detector_mnn  
+2025-08-10 05:16:21 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for processed file: /yolov5_detector_mnn  
+2025-08-10 05:16:21 DEBUG (DefaultProjectData) Closing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/yolov5_detector_mnn.rep  
+2025-08-10 05:16:21 DEBUG (DefaultProjectData) Disposing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/yolov5_detector_mnn.rep  

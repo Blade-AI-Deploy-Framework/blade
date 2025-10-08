@@ -1,0 +1,77 @@
+[
+    {
+        "address": "0x21d4", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x2360", 
+        "instruction": "subs w8,w8,#0x40", 
+        "registers": [
+            {
+                "register": "local_3e4(StackDirect[Stack[-0x3e4]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x21d8"
+    }, 
+    {
+        "address": "0x21ec", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x234c", 
+        "instruction": "subs w8,w8,#0x40", 
+        "registers": [
+            {
+                "register": "local_3e8(StackDirect[Stack[-0x3e8]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x21f0"
+    }, 
+    {
+        "address": "0x2204", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x2338", 
+        "instruction": "subs w8,w8,#0x3", 
+        "registers": [
+            {
+                "register": "local_3ec(StackDirect[Stack[-0x3ec]])"
+            }, 
+            {
+                "register": "0x3"
+            }
+        ], 
+        "original_branch_address": "0x2208"
+    }, 
+    {
+        "address": "0x23a0", 
+        "original_branch_instruction": "b.lt", 
+        "branch_target": "0x23dc", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "0x42480000"
+            }
+        ], 
+        "original_branch_address": "0x23a4"
+    }, 
+    {
+        "address": "0x23bc", 
+        "original_branch_instruction": "b.hi", 
+        "branch_target": "0x23dc", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x425c0000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x23c0"
+    }
+]

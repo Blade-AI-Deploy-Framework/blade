@@ -1,0 +1,32 @@
+[
+    {
+        "address": "0x2a64", 
+        "original_branch_instruction": "b.lt", 
+        "branch_target": "0x2b78", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "0x42480000"
+            }
+        ], 
+        "original_branch_address": "0x2a68"
+    }, 
+    {
+        "address": "0x2a7c", 
+        "original_branch_instruction": "b.hi", 
+        "branch_target": "0x2b78", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x425c0000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x2a80"
+    }
+]

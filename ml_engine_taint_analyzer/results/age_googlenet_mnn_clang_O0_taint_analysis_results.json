@@ -1,0 +1,44 @@
+[
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "00102cac", 
+        "pcode_operation": " ---  CALL (ram, 0x102500, 8) , (register, 0x4000, 8) , (unique, 0x1000079e, 8) , (register, 0x4000, 4) , (const, 0x1, 1)", 
+        "originating_imported_function_name": "['getSessionOutput']", 
+        "usage_type": "TAINTED_ARG_TO_CALL_RECURSION", 
+        "details": "Recursive call to Tensor (CALL) with taints: param_1(x1).", 
+        "tainted_component": "N/A", 
+        "found_in_function_entry": "001027d8"
+    }, 
+    {
+        "found_in_function_name": "Tensor", 
+        "instruction_address": "0010250c", 
+        "pcode_operation": " ---  CALL (ram, 0x121140, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) , (register, 0x4010, 4) , (register, 0x4018, 1)", 
+        "originating_imported_function_name": "['getSessionOutput']", 
+        "usage_type": "TAINTED_ARG_TO_CALL_RECURSION", 
+        "details": "Recursive call to Tensor (CALL) with taints: param_1(x1).", 
+        "tainted_component": "N/A", 
+        "found_in_function_entry": "00102500"
+    }, 
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "00102dc0", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x102eb4, 1) , (register, 0x108, 1)", 
+        "originating_imported_function_name": "['getSessionOutput']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpZR)", 
+        "found_in_function_entry": "001027d8", 
+        "instruction_mnemonic": "b.ne"
+    }, 
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "00102dd4", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x102eb4, 1) , (unique, 0x1580, 1)", 
+        "originating_imported_function_name": "['getSessionOutput']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(UniquePcode[0x1580])", 
+        "found_in_function_entry": "001027d8", 
+        "instruction_mnemonic": "b.le"
+    }
+]

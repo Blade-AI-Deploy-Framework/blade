@@ -1,0 +1,62 @@
+[
+    {
+        "address": "0x1f60", 
+        "original_branch_instruction": "b.lt", 
+        "branch_target": "0x210c", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "0x42480000"
+            }
+        ], 
+        "original_branch_address": "0x1f64"
+    }, 
+    {
+        "address": "0x1f78", 
+        "original_branch_instruction": "b.hi", 
+        "branch_target": "0x210c", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x425c0000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x1f7c"
+    }, 
+    {
+        "address": "0x2174", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x21e4", 
+        "instruction": "subs w8,w8,#0x1", 
+        "registers": [
+            {
+                "register": "local_68(StackDirect[Stack[-0x68]])"
+            }, 
+            {
+                "register": "0x1"
+            }
+        ], 
+        "original_branch_address": "0x2178"
+    }, 
+    {
+        "address": "0x2268", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x22d8", 
+        "instruction": "subs w8,w8,#0x1", 
+        "registers": [
+            {
+                "register": "local_88(StackDirect[Stack[-0x88]])"
+            }, 
+            {
+                "register": "0x1"
+            }
+        ], 
+        "original_branch_address": "0x226c"
+    }
+]

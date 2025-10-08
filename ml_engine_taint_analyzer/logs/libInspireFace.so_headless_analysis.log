@@ -1,0 +1,82 @@
+2025-08-15 17:55:38 INFO  (LoggingInitialization) Using log config file: jar:file:/Applications/ghidra_11.0.3_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-08-15 17:55:38 INFO  (LoggingInitialization) Using log file: /Users/chenkexin/Desktop/kk/test_taint/logs/libInspireFace.so_headless_analysis.log  
+2025-08-15 17:55:38 INFO  (Preferences) Loading user preferences: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/preferences  
+2025-08-15 17:55:38 INFO  (Preferences) Loading previous preferences: /Users/chenkexin/.ghidra/.ghidra_10.4_PUBLIC/preferences  
+2025-08-15 17:55:38 INFO  (ClassSearcher) Searching for classes...  
+2025-08-15 17:55:40 INFO  (ClassSearcher) Class search complete (1622 ms)  
+2025-08-15 17:55:40 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-08-15 17:55:40 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-08-15 17:55:40 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-08-15 17:55:40 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-08-15 17:55:40 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Python/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-frida/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/chenkexin/ghidra_scripts
+    /Users/chenkexin/Desktop/kk/test_taint
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-dbgmodel-traceloader/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts  
+2025-08-15 17:55:40 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2025-08-15 17:55:40 INFO  (HeadlessAnalyzer) Opening existing project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/libInspireFace.so  
+2025-08-15 17:55:41 INFO  (HeadlessProject) Opening project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/libInspireFace.so  
+2025-08-15 17:55:43 INFO  (HeadlessAnalyzer) REPORT: Processing project file: /libInspireFace.so  
+2025-08-15 17:55:44 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: /libInspireFace.so  
+2025-08-15 17:55:44 INFO  (ExternalDebugFilesService) DWARF external debug information found: ExternalDebugInfo [filename=null, crc=0, hash=7bf5f0df90a3b6c3e9fde572c6de15a3b4295882]  
+2025-08-15 17:55:44 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2025-08-15 17:57:38 INFO  (PackedDatabaseCache) Packed database cache: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/chenkexin-Ghidra/packed-db-cache  
+2025-08-15 17:57:38 DEBUG (PackedDatabaseCache) Using cached packed database: /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-08-15 17:57:39 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib_64  
+2025-08-15 17:57:43 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    AARCH64 ELF PLT Thunks                     0.072 secs
+    ASCII Strings                              0.521 secs
+    Apply Data Archives                        1.110 secs
+    Basic Constant Reference Analyzer         37.314 secs
+    Call Convention ID                         0.387 secs
+    Call-Fixup Installer                       0.084 secs
+    Create Address Tables                      0.625 secs
+    Create Function                            0.000 secs
+    DWARF                                      0.011 secs
+    Data Reference                             1.312 secs
+    Decompiler Switch Analysis                58.700 secs
+    Demangler GNU                              0.418 secs
+    Disassemble Entry Points                   0.540 secs
+    Embedded Media                             0.059 secs
+    External Entry References                  0.011 secs
+    External Symbol Resolver                   0.029 secs
+    Function Start Search                      0.865 secs
+    Function Start Search After Code           0.545 secs
+    Function Start Search After Data           0.473 secs
+    GCC Exception Handlers                     7.047 secs
+    Non-Returning Functions - Discovered       2.331 secs
+    Non-Returning Functions - Known            0.184 secs
+    Reference                                  1.592 secs
+    Shared Return Calls                        2.339 secs
+    Stack                                      1.732 secs
+    Subroutine References                      1.366 secs
+-----------------------------------------------------
+     Total Time   119 secs
+-----------------------------------------------------
+  
+2025-08-15 17:57:43 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: /libInspireFace.so  
+2025-08-15 17:57:43 INFO  (HeadlessAnalyzer) SCRIPT: /Users/chenkexin/Desktop/kk/test_taint/library_analyzer.py  
+2025-08-15 17:57:48 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: /libInspireFace.so  
+2025-08-15 17:57:48 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: /libInspireFace.so  
+2025-08-15 17:57:48 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for processed file: /libInspireFace.so  
+2025-08-15 17:57:48 DEBUG (DefaultProjectData) Closing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/libInspireFace.so.rep  
+2025-08-15 17:57:48 DEBUG (DefaultProjectData) Disposing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/libInspireFace.so.rep  

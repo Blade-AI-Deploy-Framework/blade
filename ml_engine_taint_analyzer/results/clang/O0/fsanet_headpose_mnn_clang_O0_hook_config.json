@@ -1,0 +1,47 @@
+[
+    {
+        "address": "0x2f94", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x3194", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x2f98"
+    }, 
+    {
+        "address": "0x2fb8", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x3194", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x2fbc"
+    }, 
+    {
+        "address": "0x2fdc", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x3194", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x2fe0"
+    }
+]

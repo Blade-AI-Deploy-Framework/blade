@@ -1,0 +1,32 @@
+[
+    {
+        "address": "0x2d1c", 
+        "original_branch_instruction": "b.gt", 
+        "branch_target": "0x2d28", 
+        "instruction": "fcmpe s0,s1", 
+        "registers": [
+            {
+                "register": "0x3f4ccccd"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x2d20"
+    }, 
+    {
+        "address": "0x2da4", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2f10", 
+        "instruction": "subs x3,x3,x2", 
+        "registers": [
+            {
+                "register": "UNNAMED(UniquePcode[0x3e480])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x2dac"
+    }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "address": "0x77e90", 
+        "instruction": "b.eq", 
+        "registers": [
+            "StackDirect[Stack[-0x20]]", 
+            "StackDirect[Stack[-0x18]]"
+        ]
+    }, 
+    {
+        "address": "0x77eb4", 
+        "instruction": "b.eq", 
+        "registers": [
+            "UniquePcode[0x100001c2]", 
+            "x1"
+        ]
+    }, 
+    {
+        "address": "0x77ec0", 
+        "instruction": "b.ne", 
+        "registers": [
+            "x20", 
+            "UniquePcode[0x11f80]"
+        ]
+    }, 
+    {
+        "address": "0x77ee0", 
+        "instruction": "b.ne", 
+        "registers": [
+            "UniquePcode[0x3e480]", 
+            "0x0"
+        ]
+    }, 
+    {
+        "address": "0x77f14", 
+        "instruction": "b.ne", 
+        "registers": [
+            "x20", 
+            "UniquePcode[0x11f80]"
+        ]
+    }, 
+    {
+        "address": "0x77f34", 
+        "instruction": "b.ne", 
+        "registers": [
+            "UniquePcode[0x24900]", 
+            "w0"
+        ]
+    }, 
+    {
+        "address": "0x79300", 
+        "instruction": "b.ne", 
+        "registers": [
+            "x19", 
+            "UniquePcode[0x11f80]"
+        ]
+    }, 
+    {
+        "address": "0x79320", 
+        "instruction": "b.ne", 
+        "registers": [
+            "x19", 
+            "UniquePcode[0x11f80]"
+        ]
+    }, 
+    {
+        "address": "0x79364", 
+        "instruction": "b.eq", 
+        "registers": [
+            "x19", 
+            "UniquePcode[0x10000df1]"
+        ]
+    }, 
+    {
+        "address": "0x79370", 
+        "instruction": "b.ne", 
+        "registers": [
+            "StackDirect[Stack[-0x80]]", 
+            "StackDirect[Stack[-0x88]]"
+        ]
+    }, 
+    {
+        "address": "0x78730", 
+        "instruction": "b.eq", 
+        "registers": [
+            "x26", 
+            "UniquePcode[0x100002dd]"
+        ]
+    }, 
+    {
+        "address": "0x78764", 
+        "instruction": "b.eq", 
+        "registers": [
+            "x26", 
+            "StackDirect[Stack[-0x68]]"
+        ]
+    }, 
+    {
+        "address": "0x787a0", 
+        "instruction": "b.ne", 
+        "registers": [
+            "UniquePcode[0x3e480]", 
+            "0x0"
+        ]
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "address": "0x2230", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x2398", 
+        "instruction": "subs w8,w8,#0xe0", 
+        "registers": [
+            {
+                "register": "local_3ec(StackDirect[Stack[-0x3ec]])"
+            }, 
+            {
+                "register": "0xe0"
+            }
+        ], 
+        "original_branch_address": "0x2234"
+    }, 
+    {
+        "address": "0x2248", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x2384", 
+        "instruction": "subs w8,w8,#0xe0", 
+        "registers": [
+            {
+                "register": "local_3f0(StackDirect[Stack[-0x3f0]])"
+            }, 
+            {
+                "register": "0xe0"
+            }
+        ], 
+        "original_branch_address": "0x224c"
+    }, 
+    {
+        "address": "0x2260", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x2370", 
+        "instruction": "subs w8,w8,#0x3", 
+        "registers": [
+            {
+                "register": "local_3f4(StackDirect[Stack[-0x3f4]])"
+            }, 
+            {
+                "register": "0x3"
+            }
+        ], 
+        "original_branch_address": "0x2264"
+    }, 
+    {
+        "address": "0x24f4", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2528", 
+        "instruction": "subs w8,w8,#0x5", 
+        "registers": [
+            {
+                "register": "w0"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x24f8"
+    }, 
+    {
+        "address": "0x2508", 
+        "original_branch_instruction": "b.le", 
+        "branch_target": "0x2528", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "0x3f000000"
+            }
+        ], 
+        "original_branch_address": "0x250c"
+    }
+]

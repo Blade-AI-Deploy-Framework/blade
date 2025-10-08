@@ -1,0 +1,47 @@
+[
+    {
+        "address": "0x2a9c", 
+        "original_branch_instruction": "b.gt", 
+        "branch_target": "0x2aa8", 
+        "instruction": "fcmpe s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "0x3f19999a"
+            }
+        ], 
+        "original_branch_address": "0x2aa0"
+    }, 
+    {
+        "address": "0x2ab8", 
+        "original_branch_instruction": "b.mi", 
+        "branch_target": "0x2ac4", 
+        "instruction": "fcmpe s0,s1", 
+        "registers": [
+            {
+                "register": "0x3dcccccd"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x2abc"
+    }, 
+    {
+        "address": "0x2b40", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2ca0", 
+        "instruction": "subs x3,x3,x2", 
+        "registers": [
+            {
+                "register": "UNNAMED(UniquePcode[0x3e480])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x2b48"
+    }
+]

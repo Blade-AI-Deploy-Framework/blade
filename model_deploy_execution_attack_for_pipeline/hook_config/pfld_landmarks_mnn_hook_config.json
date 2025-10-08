@@ -1,0 +1,50 @@
+[
+    {
+        "address": "0x2010", 
+        "instruction": "b.gt", 
+        "registers": [
+            "s0", 
+            "s2"
+        ]
+    }, 
+    {
+        "address": "0x201c", 
+        "instruction": "b.ls", 
+        "registers": [
+            "s6", 
+            "s0"
+        ]
+    }, 
+    {
+        "address": "0x2024", 
+        "instruction": "b.gt", 
+        "registers": [
+            "s1", 
+            "s5"
+        ]
+    }, 
+    {
+        "address": "0x2030", 
+        "instruction": "b.ls", 
+        "registers": [
+            "s0", 
+            "s1"
+        ]
+    }, 
+    {
+        "address": "0x203c", 
+        "instruction": "b.ne", 
+        "registers": [
+            "UNNAMED(UniquePcode[0x11f80])", 
+            "x0"
+        ]
+    }, 
+    {
+        "address": "0x20b8", 
+        "instruction": "b.ne", 
+        "registers": [
+            "UNNAMED(UniquePcode[0x3e480])", 
+            "0x0"
+        ]
+    }
+]

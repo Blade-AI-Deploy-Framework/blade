@@ -1,0 +1,199 @@
+[
+    {
+        "address": "0x2b60", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2b88", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [], 
+        "original_branch_address": "0x2b64"
+    }, 
+    {
+        "address": "0x2b80", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2b90", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [], 
+        "original_branch_address": "0x2b84"
+    }, 
+    {
+        "address": "0x2b98", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2bc8", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [], 
+        "original_branch_address": "0x2b9c"
+    }, 
+    {
+        "address": "0x2c84", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2cc8", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [
+            {
+                "register": "UNNAMED(UniquePcode[0x12580])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x2c88"
+    }, 
+    {
+        "address": "0x2f44", 
+        "original_branch_instruction": "b.le", 
+        "branch_target": "0x2ec0", 
+        "instruction": "cmp w0,#0x2", 
+        "registers": [
+            {
+                "register": "local_408(StackDirect[Stack[-0x408]])"
+            }, 
+            {
+                "register": "0x3"
+            }
+        ], 
+        "original_branch_address": "0x2f48"
+    }, 
+    {
+        "address": "0x2f5c", 
+        "original_branch_instruction": "b.le", 
+        "branch_target": "0x2eb8", 
+        "instruction": "cmp w0,#0x3f", 
+        "registers": [
+            {
+                "register": "local_40c(StackDirect[Stack[-0x40c]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x2f60"
+    }, 
+    {
+        "address": "0x2f74", 
+        "original_branch_instruction": "b.le", 
+        "branch_target": "0x2eb0", 
+        "instruction": "cmp w0,#0x3f", 
+        "registers": [
+            {
+                "register": "local_410(StackDirect[Stack[-0x410]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x2f78"
+    }, 
+    {
+        "address": "0x3070", 
+        "original_branch_instruction": "b.le", 
+        "branch_target": "0x2fec", 
+        "instruction": "cmp w0,#0x2", 
+        "registers": [
+            {
+                "register": "local_3fc(StackDirect[Stack[-0x3fc]])"
+            }, 
+            {
+                "register": "0x3"
+            }
+        ], 
+        "original_branch_address": "0x3074"
+    }, 
+    {
+        "address": "0x3088", 
+        "original_branch_instruction": "b.le", 
+        "branch_target": "0x2fe4", 
+        "instruction": "cmp w0,#0x3f", 
+        "registers": [
+            {
+                "register": "local_400(StackDirect[Stack[-0x400]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x308c"
+    }, 
+    {
+        "address": "0x30a0", 
+        "original_branch_instruction": "b.le", 
+        "branch_target": "0x2fdc", 
+        "instruction": "cmp w0,#0x3f", 
+        "registers": [
+            {
+                "register": "local_404(StackDirect[Stack[-0x404]])"
+            }, 
+            {
+                "register": "0x40"
+            }
+        ], 
+        "original_branch_address": "0x30a4"
+    }, 
+    {
+        "address": "0x314c", 
+        "original_branch_instruction": "b.mi", 
+        "branch_target": "0x3158", 
+        "instruction": "fcmpe s1,s0", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x3150"
+    }, 
+    {
+        "address": "0x3168", 
+        "original_branch_instruction": "b.mi", 
+        "branch_target": "0x3174", 
+        "instruction": "fcmpe s1,s0", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x316c"
+    }, 
+    {
+        "address": "0x3184", 
+        "original_branch_instruction": "b.mi", 
+        "branch_target": "0x3190", 
+        "instruction": "fcmpe s1,s0", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x3188"
+    }, 
+    {
+        "address": "0x31a0", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x31b8", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [], 
+        "original_branch_address": "0x31a4"
+    }, 
+    {
+        "address": "0x3234", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x33b4", 
+        "instruction": "subs x3,x3,x2", 
+        "registers": [
+            {
+                "register": "UNNAMED(UniquePcode[0x3e480])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x323c"
+    }
+]

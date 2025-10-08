@@ -1,0 +1,100 @@
+[
+    {
+        "address": "0x7608", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x7620", 
+        "instruction": "subs x8,x8,x9", 
+        "registers": [
+            {
+                "register": "x0"
+            }, 
+            {
+                "register": "x1"
+            }
+        ], 
+        "original_branch_address": "0x760c"
+    }, 
+    {
+        "address": "0x7640", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x7674", 
+        "instruction": "subs x8,x8,x9", 
+        "registers": [
+            {
+                "register": "local_28(StackDirect[Stack[-0x28]])"
+            }, 
+            {
+                "register": "x1"
+            }
+        ], 
+        "original_branch_address": "0x7644"
+    }, 
+    {
+        "address": "0x7640", 
+        "original_branch_instruction": "tbz", 
+        "branch_target": "0x7670", 
+        "instruction": "subs x8,x8,x9", 
+        "registers": [], 
+        "original_branch_address": "0x765c"
+    }, 
+    {
+        "address": "0x3778", 
+        "original_branch_instruction": "b.cs", 
+        "branch_target": "0x3828", 
+        "instruction": "subs x8,x8,x9", 
+        "registers": [
+            {
+                "register": "local_70(StackDirect[Stack[-0x70]])"
+            }, 
+            {
+                "register": "local_48(StackDirect[Stack[-0x48]])"
+            }
+        ], 
+        "original_branch_address": "0x377c"
+    }, 
+    {
+        "address": "0x3838", 
+        "original_branch_instruction": "b.cs", 
+        "branch_target": "0x387c", 
+        "instruction": "subs x8,x8,x9", 
+        "registers": [
+            {
+                "register": "local_78(StackDirect[Stack[-0x78]])"
+            }, 
+            {
+                "register": "local_48(StackDirect[Stack[-0x48]])"
+            }
+        ], 
+        "original_branch_address": "0x383c"
+    }, 
+    {
+        "address": "0x27e0", 
+        "original_branch_instruction": "b.le", 
+        "branch_target": "0x29d8", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "0x3f19999a"
+            }
+        ], 
+        "original_branch_address": "0x27e4"
+    }, 
+    {
+        "address": "0x27fc", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x29d8", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x3dcccccd"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x2800"
+    }
+]

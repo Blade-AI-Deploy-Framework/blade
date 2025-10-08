@@ -1,0 +1,696 @@
+2025-09-08 14:09:35 INFO  (LoggingInitialization) Using log config file: jar:file:/Applications/ghidra_11.0.3_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-09-08 14:09:35 INFO  (LoggingInitialization) Using log file: /Users/chenkexin/Desktop/kk/test_taint/logs/emotion_ferplus_tflite_clang_O0_headless_analysis.log  
+2025-09-08 14:09:35 INFO  (Preferences) Loading user preferences: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/preferences  
+2025-09-08 14:09:35 INFO  (Preferences) Loading previous preferences: /Users/chenkexin/.ghidra/.ghidra_10.4_PUBLIC/preferences  
+2025-09-08 14:09:35 INFO  (ClassSearcher) Searching for classes...  
+2025-09-08 14:09:37 INFO  (ClassSearcher) Class search complete (1374 ms)  
+2025-09-08 14:09:37 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-09-08 14:09:37 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-09-08 14:09:37 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-09-08 14:09:37 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-09-08 14:09:37 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Python/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-frida/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/chenkexin/ghidra_scripts
+    /Users/chenkexin/Desktop/kk/test_taint
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-dbgmodel-traceloader/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts  
+2025-09-08 14:09:37 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2025-09-08 14:09:37 INFO  (HeadlessAnalyzer) Opening existing project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/all_binaries_analysis  
+2025-09-08 14:09:38 INFO  (HeadlessProject) Opening project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/all_binaries_analysis  
+2025-09-08 14:09:38 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2025-09-08 14:09:38 INFO  (HeadlessAnalyzer)      project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/all_binaries_analysis  
+2025-09-08 14:09:38 INFO  (HeadlessAnalyzer) IMPORTING: file:///Users/chenkexin/Desktop/kk/test_taint/assets/merged_bin/emotion_ferplus_tflite_clang_O0  
+2025-09-08 14:09:40 INFO  (AutoImporter) Using Loader: Executable and Linking Format (ELF)  
+2025-09-08 14:09:40 INFO  (AutoImporter) Using Language/Compiler: AARCH64:LE:64:v8A:default  
+2025-09-08 14:09:40 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-09-08 14:09:40 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2025-09-08 14:09:40 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-09-08 14:09:40 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got.plt  
+2025-09-08 14:09:40 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_2.3 at 00100253  
+2025-09-08 14:09:40 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_2.9 at 001013f1  
+2025-09-08 14:09:40 DEBUG (ElfProgramBuilder) Discarding 3-byte alignment/filler segment_2.19 at 0010539d  
+2025-09-08 14:09:40 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.21 at 00105a7c  
+2025-09-08 14:09:42 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2025-09-08 14:09:42 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///Users/chenkexin/Desktop/kk/test_taint/assets/merged_bin/emotion_ferplus_tflite_clang_O0  
+2025-09-08 14:09:42 ERROR (DWARFAnalyzer) Error during DWARFAnalyzer import:  ghidra.app.util.bin.format.dwarf4.DWARFException: Only DWARF version 2, 3, or 4 information is currently supported (detected 5).
+	at ghidra.app.util.bin.format.dwarf4.DWARFCompilationUnit.readCompilationUnit(DWARFCompilationUnit.java:155)
+	at ghidra.app.util.bin.format.dwarf4.next.DWARFProgram.bootstrapCompilationUnits(DWARFProgram.java:629)
+	at ghidra.app.util.bin.format.dwarf4.next.DWARFProgram.<init>(DWARFProgram.java:262)
+	at ghidra.app.plugin.core.analysis.DWARFAnalyzer.added(DWARFAnalyzer.java:109)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:39)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:686)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:786)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:665)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:630)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1029)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1552)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1734)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1675)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1759)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:460)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:127)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:78)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2025-09-08 14:09:45 INFO  (PackedDatabaseCache) Packed database cache: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/chenkexin-Ghidra/packed-db-cache  
+2025-09-08 14:09:45 DEBUG (PackedDatabaseCache) Using cached packed database: /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-09-08 14:09:46 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib_64  
+2025-09-08 14:09:47 WARN  (DemangledAddressTable) Unable to fully apply external demangled Address Table at 00121088: tflite::MutableOpResolver::vtable  
+2025-09-08 14:09:48 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    AARCH64 ELF PLT Thunks                     0.238 secs
+    ASCII Strings                              0.275 secs
+    Apply Data Archives                        1.205 secs
+    Basic Constant Reference Analyzer          0.776 secs
+    Call Convention ID                         0.693 secs
+    Call-Fixup Installer                       0.022 secs
+    Create Address Tables                      0.029 secs
+    Create Function                            0.000 secs
+    DWARF                                      0.056 secs
+    Data Reference                             0.027 secs
+    Decompiler Switch Analysis                 0.135 secs
+    Demangler GNU                              0.615 secs
+    Disassemble Entry Points                   0.144 secs
+    Embedded Media                             0.015 secs
+    External Entry References                  0.001 secs
+    Function Start Search                      0.068 secs
+    Function Start Search After Code           0.043 secs
+    Function Start Search After Data           0.008 secs
+    Function Start Search delayed - One Time   0.003 secs
+    GCC Exception Handlers                     1.385 secs
+    Non-Returning Functions - Discovered       0.031 secs
+    Non-Returning Functions - Known            0.023 secs
+    Reference                                  0.093 secs
+    Shared Return Calls                        0.041 secs
+    Stack                                      0.565 secs
+    Subroutine References                      0.031 secs
+-----------------------------------------------------
+     Total Time   6 secs
+-----------------------------------------------------
+  
+2025-09-08 14:09:48 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///Users/chenkexin/Desktop/kk/test_taint/assets/merged_bin/emotion_ferplus_tflite_clang_O0  
+2025-09-08 14:09:48 INFO  (HeadlessAnalyzer) SCRIPT: /Users/chenkexin/Desktop/kk/test_taint/tflite_analyzer.py  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Searching for functions, thunks, and call sites related to keywords: ['operator']  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found function 'operator()'. Searching for its thunks.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator()' at 00101c20 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator()' at 00121090 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found function 'operator<<'. Searching for its thunks.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator<<' at 00101db0 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator<<' at 00121170 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found function 'operator<<'. Searching for its thunks.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator<<' at 00101c10 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator<<' at 00121080 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found function 'operator.new'. Searching for its thunks.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator.new' at 00101d70 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator.new' at 00121150 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found function 'operator.delete'. Searching for its thunks.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator.delete' at 00101ba0 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator.delete' at 00121038 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found function 'operator<<'. Searching for its thunks.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator<<' at 00101cd0 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found thunk 'operator<<' at 001210e8 for function.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Found 27 unique call sites. Analyzing each...  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Starting Stage 1 Taint Analysis from '['operator']' call sites ---  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1055660 at 00101bac ---  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): operator.delete at 00101ba0  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00101bac has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1055772 at 00101c1c ---  
+2025-09-08 14:09:53 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): operator<< at 00101c10  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: operator<< (call at 00101c1c) ---  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pbVar1(x0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: operator<< (Depth: 0) at 00101c10 (Originating from: ['operator']) with initial taints: pbVar1(x0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Def P-Code Op: (register, 0x4000, 8) CALL (ram, 0x121080, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Mnemonic 'CALL' is not a handled case. Aborting path.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> \nDEBUG: Reached specified start PcodeOp (register, 0x4000, 8) CALL (ram, 0x121080, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) at 00101c1c in operator<<, subsequent ops will be processed.  
+2025-09-08 14:09:54 WARN  (DecompileCallback) Decompiling 00121080, pcode error at 00121080: Unable to disassemble EXTERNAL block location: 00121080  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [operator<< @ 00101c1c] Analyzing potential tainted RETURN with value: pbVar1(x0) (Tainted: 1)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+==================== TAINTED RETURN DETECTED ====================  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Taint Origin:    ['operator']  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Function:        basic_ostream * operator<<(basic_ostream * param_1, basic_string * param_2) (Depth: 0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Return Address:  00101c1c  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Instruction:     br x17  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Tainted Value:   pbVar1(x0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Value defined by:  (register, 0x4000, 8) CALL (ram, 0x121080, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) at 00101c1c  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> ================================================================
+  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Tainted return from 'operator<<'. Finding call sites to continue analysis.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Queued new task to analyze caller 'main' starting from tainted return.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Queued new task to analyze caller 'main' starting from tainted return.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: operator<<.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1055788 at 00101c2c ---  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): operator() at 00101c20  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00101c2c has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1055964 at 00101cdc ---  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): operator<< at 00101cd0  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00101cdc has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1056124 at 00101d7c ---  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): operator.new at 00101d70  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: operator.new (call at 00101d7c) ---  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pvVar1(x0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: operator.new (Depth: 0) at 00101d70 (Originating from: ['operator']) with initial taints: pvVar1(x0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Def P-Code Op: (register, 0x4000, 8) CALL (ram, 0x121150, 8) , (register, 0x4000, 8)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Mnemonic 'CALL' is not a handled case. Aborting path.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> \nDEBUG: Reached specified start PcodeOp (register, 0x4000, 8) CALL (ram, 0x121150, 8) , (register, 0x4000, 8) at 00101d7c in operator.new, subsequent ops will be processed.  
+2025-09-08 14:09:54 WARN  (DecompileCallback) Decompiling 00121150, pcode error at 00121150: Unable to disassemble EXTERNAL block location: 00121150  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [operator.new @ 00101d7c] Analyzing potential tainted RETURN with value: pvVar1(x0) (Tainted: 1)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+==================== TAINTED RETURN DETECTED ====================  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Taint Origin:    ['operator']  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Function:        void * operator.new(ulong param_1) (Depth: 0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Return Address:  00101d7c  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Instruction:     br x17  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Tainted Value:   pvVar1(x0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Value defined by:  (register, 0x4000, 8) CALL (ram, 0x121150, 8) , (register, 0x4000, 8) at 00101d7c  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> ================================================================
+  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Tainted return from 'operator.new'. Finding call sites to continue analysis.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: operator.new.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1056188 at 00101dbc ---  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): operator<< at 00101db0  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: operator<< (call at 00101dbc) ---  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pbVar1(x0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: operator<< (Depth: 0) at 00101db0 (Originating from: ['operator']) with initial taints: pbVar1(x0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Def P-Code Op: (register, 0x4000, 8) CALL (ram, 0x121170, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Mnemonic 'CALL' is not a handled case. Aborting path.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> \nDEBUG: Reached specified start PcodeOp (register, 0x4000, 8) CALL (ram, 0x121170, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) at 00101dbc in operator<<, subsequent ops will be processed.  
+2025-09-08 14:09:54 WARN  (DecompileCallback) Decompiling 00121170, pcode error at 00121170: Unable to disassemble EXTERNAL block location: 00121170  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [operator<< @ 00101dbc] Analyzing potential tainted RETURN with value: pbVar1(x0) (Tainted: 1)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> 
+==================== TAINTED RETURN DETECTED ====================  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Taint Origin:    ['operator']  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Function:        basic_ostream * operator<<(basic_ostream * param_1, char * param_2) (Depth: 0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Return Address:  00101dbc  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Instruction:     br x17  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Tainted Value:   pbVar1(x0)  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py>   - Value defined by:  (register, 0x4000, 8) CALL (ram, 0x121170, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) at 00101dbc  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> ================================================================
+  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Tainted return from 'operator<<'. Finding call sites to continue analysis.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Queued new task to analyze caller 'main' starting from tainted return.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Queued new task to analyze caller 'main' starting from tainted return.  
+2025-09-08 14:09:54 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Queued new task to analyze caller 'main' starting from tainted return.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Queued new task to analyze caller 'main' starting from tainted return.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> INFO: [MULTI-STAGE] Queued new task to analyze caller 'main' starting from tainted return.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: operator<<.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1056660 at 00101f94 ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 00101f94) ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pbVar3(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: main (Depth: 0) at 00101f58 (Originating from: ['operator']) with initial taints: pbVar3(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Def P-Code Op: (register, 0x4000, 8) CALL (ram, 0x101db0, 8) , (unique, 0x10000612, 8) , (unique, 0x100003e5, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Mnemonic 'CALL' is not a handled case. Aborting path.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> \nDEBUG: Reached specified start PcodeOp (register, 0x4000, 8) CALL (ram, 0x101db0, 8) , (unique, 0x10000612, 8) , (unique, 0x100003e5, 8) at 00101f94 in main, subsequent ops will be processed.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00101f9c. Address varnode: (stack, 0xffffffffffffff90, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode local_70(StackDirect[Stack[-0x70]]) is not tainted (recursive check).  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer local_70(StackDirect[Stack[-0x70]]) is not in the tainted memory regions set.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: operator<< (Depth: 1) at 00101db0 (Originating from: ['operator']) with initial taints: param_1(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] No defining p-code op found. Aborting path.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Starting taint analysis from the beginning of function operator<<.  
+2025-09-08 14:09:55 WARN  (DecompileCallback) Decompiling 00121170, pcode error at 00121170: Unable to disassemble EXTERNAL block location: 00121170  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: operator<< (Depth: 2) at 00121170 (Originating from: ['operator']) with initial taints: param_1(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] No defining p-code op found. Aborting path.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Starting taint analysis from the beginning of function operator<<.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: operator<<.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [operator<< @ 00101dbc] Analyzing potential tainted RETURN with value: pbVar1(x0) (Tainted: 0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 8) (Size: 8, Def: (register, 0x4000, 8) CALL (ram, 0x121170, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) at 00101dbc)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     1. param_1(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] ---------------------------------  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: operator<<.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function operator<< with initial taints ('param_1(x0)',) (origin: ['operator']). Skipping.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [main @ 00101fb8] Taint propagated from pbVar3(x0) to UNNAMED(UniquePcode[0x1000061a]) via CAST.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00101fcc. Address varnode: (unique, 0x6500, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6500]) is not tainted (recursive check).  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6500]) is not in the tainted memory regions set.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102004. Address varnode: (unique, 0x6500, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6500]) is not tainted (recursive check).  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6500]) is not in the tainted memory regions set.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> INFO: [main @ 00102074] Taint reached CBRANCH. Operands: [].   
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: operator<< (Depth: 1) at 00101c10 (Originating from: ['operator']) with initial taints: param_1(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] No defining p-code op found. Aborting path.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Starting taint analysis from the beginning of function operator<<.  
+2025-09-08 14:09:55 WARN  (DecompileCallback) Decompiling 00121080, pcode error at 00121080: Unable to disassemble EXTERNAL block location: 00121080  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: operator<< (Depth: 2) at 00121080 (Originating from: ['operator']) with initial taints: param_1(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] No defining p-code op found. Aborting path.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Starting taint analysis from the beginning of function operator<<.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: operator<<.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [operator<< @ 00101c1c] Analyzing potential tainted RETURN with value: pbVar1(x0) (Tainted: 0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 8) (Size: 8, Def: (register, 0x4000, 8) CALL (ram, 0x121080, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) at 00101c1c)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     1. param_1(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] ---------------------------------  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: operator<<.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [main @ 001020b8] Taint propagated from pbVar3(x0) to UNNAMED(UniquePcode[0x100006fa]) via CAST.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18a80, 1) INT_EQUAL (unique, 0x18980, 4) , (const, 0x0, 4)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> INFO: [main @ 001021b8] Taint reached CBRANCH. Operands: ['UNNAMED(UniquePcode[0x18980])', 'UnnamedHighVar(Constant: 0x0)'].   
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function operator<< with initial taints ('param_1(x0)',) (origin: ['operator']). Skipping.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [main @ 001021fc] Taint propagated from pbVar3(x0) to UNNAMED(UniquePcode[0x100006da]) via CAST.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 0010236c. Address varnode: (unique, 0x6500, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6500]) is not tainted (recursive check).  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6500]) is not in the tainted memory regions set.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102380. Address varnode: (register, 0x4040, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode local_3a0(StackDirect[Stack[-0x3a0]]) is not tainted (recursive check).  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer local_3a0(StackDirect[Stack[-0x3a0]]) is not in the tainted memory regions set.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102388. Address varnode: (unique, 0x7580, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7580]) is not tainted (recursive check).  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7580]) is not in the tainted memory regions set.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001023c8. Address varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode pfVar9(x0) is not tainted (recursive check).  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer pfVar9(x0) is not in the tainted memory regions set.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001023d8. Address varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode pfVar9(x0) is not tainted (recursive check).  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer pfVar9(x0) is not in the tainted memory regions set.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) FLOAT_LESSEQUAL (register, 0x5000, 4) , (const, 0x3f19999a, 4)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> INFO: [main @ 001023f4] Taint reached CBRANCH. Operands: ['fVar10(s0)', 'UnnamedHighVar(Constant: 0x3f19999a)'].   
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x100, 1) FLOAT_LESSEQUAL (const, 0x3dcccccd, 4) , (register, 0x5000, 4)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> INFO: [main @ 00102410] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x3dcccccd)', 'UNNAMED(s0)'].   
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [main @ 0010256c] Analyzing potential tainted RETURN with value: UNNAMED(w0) (Tainted: 0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 4) (Size: 4, Def: (register, 0x4000, 4) COPY (stack, 0xffffffffffffff9c, 4) at 0010255c)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     1. UNNAMED(UniquePcode[0x1000061a])  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     2. UNNAMED(UniquePcode[0x100006da])  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     3. UNNAMED(UniquePcode[0x100006fa])  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     4. pbVar3(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] ---------------------------------  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [main @ 0010256c] Analyzing potential tainted RETURN with value: UNNAMED(w0) (Tainted: 0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 4) (Size: 4, Def: (register, 0x4000, 4) COPY (const, 0xffffffff, 4) at 0010255c)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     1. UNNAMED(UniquePcode[0x1000061a])  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     2. UNNAMED(UniquePcode[0x100006da])  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     3. UNNAMED(UniquePcode[0x100006fa])  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     4. pbVar3(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] ---------------------------------  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: main.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1056672 at 00101fa0 ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 00101fa0) ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pbVar3(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: ['operator']). Skipping.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1056684 at 00101fac ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 00101fac) ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pbVar3(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: ['operator']). Skipping.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1056696 at 00101fb8 ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00101fb8 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1056908 at 0010208c ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 0010208c) ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pbVar3(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: ['operator']). Skipping.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1056928 at 001020a0 ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 001020a0) ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pbVar3(x0)  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: ['operator']). Skipping.  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1056952 at 001020b8 ---  
+2025-09-08 14:09:55 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 001020b8 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1057136 at 00102170 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00102170 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1057232 at 001021d0 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 001021d0) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pbVar3(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: ['operator']). Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1057252 at 001021e4 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 001021e4) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Taint source is the return value of the call: pbVar3(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: ['operator']). Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1057276 at 001021fc ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 001021fc has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1061996 at 0010346c ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): deallocate at 00103450  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 0010346c has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1062868 at 001037d4 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): deallocate at 001037b8  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 001037d4 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1063204 at 00103924 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): deallocate at 00103908  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00103924 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1064060 at 00103c7c ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): deallocate at 00103c60  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00103c7c has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1064960 at 00104000 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): deallocate at 00103fe4  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00104000 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1065464 at 001041f8 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): deallocate at 001041dc  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 001041f8 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1066320 at 00104550 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): deallocate at 00104534  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00104550 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1066472 at 001045e8 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): operator() at 001045b8  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 001045e8 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1067108 at 00104864 ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): operator() at 00104834  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00104864 has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Analyzing Call Site #1068924 at 00104f7c ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Parent (caller): allocate at 00104f24  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: Call at 00104f7c has no output varnode. Nothing to taint. Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Stage 1 Complete. Checking for pending multi-stage analysis tasks... ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Stage 2 Analysis Task #1 (from rule: tainted_return_from_operator<<) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: main (Depth: 0) at 00101f58 (Originating from: tainted_return_from_operator<<) with initial taints: pbVar3(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Def P-Code Op: (register, 0x4000, 8) CALL (ram, 0x101db0, 8) , (unique, 0x10000612, 8) , (unique, 0x100003e5, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Mnemonic 'CALL' is not a handled case. Aborting path.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> \nDEBUG: Reached specified start PcodeOp (register, 0x4000, 8) CALL (ram, 0x101c10, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) at 001020a0 in main, subsequent ops will be processed.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: operator<< (Depth: 1) at 00101c10 (Originating from: tainted_return_from_operator<<) with initial taints: param_1(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] No defining p-code op found. Aborting path.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Starting taint analysis from the beginning of function operator<<.  
+2025-09-08 14:09:56 WARN  (DecompileCallback) Decompiling 00121080, pcode error at 00121080: Unable to disassemble EXTERNAL block location: 00121080  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> \n>>> Analyzing function: operator<< (Depth: 2) at 00121080 (Originating from: tainted_return_from_operator<<) with initial taints: param_1(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   - [STACK_SEARCH.0] No defining p-code op found. Aborting path.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Starting taint analysis from the beginning of function operator<<.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: operator<<.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [operator<< @ 00101c1c] Analyzing potential tainted RETURN with value: pbVar1(x0) (Tainted: 0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 8) (Size: 8, Def: (register, 0x4000, 8) CALL (ram, 0x121080, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) at 00101c1c)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     1. param_1(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] ---------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: operator<<.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [main @ 001020b8] Taint propagated from pbVar3(x0) to UNNAMED(UniquePcode[0x100006fa]) via CAST.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18a80, 1) INT_EQUAL (unique, 0x18980, 4) , (const, 0x0, 4)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: [main @ 001021b8] Taint reached CBRANCH. Operands: ['UNNAMED(UniquePcode[0x18980])', 'UnnamedHighVar(Constant: 0x0)'].   
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function operator<< with initial taints ('param_1(x0)',) (origin: tainted_return_from_operator<<). Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [main @ 001021fc] Taint propagated from pbVar3(x0) to UNNAMED(UniquePcode[0x100006da]) via CAST.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 0010236c. Address varnode: (unique, 0x6500, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x6500]) is not tainted (recursive check).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x6500]) is not in the tainted memory regions set.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102380. Address varnode: (register, 0x4040, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode local_3a0(StackDirect[Stack[-0x3a0]]) is not tainted (recursive check).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer local_3a0(StackDirect[Stack[-0x3a0]]) is not in the tainted memory regions set.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 00102388. Address varnode: (unique, 0x7580, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode UNNAMED(UniquePcode[0x7580]) is not tainted (recursive check).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer UNNAMED(UniquePcode[0x7580]) is not in the tainted memory regions set.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001023c8. Address varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode pfVar9(x0) is not tainted (recursive check).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer pfVar9(x0) is not in the tainted memory regions set.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 001023d8. Address varnode: (register, 0x4000, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE FAIL: Address varnode pfVar9(x0) is not tainted (recursive check).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [LOAD_HANDLER] REGION_RULE FAIL: Address pointer pfVar9(x0) is not in the tainted memory regions set.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) FLOAT_LESSEQUAL (register, 0x5000, 4) , (const, 0x3f19999a, 4)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: [main @ 001023f4] Taint reached CBRANCH. Operands: ['fVar10(s0)', 'UnnamedHighVar(Constant: 0x3f19999a)'].   
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x100, 1) FLOAT_LESSEQUAL (const, 0x3dcccccd, 4) , (register, 0x5000, 4)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: [main @ 00102410] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x3dcccccd)', 'UNNAMED(s0)'].   
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [main @ 0010256c] Analyzing potential tainted RETURN with value: UNNAMED(w0) (Tainted: 0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 4) (Size: 4, Def: (register, 0x4000, 4) COPY (stack, 0xffffffffffffff9c, 4) at 0010255c)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     1. UNNAMED(UniquePcode[0x100006da])  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     2. UNNAMED(UniquePcode[0x100006fa])  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     3. pbVar3(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] ---------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: [main @ 0010256c] Analyzing potential tainted RETURN with value: UNNAMED(w0) (Tainted: 0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 4) (Size: 4, Def: (register, 0x4000, 4) COPY (const, 0xffffffff, 4) at 0010255c)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     1. UNNAMED(UniquePcode[0x100006da])  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     2. UNNAMED(UniquePcode[0x100006fa])  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG]     3. pbVar3(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     [DEBUG] ---------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> <<< Finished analyzing function: main.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Stage 2 Analysis Task #2 (from rule: tainted_return_from_operator<<) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: tainted_return_from_operator<<). Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Stage 2 Analysis Task #3 (from rule: tainted_return_from_operator<<) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: tainted_return_from_operator<<). Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Stage 2 Analysis Task #4 (from rule: tainted_return_from_operator<<) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: tainted_return_from_operator<<). Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Stage 2 Analysis Task #5 (from rule: tainted_return_from_operator<<) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: tainted_return_from_operator<<). Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Stage 2 Analysis Task #6 (from rule: tainted_return_from_operator<<) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: tainted_return_from_operator<<). Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Initiating Stage 2 Analysis Task #7 (from rule: tainted_return_from_operator<<) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> DEBUG: Already analyzed function main with initial taints ('pbVar3(x0)',) (origin: tainted_return_from_operator<<). Skipping.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- All Multi-Stage Analysis Tasks Complete. ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> 
+--- Taint Analysis Run Complete ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> \n--- All Detected Tainted Value Usages (Interprocedural) ---  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #1:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   operator<< at 00101c10  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00101c1c  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  RETURN (const, 0x0, 8) , (register, 0x4000, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          RETURN_TAINTED_VALUE  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   pbVar1(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #2:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   operator.new at 00101d70  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00101d7c  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  RETURN (const, 0x0, 8) , (register, 0x4000, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          RETURN_TAINTED_VALUE  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   pvVar1(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #3:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   operator<< at 00101db0  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00101dbc  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  RETURN (const, 0x0, 8) , (register, 0x4000, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          RETURN_TAINTED_VALUE  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   pbVar1(x0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #4:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00101fa0  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:            (register, 0x4000, 8) CALL (ram, 0x101db0, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Recursive call to operator<< (CALL) with taints: param_1(x0).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #5:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   operator<< at 00101db0  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00101dbc  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:            (register, 0x4000, 8) CALL (ram, 0x121170, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Recursive call to operator<< (CALL) with taints: param_1(x0).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #6:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00101fac  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:            (register, 0x4000, 8) CALL (ram, 0x101db0, 8) , (register, 0x4000, 8) , (unique, 0x100003ed, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Recursive call to operator<< (CALL) with taints: param_1(x0).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #7:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00102074  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102134, 1) , (register, 0x4000, 1)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   bVar1(w0)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Tainted condition for branch.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #8:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 001020a0  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:            (register, 0x4000, 8) CALL (ram, 0x101c10, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Recursive call to operator<< (CALL) with taints: param_1(x0).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #9:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   operator<< at 00101c10  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00101c1c  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:            (register, 0x4000, 8) CALL (ram, 0x121080, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Recursive call to operator<< (CALL) with taints: param_1(x0).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #10:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 001021b8  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102250, 1) , (unique, 0x18a80, 1)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x18a80])  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Tainted condition for branch.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #11:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 001021e4  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:            (register, 0x4000, 8) CALL (ram, 0x101c10, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Recursive call to operator<< (CALL) with taints: param_1(x0).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #12:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 001023f4  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1024a0, 1) , (unique, 0x1580, 1)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1580])  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Tainted condition for branch.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #13:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: ['operator']  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00102410  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1024a0, 1) , (register, 0x100, 1)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   UNNAMED(NG)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Tainted condition for branch.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #14:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: tainted_return_from_operator<<  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 001020a0  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:            (register, 0x4000, 8) CALL (ram, 0x101c10, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Recursive call to operator<< (CALL) with taints: param_1(x0).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #15:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: tainted_return_from_operator<<  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   operator<< at 00101c10  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00101c1c  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:            (register, 0x4000, 8) CALL (ram, 0x121080, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Recursive call to operator<< (CALL) with taints: param_1(x0).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #16:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: tainted_return_from_operator<<  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 001021b8  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102250, 1) , (unique, 0x18a80, 1)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x18a80])  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Tainted condition for branch.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #17:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: tainted_return_from_operator<<  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 001021e4  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:            (register, 0x4000, 8) CALL (ram, 0x101c10, 8) , (register, 0x4000, 8) , (register, 0x4008, 8)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Recursive call to operator<< (CALL) with taints: param_1(x0).  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #18:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: tainted_return_from_operator<<  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 001023f4  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1024a0, 1) , (unique, 0x1580, 1)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1580])  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Tainted condition for branch.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Usage #19:  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Originating Lib Call: tainted_return_from_operator<<  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Found In Function:   main at 00101f58  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>   Instruction Address: 00102410  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1024a0, 1) , (register, 0x100, 1)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Tainted Component:   UNNAMED(NG)  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py>     Details:             Tainted condition for branch.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> ----------------------------------------  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> INFO: TAINT_ANALYSIS_JSON_OUTPUT env var found. Saving results to: /Users/chenkexin/Desktop/kk/test_taint/results/emotion_ferplus_tflite_clang_O0_taint_analysis_results.json  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> Taint analysis results saved to: /Users/chenkexin/Desktop/kk/test_taint/results/emotion_ferplus_tflite_clang_O0_taint_analysis_results.json  
+2025-09-08 14:09:56 ERROR (GhidraScript) tflite_analyzer.py> WARN: Could not find preceding comparison for branch at 00102074.  
+2025-09-08 14:09:56 ERROR (GhidraScript) tflite_analyzer.py> WARN: Could not find preceding comparison for branch at 001021b8.  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> SUCCESS: Hook configuration saved to: /Users/chenkexin/Desktop/kk/test_taint/results/emotion_ferplus_tflite_clang_O0_hook_config.json  
+2025-09-08 14:09:56 INFO  (GhidraScript) tflite_analyzer.py> TFLite Taint Analyzer finished.  
+2025-09-08 14:09:56 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///Users/chenkexin/Desktop/kk/test_taint/assets/merged_bin/emotion_ferplus_tflite_clang_O0  
+2025-09-08 14:09:56 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///Users/chenkexin/Desktop/kk/test_taint/assets/merged_bin/emotion_ferplus_tflite_clang_O0  
+2025-09-08 14:09:57 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /emotion_ferplus_tflite_clang_O0 (all_binaries_analysis:/emotion_ferplus_tflite_clang_O0)  
+2025-09-08 14:09:57 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2025-09-08 14:09:57 DEBUG (DefaultProjectData) Closing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/all_binaries_analysis.rep  
+2025-09-08 14:09:57 DEBUG (DefaultProjectData) Disposing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/all_binaries_analysis.rep  

@@ -1,0 +1,213 @@
+2025-09-05 15:45:18 INFO  (LoggingInitialization) Using log config file: jar:file:/Applications/ghidra_11.0.3_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-09-05 15:45:18 INFO  (LoggingInitialization) Using log file: /Users/chenkexin/Desktop/kk/test_taint/logs/ssrnet_age_onnxruntime_headless_analysis.log  
+2025-09-05 15:45:18 INFO  (Preferences) Loading user preferences: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/preferences  
+2025-09-05 15:45:18 INFO  (Preferences) Loading previous preferences: /Users/chenkexin/.ghidra/.ghidra_10.4_PUBLIC/preferences  
+2025-09-05 15:45:18 INFO  (ClassSearcher) Searching for classes...  
+2025-09-05 15:45:19 INFO  (ClassSearcher) Class search complete (1416 ms)  
+2025-09-05 15:45:19 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-09-05 15:45:19 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-09-05 15:45:19 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-09-05 15:45:19 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-09-05 15:45:20 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Python/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-frida/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/chenkexin/ghidra_scripts
+    /Users/chenkexin/Desktop/kk/test_taint
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-dbgmodel-traceloader/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts  
+2025-09-05 15:45:20 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2025-09-05 15:45:20 INFO  (HeadlessAnalyzer) Creating project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/ssrnet_age_onnxruntime  
+2025-09-05 15:45:20 INFO  (DefaultProject) Creating project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/ssrnet_age_onnxruntime  
+2025-09-05 15:45:20 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2025-09-05 15:45:20 INFO  (HeadlessAnalyzer)      project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/ssrnet_age_onnxruntime  
+2025-09-05 15:45:20 INFO  (HeadlessAnalyzer) IMPORTING: file:///Users/chenkexin/Desktop/kk/test_taint/assets/clang_bin/ssrnet_age_onnxruntime  
+2025-09-05 15:45:22 INFO  (AutoImporter) Using Loader: Executable and Linking Format (ELF)  
+2025-09-05 15:45:22 INFO  (AutoImporter) Using Language/Compiler: AARCH64:LE:64:v8A:default  
+2025-09-05 15:45:23 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-09-05 15:45:23 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2025-09-05 15:45:23 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-09-05 15:45:23 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got.plt  
+2025-09-05 15:45:23 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_2.3 at 00100253  
+2025-09-05 15:45:23 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.7 at 001002bc  
+2025-09-05 15:45:23 DEBUG (ElfProgramBuilder) Discarding 3-byte alignment/filler segment_2.19 at 001067d9  
+2025-09-05 15:45:24 WARN  (ElfRelocationHandler) EXTERNAL Data Elf Relocation with offset: at 0011fcc8 (External Location = _ZTVN10__cxxabiv120__si_class_type_infoE+0x10)  
+2025-09-05 15:45:24 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2025-09-05 15:45:25 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///Users/chenkexin/Desktop/kk/test_taint/assets/clang_bin/ssrnet_age_onnxruntime  
+2025-09-05 15:45:25 ERROR (DWARFAnalyzer) Error during DWARFAnalyzer import:  ghidra.app.util.bin.format.dwarf4.DWARFException: Only DWARF version 2, 3, or 4 information is currently supported (detected 5).
+	at ghidra.app.util.bin.format.dwarf4.DWARFCompilationUnit.readCompilationUnit(DWARFCompilationUnit.java:155)
+	at ghidra.app.util.bin.format.dwarf4.next.DWARFProgram.bootstrapCompilationUnits(DWARFProgram.java:629)
+	at ghidra.app.util.bin.format.dwarf4.next.DWARFProgram.<init>(DWARFProgram.java:262)
+	at ghidra.app.plugin.core.analysis.DWARFAnalyzer.added(DWARFAnalyzer.java:109)
+	at ghidra.app.plugin.core.analysis.AnalysisScheduler.runAnalyzer(AnalysisScheduler.java:186)
+	at ghidra.app.plugin.core.analysis.AnalysisTask.applyTo(AnalysisTask.java:39)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager$AnalysisTaskWrapper.run(AutoAnalysisManager.java:686)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:786)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:665)
+	at ghidra.app.plugin.core.analysis.AutoAnalysisManager.startAnalysis(AutoAnalysisManager.java:630)
+	at ghidra.app.util.headless.HeadlessAnalyzer.analyzeProgram(HeadlessAnalyzer.java:1029)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processFileWithImport(HeadlessAnalyzer.java:1552)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithLoader(HeadlessAnalyzer.java:1734)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1675)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processWithImport(HeadlessAnalyzer.java:1759)
+	at ghidra.app.util.headless.HeadlessAnalyzer.processLocal(HeadlessAnalyzer.java:460)
+	at ghidra.app.util.headless.AnalyzeHeadless.launch(AnalyzeHeadless.java:127)
+	at ghidra.GhidraLauncher.launch(GhidraLauncher.java:78)
+	at ghidra.Ghidra.main(Ghidra.java:54)
+ 
+2025-09-05 15:45:28 INFO  (PackedDatabaseCache) Packed database cache: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/chenkexin-Ghidra/packed-db-cache  
+2025-09-05 15:45:28 DEBUG (PackedDatabaseCache) Using cached packed database: /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-09-05 15:45:29 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib_64  
+2025-09-05 15:45:30 WARN  (DemangledAddressTable) Unable to fully apply external demangled Address Table at 001210e0: std::exception::typeinfo  
+2025-09-05 15:45:30 WARN  (DemangledAddressTable) Unable to fully apply external demangled Address Table at 00121160: std::exception::vtable  
+2025-09-05 15:45:30 WARN  (DemangledAddressTable) Unable to fully apply external demangled Address Table at 00121178: __cxxabiv1::__si_class_type_info::vtable  
+2025-09-05 15:45:31 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    AARCH64 ELF PLT Thunks                     0.177 secs
+    ASCII Strings                              0.275 secs
+    Apply Data Archives                        1.102 secs
+    Basic Constant Reference Analyzer          0.917 secs
+    Call Convention ID                         0.701 secs
+    Call-Fixup Installer                       0.028 secs
+    Create Address Tables                      0.039 secs
+    Create Address Tables - One Time           0.012 secs
+    Create Function                            0.000 secs
+    DWARF                                      0.060 secs
+    Data Reference                             0.037 secs
+    Decompiler Switch Analysis                 0.149 secs
+    Demangler GNU                              0.623 secs
+    Disassemble Entry Points                   0.132 secs
+    Embedded Media                             0.013 secs
+    External Entry References                  0.002 secs
+    Function Start Search                      0.079 secs
+    Function Start Search After Code           0.032 secs
+    Function Start Search After Data           0.010 secs
+    Function Start Search delayed - One Time   0.010 secs
+    GCC Exception Handlers                     1.368 secs
+    Non-Returning Functions - Discovered       0.039 secs
+    Non-Returning Functions - Known            0.021 secs
+    Reference                                  0.184 secs
+    Shared Return Calls                        0.045 secs
+    Stack                                      0.693 secs
+    Subroutine References                      0.046 secs
+-----------------------------------------------------
+     Total Time   6 secs
+-----------------------------------------------------
+  
+2025-09-05 15:45:31 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///Users/chenkexin/Desktop/kk/test_taint/assets/clang_bin/ssrnet_age_onnxruntime  
+2025-09-05 15:45:31 INFO  (HeadlessAnalyzer) SCRIPT: /Users/chenkexin/Desktop/kk/test_taint/onnxruntime_analyzer.py  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> INFO: Searching for functions, thunks, and call sites related to keywords: ['GetTensorData']  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> WARN: No external function found with keywords '['GetTensorData']'. Trying all functions...  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> INFO: Found function 'GetTensorData<float>'. Searching for its thunks.  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> INFO: Found 1 unique call sites. Analyzing each...  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> 
+--- Starting Stage 1 Taint Analysis from '['GetTensorData']' call sites ---  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> 
+--- Analyzing Call Site #1058116 at 00102544 ---  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: Parent (caller): main at 00101d18  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 00102544) ---  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: Taint source is the return value of the call: pfVar4(x0)  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> \n>>> Analyzing function: main (Depth: 0) at 00101d18 (Originating from: ['GetTensorData']) with initial taints: pfVar4(x0)  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py>   - [STACK_SEARCH.0] Analyzing varnode: (register, 0x4000, 8)  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py>   - [STACK_SEARCH.0] Details: isAddress=0, addr=register:00004000, isStackAddress=0  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py>   - [STACK_SEARCH.0] Def P-Code Op: (register, 0x4000, 8) CALL (ram, 0x10312c, 8)  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py>   - [STACK_SEARCH.0] Mnemonic 'CALL' is not a handled case. Aborting path.  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> \nDEBUG: Reached specified start PcodeOp (register, 0x4000, 8) CALL (ram, 0x10312c, 8) at 00102544 in main, subsequent ops will be processed.  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: [LOAD_HANDLER] Checking LOAD op at 0010255c. Address varnode: (register, 0x4000, 8)  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: [LOAD_HANDLER] POINTER_RULE SUCCESS: Tainting output due to load from tainted address pointer (recursive check).  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: [main @ 0010255c] Taint propagated from Tainted Address Pointer (pfVar4(x0)) to UNNAMED(s0) via LOAD.  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: [main @ 0010256c] Taint propagated from UNNAMED(s0) to UNNAMED(NG) via FLOAT_LESS.  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> INFO: [main @ 0010256c] Taint reached COMPARISON op (FLOAT_LESS). Operands: ['UNNAMED(s0)', 'UnnamedHighVar(Constant: 0x41900000)'].  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x100, 1) FLOAT_LESS (register, 0x5000, 4) , (const, 0x41900000, 4)  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> INFO: [main @ 00102570] Taint reached CBRANCH. Operands: ['UNNAMED(s0)', 'UnnamedHighVar(Constant: 0x41900000)'].   
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: [main @ 00102588] Taint propagated from UNNAMED(s0) to UNNAMED(UniquePcode[0xe80]) via FLOAT_LESS.  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> INFO: [main @ 00102588] Taint reached COMPARISON op (FLOAT_LESS). Operands: ['UnnamedHighVar(Constant: 0x420c0000)', 'UNNAMED(s0)'].  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0xe80, 1) FLOAT_LESS (const, 0x420c0000, 4) , (register, 0x5000, 4)  
+2025-09-05 15:45:36 INFO  (GhidraScript) onnxruntime_analyzer.py> INFO: [main @ 00102588] Taint reached CBRANCH. Operands: ['UnnamedHighVar(Constant: 0x420c0000)', 'UNNAMED(s0)'].   
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: [main @ 00102780] Analyzing potential tainted RETURN with value: UNNAMED(w0) (Tainted: 0)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 4) (Size: 4, Def: (register, 0x4000, 4) COPY (stack, 0xffffffffffffff1c, 4) at 00102770)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]     1. UNNAMED(NG)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]     2. UNNAMED(UniquePcode[0xe80])  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]     3. UNNAMED(s0)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]     4. pfVar4(x0)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG] ---------------------------------  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> DEBUG: [main @ 00102780] Analyzing potential tainted RETURN with value: UNNAMED(w0) (Tainted: 0)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG] --- Taint Check Details (RETURN FAILED) ---  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 4) (Size: 4, Def: (register, 0x4000, 4) COPY (const, 0xffffffff, 4) at 00102770)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function:  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]     1. UNNAMED(NG)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]     2. UNNAMED(UniquePcode[0xe80])  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]     3. UNNAMED(s0)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG]     4. pfVar4(x0)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     [DEBUG] ---------------------------------  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> <<< Finished analyzing function: main.  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> 
+--- Stage 1 Complete. Checking for pending multi-stage analysis tasks... ---  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> --- No multi-stage analysis tasks were queued. ---  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> 
+--- Taint Analysis Run Complete ---  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> \n--- All Detected Tainted Value Usages (Interprocedural) ---  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> Usage #1:  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Originating Lib Call: ['GetTensorData']  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Found In Function:   main at 00101d18  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Instruction Address: 0010256c  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     PCode Op:            (register, 0x100, 1) FLOAT_LESS (register, 0x5000, 4) , (const, 0x41900000, 4)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Usage Type:          TAINTED_COMPARISON  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Tainted Component:   UNNAMED(s0)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Details:             Tainted value used in a comparison operation (FLOAT_LESS).  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> ----------------------------------------  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> Usage #2:  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Originating Lib Call: ['GetTensorData']  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Found In Function:   main at 00101d18  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Instruction Address: 00102570  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10263c, 1) , (register, 0x100, 1)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Tainted Component:   UNNAMED(NG)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Details:             Tainted condition for branch.  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> ----------------------------------------  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> Usage #3:  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Originating Lib Call: ['GetTensorData']  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Found In Function:   main at 00101d18  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Instruction Address: 00102588  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     PCode Op:            (unique, 0xe80, 1) FLOAT_LESS (const, 0x420c0000, 4) , (register, 0x5000, 4)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Usage Type:          TAINTED_COMPARISON  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Tainted Component:   UNNAMED(s0)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Details:             Tainted value used in a comparison operation (FLOAT_LESS).  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> ----------------------------------------  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> Usage #4:  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Originating Lib Call: ['GetTensorData']  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Found In Function:   main at 00101d18  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>   Instruction Address: 00102588  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10263c, 1) , (unique, 0xe80, 1)  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0xe80])  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py>     Details:             Tainted condition for branch.  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> ----------------------------------------  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> INFO: TAINT_ANALYSIS_JSON_OUTPUT env var found. Saving results to: /Users/chenkexin/Desktop/kk/test_taint/results/ssrnet_age_onnxruntime_taint_analysis_results.json  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> Taint analysis results saved to: /Users/chenkexin/Desktop/kk/test_taint/results/ssrnet_age_onnxruntime_taint_analysis_results.json  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> SUCCESS: Hook configuration saved to: /Users/chenkexin/Desktop/kk/test_taint/results/ssrnet_age_onnxruntime_hook_config.json  
+2025-09-05 15:45:37 INFO  (GhidraScript) onnxruntime_analyzer.py> ONNXRuntime Taint Analyzer finished.  
+2025-09-05 15:45:37 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///Users/chenkexin/Desktop/kk/test_taint/assets/clang_bin/ssrnet_age_onnxruntime  
+2025-09-05 15:45:37 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///Users/chenkexin/Desktop/kk/test_taint/assets/clang_bin/ssrnet_age_onnxruntime  
+2025-09-05 15:45:37 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /ssrnet_age_onnxruntime (ssrnet_age_onnxruntime:/ssrnet_age_onnxruntime)  
+2025-09-05 15:45:37 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2025-09-05 15:45:37 DEBUG (DefaultProjectData) Closing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/ssrnet_age_onnxruntime.rep  
+2025-09-05 15:45:37 DEBUG (DefaultProjectData) Disposing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/ssrnet_age_onnxruntime.rep  

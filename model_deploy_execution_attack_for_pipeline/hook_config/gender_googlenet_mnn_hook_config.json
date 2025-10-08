@@ -1,0 +1,98 @@
+[
+    {
+        "address": "0x2034", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2084", 
+        "instruction": "cmp x0,x19", 
+        "registers": [
+            {
+                "register": "x0"
+            }, 
+            {
+                "register": "puVar1(UniquePcode[0x11800])"
+            }
+        ], 
+        "original_branch_address": "0x2038"
+    }, 
+    {
+        "address": "0x2040", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x2084", 
+        "instruction": "cmp x0,x1", 
+        "registers": [
+            {
+                "register": "puVar1(UniquePcode[0x11800])"
+            }, 
+            {
+                "register": "x1"
+            }
+        ], 
+        "original_branch_address": "0x2044"
+    }, 
+    {
+        "address": "0x2054", 
+        "original_branch_instruction": "b.gt", 
+        "branch_target": "0x2120", 
+        "instruction": "fcmpe s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "s1"
+            }
+        ], 
+        "original_branch_address": "0x2058",
+        "pairs_to_process": [
+            {
+                "pair_index": 1,
+                "attack_mode": "satisfy"
+            }
+        ]
+    }, 
+    {
+        "address": "0x2060", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2050", 
+        "instruction": "cmp x0,x1", 
+        "registers": [
+            {
+                "register": "puVar1(UniquePcode[0x11800])"
+            }, 
+            {
+                "register": "x1"
+            }
+        ], 
+        "original_branch_address": "0x2064"
+    }, 
+    {
+        "address": "0x2070", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2084", 
+        "instruction": "cmp w2,#0x1", 
+        "registers": [
+            {
+                "register": "w2"
+            }, 
+            {
+                "register": "0x1"
+            }
+        ], 
+        "original_branch_address": "0x2074"
+    }, 
+    {
+        "address": "0x207c", 
+        "original_branch_instruction": "b.gt", 
+        "branch_target": "0x2160", 
+        "instruction": "fcmpe s1,s0", 
+        "registers": [
+            {
+                "register": "s1"
+            }, 
+            {
+                "register": "0x3f000000"
+            }
+        ], 
+        "original_branch_address": "0x2080"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "address": "0x1fec", 
+        "original_branch_instruction": "b.ge", 
+        "branch_target": "0x1ff8", 
+        "instruction": "fcmpe s1,s0", 
+        "registers": [
+            {
+                "register": "s1"
+            }, 
+            {
+                "register": "0x41900000"
+            }
+        ], 
+        "original_branch_address": "0x1ff0"
+    }, 
+    {
+        "address": "0x2000", 
+        "original_branch_instruction": "b.ls", 
+        "branch_target": "0x20d4", 
+        "instruction": "fcmpe s1,s0", 
+        "registers": [
+            {
+                "register": "s1"
+            }, 
+            {
+                "register": "0x420c0000"
+            }
+        ], 
+        "original_branch_address": "0x2004"
+    }
+]

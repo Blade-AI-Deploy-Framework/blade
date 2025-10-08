@@ -1,0 +1,120 @@
+2025-09-04 01:45:00 INFO  (LoggingInitialization) Using log config file: jar:file:/Applications/ghidra_11.0.3_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-09-04 01:45:00 INFO  (LoggingInitialization) Using log file: /Users/chenkexin/Desktop/kk/test_taint/logs/age_googlenet_ncnn_headless_analysis.log  
+2025-09-04 01:45:00 INFO  (Preferences) Loading user preferences: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/preferences  
+2025-09-04 01:45:00 INFO  (Preferences) Loading previous preferences: /Users/chenkexin/.ghidra/.ghidra_10.4_PUBLIC/preferences  
+2025-09-04 01:45:00 INFO  (ClassSearcher) Searching for classes...  
+2025-09-04 01:45:02 INFO  (ClassSearcher) Class search complete (1398 ms)  
+2025-09-04 01:45:02 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-09-04 01:45:02 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-09-04 01:45:02 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-09-04 01:45:02 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-09-04 01:45:03 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Python/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-frida/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/chenkexin/ghidra_scripts
+    /Users/chenkexin/Desktop/kk/test_taint
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-dbgmodel-traceloader/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts  
+2025-09-04 01:45:03 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2025-09-04 01:45:03 INFO  (HeadlessAnalyzer) Creating project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/age_googlenet_ncnn  
+2025-09-04 01:45:03 INFO  (DefaultProject) Creating project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/age_googlenet_ncnn  
+2025-09-04 01:45:03 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2025-09-04 01:45:03 INFO  (HeadlessAnalyzer)      project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/age_googlenet_ncnn  
+2025-09-04 01:45:03 INFO  (HeadlessAnalyzer) IMPORTING: file:///Users/chenkexin/Desktop/kk/test_taint/assets/bin/age_googlenet_ncnn  
+2025-09-04 01:45:05 INFO  (AutoImporter) Using Loader: Executable and Linking Format (ELF)  
+2025-09-04 01:45:05 INFO  (AutoImporter) Using Language/Compiler: AARCH64:LE:64:v8A:default  
+2025-09-04 01:45:05 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-09-04 01:45:05 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2025-09-04 01:45:05 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-09-04 01:45:05 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got.plt  
+2025-09-04 01:45:06 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_2.3 at 00100253  
+2025-09-04 01:45:06 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.7 at 001002b4  
+2025-09-04 01:45:06 DEBUG (ElfProgramBuilder) Discarding 2-byte alignment/filler segment_2.11 at 00100ce6  
+2025-09-04 01:45:06 DEBUG (ElfProgramBuilder) Discarding 16-byte alignment/filler segment_2.17 at 001014b0  
+2025-09-04 01:45:06 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2025-09-04 01:45:07 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///Users/chenkexin/Desktop/kk/test_taint/assets/bin/age_googlenet_ncnn  
+2025-09-04 01:45:07 INFO  (ExternalDebugFilesService) DWARF external debug information found: ExternalDebugInfo [filename=null, crc=0, hash=9924a9e09c4a4469efd1c6933f7bc265829406a6]  
+2025-09-04 01:45:07 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2025-09-04 01:45:09 INFO  (PackedDatabaseCache) Packed database cache: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/chenkexin-Ghidra/packed-db-cache  
+2025-09-04 01:45:09 DEBUG (PackedDatabaseCache) Using cached packed database: /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-09-04 01:45:10 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib_64  
+2025-09-04 01:45:10 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    AARCH64 ELF PLT Thunks                     0.166 secs
+    ASCII Strings                              0.276 secs
+    Apply Data Archives                        1.024 secs
+    Basic Constant Reference Analyzer          0.476 secs
+    Call Convention ID                         0.060 secs
+    Call-Fixup Installer                       0.029 secs
+    Create Address Tables                      0.021 secs
+    Create Address Tables - One Time           0.004 secs
+    Create Function                            0.000 secs
+    DWARF                                      0.010 secs
+    Data Reference                             0.014 secs
+    Decompiler Switch Analysis                 0.195 secs
+    Demangler GNU                              0.132 secs
+    Disassemble Entry Points                   0.133 secs
+    Embedded Media                             0.018 secs
+    External Entry References                  0.001 secs
+    Function Start Search                      0.055 secs
+    Function Start Search After Code           0.025 secs
+    Function Start Search After Data           0.004 secs
+    Function Start Search delayed - One Time   0.004 secs
+    GCC Exception Handlers                     0.664 secs
+    Non-Returning Functions - Discovered       0.017 secs
+    Non-Returning Functions - Known            0.018 secs
+    Reference                                  0.083 secs
+    Shared Return Calls                        0.050 secs
+    Stack                                      0.211 secs
+    Subroutine References                      0.036 secs
+-----------------------------------------------------
+     Total Time   3 secs
+-----------------------------------------------------
+  
+2025-09-04 01:45:10 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///Users/chenkexin/Desktop/kk/test_taint/assets/bin/age_googlenet_ncnn  
+2025-09-04 01:45:10 INFO  (HeadlessAnalyzer) SCRIPT: /Users/chenkexin/Desktop/kk/test_taint/ncnn_analyzer.py  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> INFO: Searching for functions, thunks, and call sites related to keywords: ['from_pixels']  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> INFO: Found function 'from_pixels'. Searching for its thunks.  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> INFO: Found thunk 'from_pixels' at 00101270 for function.  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> INFO: Found thunk 'from_pixels' at 00121008 for function.  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> INFO: Found 2 unique call sites. Analyzing each...  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> 
+--- Starting Stage 1 Taint Analysis from '['from_pixels']' call sites ---  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> 
+--- Analyzing Call Site #1053308 at 0010127c ---  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> DEBUG: Parent (caller): from_pixels at 00101270  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> INFO: Call at 0010127c has no output varnode. Nothing to taint. Skipping.  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> 
+--- Analyzing Call Site #1055304 at 00101a48 ---  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> DEBUG: Parent (caller): main at 00101618  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> INFO: Call at 00101a48 has no output varnode. Nothing to taint. Skipping.  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> 
+--- Stage 1 Complete. Checking for pending multi-stage analysis tasks... ---  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> --- No multi-stage analysis tasks were queued. ---  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> 
+--- Taint Analysis Run Complete ---  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> No tainted value usages detected for keywords '['from_pixels']'.  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> No tainted usages found, skipping hook config generation.  
+2025-09-04 01:45:15 INFO  (GhidraScript) ncnn_analyzer.py> NCNN Taint Analyzer finished.  
+2025-09-04 01:45:15 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///Users/chenkexin/Desktop/kk/test_taint/assets/bin/age_googlenet_ncnn  
+2025-09-04 01:45:15 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///Users/chenkexin/Desktop/kk/test_taint/assets/bin/age_googlenet_ncnn  
+2025-09-04 01:45:15 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /age_googlenet_ncnn (age_googlenet_ncnn:/age_googlenet_ncnn)  
+2025-09-04 01:45:15 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2025-09-04 01:45:15 DEBUG (DefaultProjectData) Closing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/age_googlenet_ncnn.rep  
+2025-09-04 01:45:15 DEBUG (DefaultProjectData) Disposing ProjectData: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/age_googlenet_ncnn.rep  

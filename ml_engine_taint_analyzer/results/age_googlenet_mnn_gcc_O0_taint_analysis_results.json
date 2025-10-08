@@ -1,0 +1,55 @@
+[
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "00102bec", 
+        "pcode_operation": " ---  CALL (ram, 0x1023b0, 8) , (register, 0x4000, 8) , (stack, 0xfffffffffffffd78, 8) , (register, 0x4000, 4) , (const, 0x1, 1)", 
+        "originating_imported_function_name": "['getSessionOutput']", 
+        "usage_type": "TAINTED_ARG_TO_CALL_RECURSION", 
+        "details": "Recursive call to Tensor (CALL) with taints: param_1(x1).", 
+        "tainted_component": "N/A", 
+        "found_in_function_entry": "001027d8"
+    }, 
+    {
+        "found_in_function_name": "Tensor", 
+        "instruction_address": "001023bc", 
+        "pcode_operation": " ---  CALL (ram, 0x121088, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) , (register, 0x4010, 4) , (register, 0x4018, 1)", 
+        "originating_imported_function_name": "['getSessionOutput']", 
+        "usage_type": "TAINTED_ARG_TO_CALL_RECURSION", 
+        "details": "Recursive call to Tensor (CALL) with taints: param_1(x1).", 
+        "tainted_component": "N/A", 
+        "found_in_function_entry": "001023b0"
+    }, 
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "00102cbc", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x102ce4, 1) , (register, 0x108, 1)", 
+        "originating_imported_function_name": "['getSessionOutput']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpZR)", 
+        "found_in_function_entry": "001027d8", 
+        "instruction_mnemonic": "b.ne"
+    }, 
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "00102ccc", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x102cd4, 1) , (unique, 0x1400, 1)", 
+        "originating_imported_function_name": "['getSessionOutput']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(UniquePcode[0x1400])", 
+        "found_in_function_entry": "001027d8", 
+        "instruction_mnemonic": "b.gt"
+    }, 
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "00102d50", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x102ea4, 1) , (register, 0x108, 1)", 
+        "originating_imported_function_name": "['getSessionOutput']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpZR)", 
+        "found_in_function_entry": "001027d8", 
+        "instruction_mnemonic": "b.eq"
+    }
+]

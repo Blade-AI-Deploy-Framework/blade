@@ -1,0 +1,92 @@
+[
+    {
+        "address": "0x2698", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x2730", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x269c"
+    }, 
+    {
+        "address": "0x26bc", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x2730", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x26c0"
+    }, 
+    {
+        "address": "0x26e0", 
+        "original_branch_instruction": "b.pl", 
+        "branch_target": "0x2730", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "0x40a00000"
+            }, 
+            {
+                "register": "s0"
+            }
+        ], 
+        "original_branch_address": "0x26e4"
+    }, 
+    {
+        "address": "0x2798", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2808", 
+        "instruction": "subs w8,w8,#0x1", 
+        "registers": [
+            {
+                "register": "local_88(StackDirect[Stack[-0x88]])"
+            }, 
+            {
+                "register": "0x1"
+            }
+        ], 
+        "original_branch_address": "0x279c"
+    }, 
+    {
+        "address": "0x2980", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x29f0", 
+        "instruction": "subs w8,w8,#0x1", 
+        "registers": [
+            {
+                "register": "local_a8(StackDirect[Stack[-0xa8]])"
+            }, 
+            {
+                "register": "0x1"
+            }
+        ], 
+        "original_branch_address": "0x2984"
+    }, 
+    {
+        "address": "0x2b74", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2be4", 
+        "instruction": "subs w8,w8,#0x1", 
+        "registers": [
+            {
+                "register": "local_c8(StackDirect[Stack[-0xc8]])"
+            }, 
+            {
+                "register": "0x1"
+            }
+        ], 
+        "original_branch_address": "0x2b78"
+    }
+]

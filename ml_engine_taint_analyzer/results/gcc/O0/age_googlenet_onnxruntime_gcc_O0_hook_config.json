@@ -1,0 +1,85 @@
+[
+    {
+        "address": "0x69d8", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x69e8", 
+        "instruction": "cmp x1,x0", 
+        "registers": [
+            {
+                "register": "x0"
+            }, 
+            {
+                "register": "x1"
+            }
+        ], 
+        "original_branch_address": "0x69dc"
+    }, 
+    {
+        "address": "0x6a0c", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x6a1c", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [], 
+        "original_branch_address": "0x6a10"
+    }, 
+    {
+        "address": "0x6a40", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x69f4", 
+        "instruction": "cmp w0,#0x0", 
+        "registers": [
+            {
+                "register": "local_18(StackDirect[Stack[-0x18]])"
+            }, 
+            {
+                "register": "local_20(StackDirect[Stack[-0x20]])"
+            }
+        ], 
+        "original_branch_address": "0x6a44"
+    }, 
+    {
+        "address": "0x268c", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x26b8", 
+        "instruction": "cmp w0,#0x5", 
+        "registers": [
+            {
+                "register": "w0"
+            }, 
+            {
+                "register": "0x5"
+            }
+        ], 
+        "original_branch_address": "0x2690"
+    }, 
+    {
+        "address": "0x269c", 
+        "original_branch_instruction": "b.gt", 
+        "branch_target": "0x26a8", 
+        "instruction": "fcmpe s1,s0", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "0x3f000000"
+            }
+        ], 
+        "original_branch_address": "0x26a0"
+    }, 
+    {
+        "address": "0x2764", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x29c8", 
+        "instruction": "subs x3,x3,x2", 
+        "registers": [
+            {
+                "register": "UNNAMED(UniquePcode[0x3e480])"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x276c"
+    }
+]

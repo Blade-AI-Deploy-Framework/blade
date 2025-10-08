@@ -1,0 +1,47 @@
+[
+    {
+        "address": "0x2354", 
+        "original_branch_instruction": "b.mi", 
+        "branch_target": "0x2414", 
+        "instruction": "fcmpe s8,s0", 
+        "registers": [
+            {
+                "register": "s8"
+            }, 
+            {
+                "register": "0x41200000"
+            }
+        ], 
+        "original_branch_address": "0x2358"
+    }, 
+    {
+        "address": "0x2420", 
+        "original_branch_instruction": "b.mi", 
+        "branch_target": "0x242c", 
+        "instruction": "fcmpe s9,s0", 
+        "registers": [
+            {
+                "register": "s9"
+            }, 
+            {
+                "register": "0x41200000"
+            }
+        ], 
+        "original_branch_address": "0x2424"
+    }, 
+    {
+        "address": "0x2438", 
+        "original_branch_instruction": "b.mi", 
+        "branch_target": "0x2478", 
+        "instruction": "fcmpe s10,s0", 
+        "registers": [
+            {
+                "register": "s10"
+            }, 
+            {
+                "register": "0x41200000"
+            }
+        ], 
+        "original_branch_address": "0x243c"
+    }
+]

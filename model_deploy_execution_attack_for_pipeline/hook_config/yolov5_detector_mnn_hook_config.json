@@ -1,0 +1,746 @@
+[
+    {
+        "address": "0x2504",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x2a70",
+        "instruction": "cmp w24,#0x0",
+        "registers": [
+            {
+                "register": "UNNAMED(UniquePcode[0x1000126d])"
+            },
+            {
+                "register": "0x1"
+            }
+        ],
+        "original_branch_address": "0x2508",
+        "branch_condition_meaning": "(w24) <= (signed) (#0x0)",
+        "loss_function_name": "Hinge Loss"
+    },
+    {
+        "address": "0x252c",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x2848",
+        "instruction": "fcmpe s2,s9",
+        "registers": [
+            {
+                "register": "0x3e800000"
+            },
+            {
+                "register": "s2"
+            }
+        ],
+        "original_branch_address": "0x2530",
+        "branch_condition_meaning": "(s2) > (signed) (s9)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2540",
+        "original_branch_instruction": "b.ne",
+        "branch_target": "0x2528",
+        "instruction": "cmp w24,w21",
+        "registers": [
+            {
+                "register": "s2"
+            },
+            {
+                "register": "w21"
+            }
+        ],
+        "original_branch_address": "0x2544",
+        "branch_condition_meaning": "(w24) != (not equal) (w21)",
+        "loss_function_name": "Hinge-like Margin Loss"
+    },
+    {
+        "address": "0x256c",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x2a74",
+        "instruction": "cmp x1,x19",
+        "registers": [
+            {
+                "register": "local_368(StackDirect[Stack[-0x368]])"
+            },
+            {
+                "register": "local_370(StackDirect[Stack[-0x370]])"
+            }
+        ],
+        "original_branch_address": "0x2570",
+        "branch_condition_meaning": "(x1) == (equal) (x19)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x2590",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x29c4",
+        "instruction": "cmp x18,#0x180",
+        "registers": [
+            {
+                "register": "x18"
+            },
+            {
+                "register": "0x181"
+            }
+        ],
+        "original_branch_address": "0x2594",
+        "branch_condition_meaning": "(x18) > (signed) (#0x180)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2590",
+        "original_branch_instruction": "tbnz",
+        "branch_target": "0x2c88",
+        "instruction": "cmp x18,#0x180",
+        "registers": [
+            {
+                "register": "UNNAMED(UniquePcode[0x10001351])"
+            },
+            {
+                "register": "0x0"
+            }
+        ],
+        "original_branch_address": "0x25b0"
+    },
+    {
+        "address": "0x25ec",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x260c",
+        "instruction": "cmp x24,#0x1",
+        "registers": [
+            {
+                "register": "x24"
+            },
+            {
+                "register": "0x1"
+            }
+        ],
+        "original_branch_address": "0x25f0",
+        "branch_condition_meaning": "(x24) == (equal) (#0x1)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x25f4",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x2608",
+        "instruction": "cmp x21,x0",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "x0"
+            }
+        ],
+        "original_branch_address": "0x25f8",
+        "branch_condition_meaning": "(x21) == (equal) (x0)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x2630",
+        "original_branch_instruction": "b.ne",
+        "branch_target": "0x2620",
+        "instruction": "cmp x21,x1",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "x1"
+            }
+        ],
+        "original_branch_address": "0x2634",
+        "branch_condition_meaning": "(x21) != (not equal) (x1)",
+        "loss_function_name": "Hinge-like Margin Loss"
+    },
+    {
+        "address": "0x2668",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x276c",
+        "instruction": "cmp x1,x8",
+        "registers": [
+            {
+                "register": "x1"
+            },
+            {
+                "register": "x8"
+            }
+        ],
+        "original_branch_address": "0x266c",
+        "branch_condition_meaning": "(x1) == (equal) (x8)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x2684",
+        "original_branch_instruction": "b.ne",
+        "branch_target": "0x2760",
+        "instruction": "cmp w9,w4",
+        "registers": [
+            {
+                "register": "UNNAMED(UniquePcode[0x24900])"
+            },
+            {
+                "register": "UNNAMED(UniquePcode[0x24900])"
+            }
+        ],
+        "original_branch_address": "0x2688",
+        "branch_condition_meaning": "(w9) != (not equal) (w4)",
+        "loss_function_name": "Hinge-like Margin Loss"
+    },
+    {
+        "address": "0x2698",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x2760",
+        "instruction": "fcmpe s0,#0.0",
+        "registers": [
+            {
+                "register": "0x0"
+            },
+            {
+                "register": "UNNAMED(StackDirect[Stack[-0x378]])"
+            }
+        ],
+        "original_branch_address": "0x269c",
+        "branch_condition_meaning": "(s0) <= (unsigned) (#0.0)",
+        "loss_function_name": "Hinge Loss"
+    },
+    {
+        "address": "0x26a4",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x2760",
+        "instruction": "fcmpe s1,#0.0",
+        "registers": [
+            {
+                "register": "0x0"
+            },
+            {
+                "register": "UNNAMED(StackDirect[Stack[-0x374]])"
+            }
+        ],
+        "original_branch_address": "0x26a8",
+        "branch_condition_meaning": "(s1) <= (unsigned) (#0.0)",
+        "loss_function_name": "Hinge Loss"
+    },
+    {
+        "address": "0x26b0",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x2760",
+        "instruction": "fcmpe s3,#0.0",
+        "registers": [
+            {
+                "register": "0x0"
+            },
+            {
+                "register": "s3"
+            }
+        ],
+        "original_branch_address": "0x26b4",
+        "branch_condition_meaning": "(s3) <= (unsigned) (#0.0)",
+        "loss_function_name": "Hinge Loss"
+    },
+    {
+        "address": "0x26bc",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x2760",
+        "instruction": "fcmpe s2,#0.0",
+        "registers": [
+            {
+                "register": "0x0"
+            },
+            {
+                "register": "s8"
+            }
+        ],
+        "original_branch_address": "0x26c0",
+        "branch_condition_meaning": "(s2) <= (unsigned) (#0.0)",
+        "loss_function_name": "Hinge Loss"
+    },
+    {
+        "address": "0x26d0",
+        "original_branch_instruction": "b.mi",
+        "branch_target": "0x26ec",
+        "instruction": "fcmpe s5,s4",
+        "registers": [
+            {
+                "register": "s4"
+            },
+            {
+                "register": "UNNAMED(StackDirect[Stack[-0x380]])"
+            }
+        ],
+        "original_branch_address": "0x26d4",
+        "branch_condition_meaning": "(s5) is negative (Most Significant Bit is 1) (s4)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x26f4",
+        "original_branch_instruction": "b.mi",
+        "branch_target": "0x2a9c",
+        "instruction": "fcmpe s0,s6",
+        "registers": [
+            {
+                "register": "UNNAMED(StackDirect[Stack[-0x37c]])"
+            },
+            {
+                "register": "s6"
+            }
+        ],
+        "original_branch_address": "0x26f8",
+        "branch_condition_meaning": "(s0) is negative (Most Significant Bit is 1) (s6)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x26fc",
+        "original_branch_instruction": "b.mi",
+        "branch_target": "0x2ab8",
+        "instruction": "fcmpe s5,#0.0",
+        "registers": [
+            {
+                "register": "0x0"
+            },
+            {
+                "register": "s2"
+            }
+        ],
+        "original_branch_address": "0x2700",
+        "branch_condition_meaning": "(s5) is negative (Most Significant Bit is 1) (#0.0)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2704",
+        "original_branch_instruction": "b.mi",
+        "branch_target": "0x2acc",
+        "instruction": "fcmpe s6,#0.0",
+        "registers": [
+            {
+                "register": "0x0"
+            },
+            {
+                "register": "s6"
+            }
+        ],
+        "original_branch_address": "0x2708",
+        "branch_condition_meaning": "(s6) is negative (Most Significant Bit is 1) (#0.0)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2718",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x2aec",
+        "instruction": "fcmpe s4,s3",
+        "registers": [
+            {
+                "register": "w21"
+            },
+            {
+                "register": "s2"
+            }
+        ],
+        "original_branch_address": "0x271c",
+        "branch_condition_meaning": "(s4) > (signed) (s3)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2728",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x2adc",
+        "instruction": "fcmpe s2,s1",
+        "registers": [
+            {
+                "register": "s2"
+            },
+            {
+                "register": "s8"
+            }
+        ],
+        "original_branch_address": "0x272c",
+        "branch_condition_meaning": "(s2) > (signed) (s1)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2730",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x2760",
+        "instruction": "fcmpe s4,#0.0",
+        "registers": [
+            {
+                "register": "0x0"
+            },
+            {
+                "register": "s2"
+            }
+        ],
+        "original_branch_address": "0x2734",
+        "branch_condition_meaning": "(s4) <= (unsigned) (#0.0)",
+        "loss_function_name": "Hinge Loss"
+    },
+    {
+        "address": "0x2738",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x2760",
+        "instruction": "fcmpe s2,#0.0",
+        "registers": [
+            {
+                "register": "s8"
+            },
+            {
+                "register": "0x0"
+            }
+        ],
+        "original_branch_address": "0x273c",
+        "branch_condition_meaning": "(s2) <= (unsigned) (#0.0)",
+        "loss_function_name": "Hinge Loss"
+    },
+    {
+        "address": "0x2758",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x2784",
+        "instruction": "fcmpe s2,s8",
+        "registers": [
+            {
+                "register": "0x3ee66666"
+            },
+            {
+                "register": "s2"
+            }
+        ],
+        "original_branch_address": "0x275c",
+        "branch_condition_meaning": "(s2) > (signed) (s8)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2764",
+        "original_branch_instruction": "b.hi",
+        "branch_target": "0x2678",
+        "instruction": "cmp x5,x0",
+        "registers": [
+            {
+                "register": "x0"
+            },
+            {
+                "register": "UNNAMED(UniquePcode[0x10001429])"
+            }
+        ],
+        "original_branch_address": "0x2768",
+        "branch_condition_meaning": "(x5) > (unsigned) (x0)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2774",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x2b04",
+        "instruction": "cmp x0,x1",
+        "registers": [
+            {
+                "register": "local_340(StackDirect[Stack[-0x340]])"
+            },
+            {
+                "register": "x1"
+            }
+        ],
+        "original_branch_address": "0x2778",
+        "branch_condition_meaning": "(x0) == (equal) (x1)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x278c",
+        "original_branch_instruction": "b.ne",
+        "branch_target": "0x2660",
+        "instruction": "cmp x22,x24",
+        "registers": [
+            {
+                "register": "x24"
+            },
+            {
+                "register": "x24"
+            }
+        ],
+        "original_branch_address": "0x2790",
+        "branch_condition_meaning": "(x22) != (not equal) (x24)",
+        "loss_function_name": "Hinge-like Margin Loss"
+    },
+    {
+        "address": "0x27a0",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x27c4",
+        "instruction": "cmp x22,x20",
+        "registers": [
+            {
+                "register": "local_348(StackDirect[Stack[-0x348]])"
+            },
+            {
+                "register": "local_350(StackDirect[Stack[-0x350]])"
+            }
+        ],
+        "original_branch_address": "0x27a4",
+        "branch_condition_meaning": "(x22) == (equal) (x20)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x27bc",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x2b18",
+        "instruction": "fcmpe s1,s0",
+        "registers": [
+            {
+                "register": "s1"
+            },
+            {
+                "register": "0x3f000000"
+            }
+        ],
+        "original_branch_address": "0x27c0",
+        "branch_condition_meaning": "(s1) > (signed) (s0)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x27d8",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x2b70",
+        "instruction": "cmp x22,x20",
+        "registers": [
+            {
+                "register": "x8"
+            },
+            {
+                "register": "x1"
+            }
+        ],
+        "original_branch_address": "0x27dc",
+        "branch_condition_meaning": "(x22) == (equal) (x20)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x2848",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x2934",
+        "instruction": "cmp x19,x20",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "x0"
+            }
+        ],
+        "original_branch_address": "0x284c",
+        "branch_condition_meaning": "(x19) == (equal) (x20)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x285c",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x2880",
+        "instruction": "cmp x19,x0",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "x0"
+            }
+        ],
+        "original_branch_address": "0x2860",
+        "branch_condition_meaning": "(x19) == (equal) (x0)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x286c",
+        "original_branch_instruction": "b.mi",
+        "branch_target": "0x2928",
+        "instruction": "fcmpe s1,s0",
+        "registers": [
+            {
+                "register": "s4"
+            },
+            {
+                "register": "s0"
+            }
+        ],
+        "original_branch_address": "0x2870",
+        "branch_condition_meaning": "(s1) is negative (Most Significant Bit is 1) (s0)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x289c",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x28a8",
+        "instruction": "fcmpe s2,s9",
+        "registers": [
+            {
+                "register": "0x3e800000"
+            },
+            {
+                "register": "s4"
+            }
+        ],
+        "original_branch_address": "0x28a0",
+        "branch_condition_meaning": "(s2) > (signed) (s9)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2904",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x2b30",
+        "instruction": "cmp x1,x2",
+        "registers": [
+            {
+                "register": "local_360(StackDirect[Stack[-0x360]])"
+            },
+            {
+                "register": "local_368(StackDirect[Stack[-0x368]])"
+            }
+        ],
+        "original_branch_address": "0x2908",
+        "branch_condition_meaning": "(x1) == (equal) (x2)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x29dc",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x2a38",
+        "instruction": "cmp x21,x20",
+        "registers": [
+            {
+                "register": "x0"
+            },
+            {
+                "register": "x2"
+            }
+        ],
+        "original_branch_address": "0x29e0",
+        "branch_condition_meaning": "(x21) == (equal) (x20)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x2a0c",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x2a44",
+        "instruction": "fcmpe s1,s0",
+        "registers": [
+            {
+                "register": "s8"
+            },
+            {
+                "register": "s2"
+            }
+        ],
+        "original_branch_address": "0x2a10",
+        "branch_condition_meaning": "(s1) > (signed) (s0)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2ac0",
+        "original_branch_instruction": "b.mi",
+        "branch_target": "0x2760",
+        "instruction": "fcmpe s7,s4",
+        "registers": [
+            {
+                "register": "s4"
+            },
+            {
+                "register": "s7"
+            }
+        ],
+        "original_branch_address": "0x2ac4",
+        "branch_condition_meaning": "(s7) is negative (Most Significant Bit is 1) (s4)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2ad0",
+        "original_branch_instruction": "b.mi",
+        "branch_target": "0x2760",
+        "instruction": "fcmpe s7,s0",
+        "registers": [
+            {
+                "register": "s2"
+            },
+            {
+                "register": "s7"
+            }
+        ],
+        "original_branch_address": "0x2ad4",
+        "branch_condition_meaning": "(s7) is negative (Most Significant Bit is 1) (s0)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2adc",
+        "original_branch_instruction": "b.ls",
+        "branch_target": "0x2760",
+        "instruction": "fcmpe s4,#0.0",
+        "registers": [
+            {
+                "register": "0x0"
+            },
+            {
+                "register": "w21"
+            }
+        ],
+        "original_branch_address": "0x2ae0",
+        "branch_condition_meaning": "(s4) <= (unsigned) (#0.0)",
+        "loss_function_name": "Hinge Loss"
+    },
+    {
+        "address": "0x2af8",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x2adc",
+        "instruction": "fcmpe s2,s1",
+        "registers": [
+            {
+                "register": "s2"
+            },
+            {
+                "register": "s8"
+            }
+        ],
+        "original_branch_address": "0x2afc",
+        "branch_condition_meaning": "(s2) > (signed) (s1)",
+        "loss_function_name": "Logistic Loss"
+    },
+    {
+        "address": "0x2b74",
+        "original_branch_instruction": "b.eq",
+        "branch_target": "0x2bf4",
+        "instruction": "cmp x19,x0",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "local_3c8(StackDirect[Stack[-0x3c8]])"
+            }
+        ],
+        "original_branch_address": "0x2b78",
+        "branch_condition_meaning": "(x19) == (equal) (x0)",
+        "loss_function_name": "Log-Cosh Loss"
+    },
+    {
+        "address": "0x2b98",
+        "original_branch_instruction": "csel",
+        "branch_target": "N/A",
+        "instruction": "cmp x0,#0x60",
+        "registers": [
+            {
+                "register": "0x60"
+            },
+            {
+                "register": "local_388(StackDirect[Stack[-0x388]])"
+            }
+        ],
+        "original_branch_address": "0x2ba0"
+    },
+    {
+        "address": "0x2be8",
+        "original_branch_instruction": "b.ne",
+        "branch_target": "0x2bb0",
+        "instruction": "cmp x19,x22",
+        "registers": [
+            {
+                "register": "x19"
+            },
+            {
+                "register": "x0"
+            }
+        ],
+        "original_branch_address": "0x2bec",
+        "branch_condition_meaning": "(x19) != (not equal) (x22)",
+        "loss_function_name": "Hinge-like Margin Loss"
+    }
+]

@@ -1,0 +1,295 @@
+[
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "001024e0", 
+        "pcode_operation": " ---  CALL (ram, 0x105438, 8) , (stack, 0xfffffffffffffd70, 8) , (register, 0x4000, 8)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "TAINTED_ARG_TO_CALL_RECURSION", 
+        "details": "Recursive call to softmax<float> (CALL) with taints: param_1(x0).", 
+        "tainted_component": "N/A", 
+        "found_in_function_entry": "00101d18"
+    }, 
+    {
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "001054b4", 
+        "pcode_operation": "(register, 0x4000, 8) CALL (ram, 0x106a14, 8) , (register, 0x4000, 8) , (unique, 0x12480, 8)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "TAINTED_ARG_TO_CALL_RECURSION", 
+        "details": "Recursive call to max_element<float_const*> (CALL) with taints: param_2(x1), param_1(x0).", 
+        "tainted_component": "N/A", 
+        "found_in_function_entry": "00105438"
+    }, 
+    {
+        "found_in_function_name": "max_element<float_const*>", 
+        "instruction_address": "00106a38", 
+        "pcode_operation": "(register, 0x4000, 8) CALL (ram, 0x107eac, 8) , (register, 0x4000, 8) , (register, 0x4008, 8) , (register, 0x4098, 4)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "TAINTED_ARG_TO_CALL_RECURSION", 
+        "details": "Recursive call to __max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter> (CALL) with taints: param_1(x0), param_2(x1).", 
+        "tainted_component": "N/A", 
+        "found_in_function_entry": "00106a14"
+    }, 
+    {
+        "found_in_function_name": "__max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "instruction_address": "00107ec8", 
+        "pcode_operation": "(register, 0x108, 1) INT_NOTEQUAL (register, 0x4000, 8) , (register, 0x4008, 8)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "TAINTED_COMPARISON", 
+        "details": "Tainted value used in a comparison operation (INT_NOTEQUAL).", 
+        "tainted_component": "param_1(x0)", 
+        "found_in_function_entry": "00107eac"
+    }, 
+    {
+        "found_in_function_name": "__max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "instruction_address": "00107ecc", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x107ed8, 1) , (register, 0x108, 1)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpZR)", 
+        "found_in_function_entry": "00107eac", 
+        "instruction_mnemonic": "b.ne"
+    }, 
+    {
+        "found_in_function_name": "__max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "instruction_address": "00107ef0", 
+        "pcode_operation": "(register, 0x4000, 1) CALL (ram, 0x108838, 8) , (unique, 0x11f80, 8) , (stack, 0xfffffffffffffff8, 8) , (unique, 0x11f80, 8)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "TAINTED_ARG_TO_CALL_RECURSION", 
+        "details": "Recursive call to operator() (CALL) with taints: param_2(x2), param_1(x1).", 
+        "tainted_component": "N/A", 
+        "found_in_function_entry": "00107eac"
+    }, 
+    {
+        "found_in_function_name": "operator()", 
+        "instruction_address": "00108858", 
+        "pcode_operation": "(unique, 0x10000009, 1) FLOAT_LESS (register, 0x5020, 4) , (register, 0x5000, 4)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "TAINTED_COMPARISON", 
+        "details": "Tainted value used in a comparison operation (FLOAT_LESS).", 
+        "tainted_component": "UNNAMED(s1)", 
+        "found_in_function_entry": "00108838"
+    }, 
+    {
+        "found_in_function_name": "operator()", 
+        "instruction_address": "00108868", 
+        "pcode_operation": " ---  RETURN (const, 0x0, 8) , (register, 0x4000, 1)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "RETURN_TAINTED_VALUE", 
+        "tainted_component": "UNNAMED(w0)", 
+        "found_in_function_entry": "00108838"
+    }, 
+    {
+        "found_in_function_name": "__max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "instruction_address": "00107f00", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x107f0c, 1) , (register, 0x4000, 1)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "bVar1(w0)", 
+        "found_in_function_entry": "00107eac", 
+        "instruction_mnemonic": "b.eq"
+    }, 
+    {
+        "found_in_function_name": "__max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "instruction_address": "00107f20", 
+        "pcode_operation": "(register, 0x108, 1) INT_NOTEQUAL (unique, 0x11f80, 8) , (stack, 0xffffffffffffffe0, 8)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "TAINTED_COMPARISON", 
+        "details": "Tainted value used in a comparison operation (INT_NOTEQUAL).", 
+        "tainted_component": "local_18(StackDirect[Stack[-0x18]])", 
+        "found_in_function_entry": "00107eac"
+    }, 
+    {
+        "found_in_function_name": "__max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "instruction_address": "00107f34", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x107ee4, 1) , (register, 0x108, 1)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpZR)", 
+        "found_in_function_entry": "00107eac", 
+        "instruction_mnemonic": "b.ne"
+    }, 
+    {
+        "found_in_function_name": "__max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "instruction_address": "00107f40", 
+        "pcode_operation": " ---  RETURN (const, 0x0, 8) , (register, 0x4000, 8)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "RETURN_TAINTED_VALUE", 
+        "tainted_component": "local_8(StackDirect[Stack[-0x8]])", 
+        "found_in_function_entry": "00107eac"
+    }, 
+    {
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "001054e8", 
+        "pcode_operation": "(register, 0x5000, 4) CALL (ram, 0x102978, 8) , (register, 0x5000, 4)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "TAINT_PROPAGATED_BY_RULE", 
+        "details": "Taint propagated through math function 'exp' from arg(s) (UNNAMED(s0)) to return value.", 
+        "tainted_component": "uVar3(s0)", 
+        "found_in_function_entry": "00105438"
+    }, 
+    {
+        "store_destination": "puVar2(x0)", 
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "001054fc", 
+        "pcode_operation": " ---  STORE (const, 0x1b1, 4) , (register, 0x4000, 8) , (register, 0x5000, 4)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "STORE_TAINTED_VALUE", 
+        "details": "Tainted value stored.", 
+        "tainted_component": "uVar3(s0)", 
+        "found_in_function_entry": "00105438"
+    }, 
+    {
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "00105534", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x1054cc, 1) , (register, 0x105, 1)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpCY)", 
+        "found_in_function_entry": "00105438", 
+        "instruction_mnemonic": "b.cc"
+    }, 
+    {
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "00105574", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x105540, 1) , (register, 0x105, 1)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpCY)", 
+        "found_in_function_entry": "00105438", 
+        "instruction_mnemonic": "b.cc"
+    }, 
+    {
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "00105608", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x105610, 1) , (register, 0x108, 1)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpZR)", 
+        "found_in_function_entry": "00105438", 
+        "instruction_mnemonic": "b.eq"
+    }, 
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "00102524", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x102538, 1) , (unique, 0x1000073f, 1)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(UniquePcode[0x1000073f])", 
+        "found_in_function_entry": "00101d18", 
+        "instruction_mnemonic": "b.eq"
+    }, 
+    {
+        "found_in_function_name": "main", 
+        "instruction_address": "001025f4", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x102848, 1) , (register, 0x108, 1)", 
+        "originating_imported_function_name": "['GetTensorData']", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpZR)", 
+        "found_in_function_entry": "00101d18", 
+        "instruction_mnemonic": "b.eq"
+    }, 
+    {
+        "found_in_function_name": "__max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "instruction_address": "00107f00", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x107f0c, 1) , (register, 0x4000, 1)", 
+        "originating_imported_function_name": "tainted_return_from_operator()", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "bVar1(w0)", 
+        "found_in_function_entry": "00107eac", 
+        "instruction_mnemonic": "b.eq"
+    }, 
+    {
+        "found_in_function_name": "__max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "instruction_address": "00107f34", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x107ee4, 1) , (register, 0x108, 1)", 
+        "originating_imported_function_name": "tainted_return_from_operator()", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpZR)", 
+        "found_in_function_entry": "00107eac", 
+        "instruction_mnemonic": "b.ne"
+    }, 
+    {
+        "found_in_function_name": "max_element<float_const*>", 
+        "instruction_address": "00106a44", 
+        "pcode_operation": " ---  RETURN (const, 0x0, 8) , (register, 0x4000, 8)", 
+        "originating_imported_function_name": "tainted_return_from___max_element<float_const*,__gnu_cxx::__ops::_Iter_less_iter>", 
+        "usage_type": "RETURN_TAINTED_VALUE", 
+        "tainted_component": "pfVar1(x0)", 
+        "found_in_function_entry": "00106a14"
+    }, 
+    {
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "001054e8", 
+        "pcode_operation": "(register, 0x5000, 4) CALL (ram, 0x102978, 8) , (register, 0x5000, 4)", 
+        "originating_imported_function_name": "tainted_return_from_max_element<float_const*>", 
+        "usage_type": "TAINT_PROPAGATED_BY_RULE", 
+        "details": "Taint propagated through math function 'exp' from arg(s) (UNNAMED(s0)) to return value.", 
+        "tainted_component": "uVar3(s0)", 
+        "found_in_function_entry": "00105438"
+    }, 
+    {
+        "store_destination": "puVar2(x0)", 
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "001054fc", 
+        "pcode_operation": " ---  STORE (const, 0x1b1, 4) , (register, 0x4000, 8) , (register, 0x5000, 4)", 
+        "originating_imported_function_name": "tainted_return_from_max_element<float_const*>", 
+        "usage_type": "STORE_TAINTED_VALUE", 
+        "details": "Tainted value stored.", 
+        "tainted_component": "uVar3(s0)", 
+        "found_in_function_entry": "00105438"
+    }, 
+    {
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "00105534", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x1054cc, 1) , (register, 0x105, 1)", 
+        "originating_imported_function_name": "tainted_return_from_max_element<float_const*>", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpCY)", 
+        "found_in_function_entry": "00105438", 
+        "instruction_mnemonic": "b.cc"
+    }, 
+    {
+        "store_destination": "pfVar1(x0)", 
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "00105558", 
+        "pcode_operation": " ---  STORE (const, 0x1b1, 4) , (register, 0x4000, 8) , (register, 0x5000, 4)", 
+        "originating_imported_function_name": "tainted_return_from_max_element<float_const*>", 
+        "usage_type": "STORE_TAINTED_VALUE", 
+        "details": "Tainted value stored.", 
+        "tainted_component": "UNNAMED(s0)", 
+        "found_in_function_entry": "00105438"
+    }, 
+    {
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "00105574", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x105540, 1) , (register, 0x105, 1)", 
+        "originating_imported_function_name": "tainted_return_from_max_element<float_const*>", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpCY)", 
+        "found_in_function_entry": "00105438", 
+        "instruction_mnemonic": "b.cc"
+    }, 
+    {
+        "found_in_function_name": "softmax<float>", 
+        "instruction_address": "00105608", 
+        "pcode_operation": " ---  CBRANCH (ram, 0x105610, 1) , (register, 0x108, 1)", 
+        "originating_imported_function_name": "tainted_return_from_max_element<float_const*>", 
+        "usage_type": "BRANCH_CONDITION_TAINTED", 
+        "details": "Tainted condition for branch.", 
+        "tainted_component": "UNNAMED(tmpZR)", 
+        "found_in_function_entry": "00105438", 
+        "instruction_mnemonic": "b.eq"
+    }
+]

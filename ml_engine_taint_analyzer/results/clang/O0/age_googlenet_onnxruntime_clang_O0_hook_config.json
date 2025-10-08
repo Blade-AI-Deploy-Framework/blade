@@ -1,0 +1,70 @@
+[
+    {
+        "address": "0x4c98", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x4cb0", 
+        "instruction": "subs x8,x8,x9", 
+        "registers": [
+            {
+                "register": "x0"
+            }, 
+            {
+                "register": "x1"
+            }
+        ], 
+        "original_branch_address": "0x4c9c"
+    }, 
+    {
+        "address": "0x4cd0", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x4d04", 
+        "instruction": "subs x8,x8,x9", 
+        "registers": [
+            {
+                "register": "local_28(StackDirect[Stack[-0x28]])"
+            }, 
+            {
+                "register": "x1"
+            }
+        ], 
+        "original_branch_address": "0x4cd4"
+    }, 
+    {
+        "address": "0x4cd0", 
+        "original_branch_instruction": "tbz", 
+        "branch_target": "0x4d00", 
+        "instruction": "subs x8,x8,x9", 
+        "registers": [], 
+        "original_branch_address": "0x4cec"
+    }, 
+    {
+        "address": "0x2b74", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2c50", 
+        "instruction": "subs w8,w8,#0x5", 
+        "registers": [
+            {
+                "register": "w0"
+            }, 
+            {
+                "register": "0x0"
+            }
+        ], 
+        "original_branch_address": "0x2b78"
+    }, 
+    {
+        "address": "0x2b88", 
+        "original_branch_instruction": "b.le", 
+        "branch_target": "0x2c50", 
+        "instruction": "fcmp s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "0x3f000000"
+            }
+        ], 
+        "original_branch_address": "0x2b8c"
+    }
+]

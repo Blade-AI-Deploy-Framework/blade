@@ -1,0 +1,167 @@
+[
+    {
+        "address": "0x21bc",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x26dc",
+        "instruction": "cmp w21,#0x0",
+        "registers": [
+            {
+                "register": "w21"
+            },
+            {
+                "register": "0x0"
+            }
+        ],
+        "original_branch_address": "0x21c0"
+    },
+    {
+        "address": "0x21e4",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x2398",
+        "instruction": "fcmpe s0,s8",
+        "registers": [
+            {
+                "register": "s0"
+            },
+            {
+                "register": "s8"
+            }
+        ],
+        "original_branch_address": "0x21e8"
+    },
+    {
+        "address": "0x2244",
+        "original_branch_instruction": "b.le",
+        "branch_target": "0x2420",
+        "instruction": "cmp x18,#0x140",
+        "registers": [
+            {
+                "register": "x18"
+            },
+            {
+                "register": "0x140"
+            }
+        ],
+        "original_branch_address": "0x2248"
+    },
+    {
+        "address": "0x228c",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x23d8",
+        "instruction": "fcmpe s1,s0",
+        "registers": [
+            {
+                "register": "s1"
+            },
+            {
+                "register": "s0"
+            }
+        ],
+        "original_branch_address": "0x2290"
+    },
+    {
+        "address": "0x2388",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x2444",
+        "instruction": "cmp x20,x21",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "x21"
+            }
+        ],
+        "original_branch_address": "0x238c"
+    },
+    {
+        "address": "0x23f8",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x23d8",
+        "instruction": "fcmpe s1,s0",
+        "registers": [
+            {
+                "register": "s1"
+            },
+            {
+                "register": "s0"
+            }
+        ],
+        "original_branch_address": "0x23fc"
+    },
+    {
+        "address": "0x2468",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x26cc",
+        "instruction": "fcmpe s1,s0",
+        "registers": [
+            {
+                "register": "s1"
+            },
+            {
+                "register": "s0"
+            }
+        ],
+        "original_branch_address": "0x246c"
+    },
+    {
+        "address": "0x2548",
+        "original_branch_instruction": "b.cs",
+        "branch_target": "0x2444",
+        "instruction": "cmp x20,x21",
+        "registers": [
+            {
+                "register": "x20"
+            },
+            {
+                "register": "x21"
+            }
+        ],
+        "original_branch_address": "0x254c"
+    },
+    {
+        "address": "0x25d8",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x2600",
+        "instruction": "fcmpe s2,#0.0",
+        "registers": [
+            {
+                "register": "s2"
+            },
+            {
+                "register": "0.0"
+            }
+        ],
+        "original_branch_address": "0x25dc"
+    },
+    {
+        "address": "0x2620",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x262c",
+        "instruction": "fcmpe s1,#0.0",
+        "registers": [
+            {
+                "register": "s1"
+            },
+            {
+                "register": "0.0"
+            }
+        ],
+        "original_branch_address": "0x2624"
+    },
+    {
+        "address": "0x2630",
+        "original_branch_instruction": "b.gt",
+        "branch_target": "0x263c",
+        "instruction": "fcmpe s0,s9",
+        "registers": [
+            {
+                "register": "s0"
+            },
+            {
+                "register": "s9"
+            }
+        ],
+        "original_branch_address": "0x2634"
+    }
+]

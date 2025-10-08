@@ -1,0 +1,107 @@
+[
+    {
+        "address": "0x2318", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x236c", 
+        "instruction": "cmp x0,x21", 
+        "registers": [
+            {
+                "register": "pfVar1(UniquePcode[0x11800])"
+            }, 
+            {
+                "register": "x21"
+            }
+        ], 
+        "original_branch_address": "0x231c"
+    }, 
+    {
+        "address": "0x2324", 
+        "original_branch_instruction": "b.eq", 
+        "branch_target": "0x236c", 
+        "instruction": "cmp x0,x1", 
+        "registers": [
+            {
+                "register": "pfVar1(UniquePcode[0x11800])"
+            }, 
+            {
+                "register": "x1"
+            }
+        ], 
+        "original_branch_address": "0x2328"
+    }, 
+    {
+        "address": "0x233c", 
+        "original_branch_instruction": "b.gt", 
+        "branch_target": "0x240c", 
+        "instruction": "fcmpe s0,s1", 
+        "registers": [
+            {
+                "register": "s0"
+            }, 
+            {
+                "register": "s1"
+            }
+        ], 
+        "original_branch_address": "0x2340",
+        "pairs_to_process": [
+            {
+                "pair_index": 5,
+                "attack_mode": "satisfy"
+            },
+            {
+                "pair_index": 6,
+                "attack_mode": "invert"
+            },
+            {
+                "pair_index": 7,
+                "attack_mode": "invert"
+            }
+            
+        ]
+    }, 
+    {
+        "address": "0x2348", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x2338", 
+        "instruction": "cmp x0,x1", 
+        "registers": [
+            {
+                "register": "pfVar1(UniquePcode[0x11800])"
+            }, 
+            {
+                "register": "x1"
+            }
+        ], 
+        "original_branch_address": "0x234c"
+    }, 
+    {
+        "address": "0x2358", 
+        "original_branch_instruction": "b.ne", 
+        "branch_target": "0x236c", 
+        "instruction": "cmp w2,#0x5", 
+        "registers": [
+            {
+                "register": "w2"
+            }, 
+            {
+                "register": "0x5"
+            }
+        ], 
+        "original_branch_address": "0x235c"
+    }, 
+    {
+        "address": "0x2364", 
+        "original_branch_instruction": "b.gt", 
+        "branch_target": "0x245c", 
+        "instruction": "fcmpe s1,s0", 
+        "registers": [
+            {
+                "register": "s1"
+            }, 
+            {
+                "register": "0x3f000000"
+            }
+        ], 
+        "original_branch_address": "0x2368"
+    }
+]

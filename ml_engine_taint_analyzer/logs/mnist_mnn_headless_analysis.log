@@ -1,0 +1,600 @@
+2025-07-16 17:33:43 INFO  (LoggingInitialization) Using log config file: jar:file:/Applications/ghidra_11.0.3_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-07-16 17:33:43 INFO  (LoggingInitialization) Using log file: /Users/chenkexin/Desktop/kk/test_taint/logs/mnist_mnn_headless_analysis.log  
+2025-07-16 17:33:43 INFO  (Preferences) Loading user preferences: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/preferences  
+2025-07-16 17:33:43 INFO  (Preferences) Loading previous preferences: /Users/chenkexin/.ghidra/.ghidra_10.4_PUBLIC/preferences  
+2025-07-16 17:33:43 INFO  (ClassSearcher) Searching for classes...  
+2025-07-16 17:33:45 INFO  (ClassSearcher) Class search complete (2801 ms)  
+2025-07-16 17:33:46 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-07-16 17:33:46 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-07-16 17:33:46 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-07-16 17:33:46 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-07-16 17:33:47 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Python/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-frida/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/chenkexin/ghidra_scripts
+    /Users/chenkexin/Desktop/kk/test_taint
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-dbgmodel-traceloader/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts  
+2025-07-16 17:33:47 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2025-07-16 17:33:47 INFO  (HeadlessAnalyzer) Creating project: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/tmp.ZmDi6YJVqc/HeadlessTaintAnalysis  
+2025-07-16 17:33:48 INFO  (DefaultProject) Creating project: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/tmp.ZmDi6YJVqc/HeadlessTaintAnalysis  
+2025-07-16 17:33:48 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2025-07-16 17:33:48 INFO  (HeadlessAnalyzer)      project: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/tmp.ZmDi6YJVqc/HeadlessTaintAnalysis  
+2025-07-16 17:33:48 INFO  (HeadlessAnalyzer) IMPORTING: file:///Users/chenkexin/Desktop/kk/test_taint/assets/mnist_mnn  
+2025-07-16 17:33:52 INFO  (AutoImporter) Using Loader: Executable and Linking Format (ELF)  
+2025-07-16 17:33:52 INFO  (AutoImporter) Using Language/Compiler: AARCH64:LE:64:v8A:default  
+2025-07-16 17:33:53 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-07-16 17:33:53 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2025-07-16 17:33:53 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-07-16 17:33:53 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got  
+2025-07-16 17:33:53 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_2.3 at 00100253  
+2025-07-16 17:33:53 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.7 at 001002cc  
+2025-07-16 17:33:53 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_2.10 at 00101113  
+2025-07-16 17:33:53 DEBUG (ElfProgramBuilder) Discarding 6-byte alignment/filler segment_2.12 at 00101192  
+2025-07-16 17:33:53 DEBUG (ElfProgramBuilder) Discarding 8-byte alignment/filler segment_2.17 at 001019d8  
+2025-07-16 17:33:53 DEBUG (ElfProgramBuilder) Discarding 16-byte alignment/filler segment_2.19 at 00101cf0  
+2025-07-16 17:33:53 DEBUG (ElfProgramBuilder) Discarding 12-byte alignment/filler segment_2.22 at 00102f94  
+2025-07-16 17:33:53 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.25 at 001031ec  
+2025-07-16 17:33:54 WARN  (ElfRelocationHandler) EXTERNAL Data Elf Relocation with offset: at 0011fb60 (External Location = _ZTVN10__cxxabiv117__class_type_infoE+0x10)  
+2025-07-16 17:33:54 WARN  (ElfRelocationHandler) EXTERNAL Data Elf Relocation with offset: at 0011fb70 (External Location = _ZTVN10__cxxabiv120__si_class_type_infoE+0x10)  
+2025-07-16 17:33:54 WARN  (ElfRelocationHandler) EXTERNAL Data Elf Relocation with offset: at 0011fb88 (External Location = _ZTVN10__cxxabiv120__si_class_type_infoE+0x10)  
+2025-07-16 17:33:55 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2025-07-16 17:33:55 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///Users/chenkexin/Desktop/kk/test_taint/assets/mnist_mnn  
+2025-07-16 17:33:56 INFO  (ExternalDebugFilesService) DWARF external debug information found: ExternalDebugInfo [filename=null, crc=0, hash=c76e8d3e6cb356a3d52d198b402fe5a775ff7400]  
+2025-07-16 17:33:56 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2025-07-16 17:34:01 INFO  (PackedDatabaseCache) Packed database cache: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/chenkexin-Ghidra/packed-db-cache  
+2025-07-16 17:34:01 DEBUG (PackedDatabaseCache) Using cached packed database: /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-07-16 17:34:03 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib_64  
+2025-07-16 17:34:04 WARN  (DemangledAddressTable) Unable to fully apply external demangled Address Table at 00121048: __cxxabiv1::__class_type_info::vtable  
+2025-07-16 17:34:04 WARN  (DemangledAddressTable) Unable to fully apply external demangled Address Table at 00121190: __cxxabiv1::__si_class_type_info::vtable  
+2025-07-16 17:34:06 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    AARCH64 ELF PLT Thunks                     0.203 secs
+    ASCII Strings                              0.453 secs
+    Apply Data Archives                        2.070 secs
+    Basic Constant Reference Analyzer          1.727 secs
+    Call Convention ID                         0.465 secs
+    Call-Fixup Installer                       0.055 secs
+    Create Address Tables                      0.044 secs
+    Create Address Tables - One Time           0.028 secs
+    Create Function                            0.000 secs
+    DWARF                                      0.010 secs
+    Data Reference                             0.107 secs
+    Decompiler Switch Analysis                 0.582 secs
+    Demangler GNU                              0.756 secs
+    Disassemble                                0.032 secs
+    Disassemble Entry Points                   0.191 secs
+    Embedded Media                             0.044 secs
+    External Entry References                  0.000 secs
+    Function Start Search                      0.109 secs
+    Function Start Search After Code           0.036 secs
+    Function Start Search After Data           0.037 secs
+    Function Start Search delayed - One Time   0.013 secs
+    GCC Exception Handlers                     2.239 secs
+    Non-Returning Functions - Discovered       0.062 secs
+    Non-Returning Functions - Known            0.021 secs
+    Reference                                  0.186 secs
+    Shared Return Calls                        0.091 secs
+    Stack                                      1.081 secs
+    Subroutine References                      0.071 secs
+-----------------------------------------------------
+     Total Time   10 secs
+-----------------------------------------------------
+  
+2025-07-16 17:34:06 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///Users/chenkexin/Desktop/kk/test_taint/assets/mnist_mnn  
+2025-07-16 17:34:06 INFO  (HeadlessAnalyzer) SCRIPT: /Users/chenkexin/Desktop/kk/test_taint/mnn_analyzer.py  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> INFO: Searching for functions, thunks, and call sites related to keyword 'getSessionOutput'  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found function 'getSessionOutput'. Searching for its thunks.  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found thunk 'getSessionOutput' at 00101b80 for function.  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found thunk 'getSessionOutput' at 001210f8 for function.  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> INFO: Found 2 unique call sites. Analyzing each...  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Starting Stage 1 Taint Analysis from 'getSessionOutput' call sites ---  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Analyzing Call Site #1055628 at 00101b8c ---  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: Parent (caller): getSessionOutput at 00101b80  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> INFO: Call at 00101b8c has no output varnode. Nothing to taint. Skipping.  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Analyzing Call Site #1056928 at 001020a0 ---  
+2025-07-16 17:34:16 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: Parent (caller): main at 00101d00  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Initiating Taint Analysis for: main (call at 001020a0) ---  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: Taint source is the return value of the call: UNNAMED(UniquePcode[0x10001295])  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> \n>>> Analyzing function: main (Depth: 0) at 00101d00 (Originating from: getSessionOutput) with initial taints: UNNAMED(UniquePcode[0x10001295])  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> \nDEBUG: Reached specified start PcodeOp (unique, 0x10001295, 8) CALL (ram, 0x101b80, 8) , (unique, 0x1000128d, 8) , (register, 0x4000, 8) at 001020a0 in main, subsequent ops will be processed.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001020a0] Taint propagated from UNNAMED(UniquePcode[0x10001295]) to pTVar18(x0) via CAST.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [MNN_RULE] Found call to 'Tensor' with a tainted argument.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Tracing `this` pointer... At VN: (unique, 0x1000129d, 8), Def_Op: (unique, 0x1000129d, 8) CAST (unique, 0x11f80, 8)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Tracing `this` pointer... At VN: (unique, 0x11f80, 8), Def_Op: (unique, 0x11f80, 8) PTRSUB (register, 0x8, 8) , (const, 0xfffffffffffffdd8, 8)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Identified base register as (register, 0x8, 8) and offset as -0x228  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Found base-relative origin. `this` offset is -0x228. Calculated sink offset: -0x218  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE] Found matching stack symbol 'local_218' at offset -0x218.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 738: (stack, 0xfffffffffffffd20, 8) INDIRECT (stack, 0xfffffffffffffd20, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 739: (stack, 0xfffffffffffffd28, 8) INDIRECT (stack, 0xfffffffffffffd28, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 740: (stack, 0xfffffffffffffd30, 8) INDIRECT (stack, 0xfffffffffffffd30, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 741: (stack, 0xfffffffffffffd78, 8) INDIRECT (stack, 0xfffffffffffffd78, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 742: (stack, 0xfffffffffffffdd8, 4) INDIRECT (stack, 0xfffffffffffffdd8, 4) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 743: (stack, 0xfffffffffffffde0, 8) INDIRECT (stack, 0xfffffffffffffde0, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 744: (stack, 0xfffffffffffffde8, 8) INDIRECT (stack, 0xfffffffffffffde8, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 745: (stack, 0xfffffffffffffe20, 8) INDIRECT (stack, 0xfffffffffffffe20, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 746: (stack, 0xfffffffffffffe28, 8) INDIRECT (stack, 0xfffffffffffffe28, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 747: (stack, 0xfffffffffffffe30, 8) INDIRECT (stack, 0xfffffffffffffe30, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 748: (stack, 0xfffffffffffffe38, 8) INDIRECT (stack, 0xfffffffffffffe38, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 749: (stack, 0xfffffffffffffe40, 8) INDIRECT (stack, 0xfffffffffffffe40, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 750: (stack, 0xfffffffffffffe48, 8) INDIRECT (stack, 0xfffffffffffffe48, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 751: (stack, 0xfffffffffffffe50, 8) INDIRECT (stack, 0xfffffffffffffe50, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 752: (stack, 0xfffffffffffffe58, 8) INDIRECT (stack, 0xfffffffffffffe58, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 753: (stack, 0xfffffffffffffe60, 8) INDIRECT (stack, 0xfffffffffffffe60, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 754: (stack, 0xfffffffffffffe68, 8) INDIRECT (stack, 0xfffffffffffffe68, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 755: (stack, 0xfffffffffffffe70, 4) INDIRECT (stack, 0xfffffffffffffe70, 4) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 756: (stack, 0xfffffffffffffe78, 4) INDIRECT (stack, 0xfffffffffffffe78, 4) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 757: (stack, 0xfffffffffffffe80, 8) INDIRECT (stack, 0xfffffffffffffe80, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 758: (stack, 0xffffffffffffff88, 8) INDIRECT (stack, 0xffffffffffffff88, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 759: (ram, 0x1210e8, 8) INDIRECT (ram, 0x1210e8, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 760: (ram, 0x1211a0, 8) INDIRECT (ram, 0x1211a0, 8) , (const, 0x2f8, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 761: (unique, 0x1000129d, 8) CAST (unique, 0x11f80, 8)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 762:  ---  CALL (ram, 0x101c30, 8) , (register, 0x4000, 8)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 763: (stack, 0xfffffffffffffd20, 8) INDIRECT (stack, 0xfffffffffffffd20, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 764: (stack, 0xfffffffffffffd28, 8) INDIRECT (stack, 0xfffffffffffffd28, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 765: (stack, 0xfffffffffffffd30, 8) INDIRECT (stack, 0xfffffffffffffd30, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 766: (stack, 0xfffffffffffffd78, 8) INDIRECT (stack, 0xfffffffffffffd78, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 767: (stack, 0xfffffffffffffdd8, 4) INDIRECT (stack, 0xfffffffffffffdd8, 4) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 768: (stack, 0xfffffffffffffde0, 8) INDIRECT (stack, 0xfffffffffffffde0, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 769: (stack, 0xfffffffffffffde8, 8) INDIRECT (stack, 0xfffffffffffffde8, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 770: (stack, 0xfffffffffffffe20, 8) INDIRECT (stack, 0xfffffffffffffe20, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 771: (stack, 0xfffffffffffffe28, 8) INDIRECT (stack, 0xfffffffffffffe28, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 772: (stack, 0xfffffffffffffe30, 8) INDIRECT (stack, 0xfffffffffffffe30, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 773: (stack, 0xfffffffffffffe38, 8) INDIRECT (stack, 0xfffffffffffffe38, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 774: (stack, 0xfffffffffffffe40, 8) INDIRECT (stack, 0xfffffffffffffe40, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 775: (stack, 0xfffffffffffffe48, 8) INDIRECT (stack, 0xfffffffffffffe48, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 776: (stack, 0xfffffffffffffe50, 8) INDIRECT (stack, 0xfffffffffffffe50, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 777: (stack, 0xfffffffffffffe58, 8) INDIRECT (stack, 0xfffffffffffffe58, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 778: (stack, 0xfffffffffffffe60, 8) INDIRECT (stack, 0xfffffffffffffe60, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 779: (stack, 0xfffffffffffffe68, 8) INDIRECT (stack, 0xfffffffffffffe68, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 780: (stack, 0xfffffffffffffe70, 4) INDIRECT (stack, 0xfffffffffffffe70, 4) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 781: (stack, 0xfffffffffffffe78, 4) INDIRECT (stack, 0xfffffffffffffe78, 4) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 782: (stack, 0xfffffffffffffe80, 8) INDIRECT (stack, 0xfffffffffffffe80, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 783: (stack, 0xffffffffffffff88, 8) INDIRECT (stack, 0xffffffffffffff88, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 784: (ram, 0x1210e8, 8) INDIRECT (ram, 0x1210e8, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 785: (ram, 0x1211a0, 8) INDIRECT (ram, 0x1211a0, 8) , (const, 0x2fc, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [MNN_RULE_SCAN] Checking P-code at index 786: (unique, 0x10000ed6, 8) COPY (stack, 0xfffffffffffffde8, 8)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [MNN_RULE] Found sink use via COPY operation at address 001020c8: (unique, 0x10000ed6, 8) COPY (stack, 0xfffffffffffffde8, 8). Tainting its output: __src(UniquePcode[0x10000ed6])  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [MNN_RULE] Added __src(UniquePcode[0x10000ed6]) to current taint set.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [RULE copyToHostTensor] Detected call to 'copyToHostTensor' with tainted arguments.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [RULE copyToHostTensor] Call has no return value to taint.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [RULE_MEMMOVE] Detected call with tainted source: __src(UniquePcode[0x10000ed6])  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [RULE_MEMMOVE] Propagating taint to destination: __dest(x0)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001020f4] Taint propagated from __dest(x0) to local_2c0(StackDirect[Stack[-0x2c0]]) via COPY.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001020f8] Taint propagated from __dest(x0) to UNNAMED(s0) via LOAD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001020f8] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x7c800]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102100] Taint propagated from UNNAMED(UniquePcode[0x7c800]) to UNNAMED(s5) via LOAD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102100] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x7b80]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102100] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x7c800]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102108] Taint propagated from UNNAMED(s0) to UNNAMED(UniquePcode[0x100004ae]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010210c] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102110] Taint propagated from UNNAMED(UniquePcode[0x7b80]) to UNNAMED(s4) via LOAD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102110] Taint propagated from UNNAMED(UniquePcode[0x7c800]) to UNNAMED(s3) via LOAD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102110] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x7b80]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102110] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x7c800]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102118] Taint propagated from UNNAMED(UniquePcode[0x7b80]) to UNNAMED(s2) via LOAD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102118] Taint propagated from UNNAMED(UniquePcode[0x7c800]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102118] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x7b80]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102118] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x7c800]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100004ae, 1) FLOAT_LESSEQUAL (register, 0x50e0, 4) , (register, 0x5000, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 0010211c] Taint reached CBRANCH. Operands: ['UNNAMED(s7)', 'UNNAMED(s0)'].   
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010211c] Taint propagated from UNNAMED(s0) to fVar33(s0) via COPY.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102120] Taint propagated from UNNAMED(UniquePcode[0x6400]) to UNNAMED(s0) via LOAD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102120] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010212c] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x100004c6]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100004c6, 1) FLOAT_LESSEQUAL (register, 0x50c0, 4) , (register, 0x50e0, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102130] Taint reached CBRANCH. Operands: ['UNNAMED(s6)', 'fVar33(s0)'].   
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102130] Taint propagated from fVar33(s0) to fVar42(s8) via COPY.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102134] Taint propagated from UNNAMED(s5) to UNNAMED(UniquePcode[0x100004ca]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100004ca, 1) FLOAT_LESSEQUAL (register, 0x50a0, 4) , (register, 0x50c0, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102138] Taint reached CBRANCH. Operands: ['UNNAMED(s5)', 'fVar42(s8)'].   
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010213c] Taint propagated from UNNAMED(s4) to UNNAMED(UniquePcode[0x100004ce]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100004ce, 1) FLOAT_LESSEQUAL (register, 0x5080, 4) , (register, 0x50a0, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102140] Taint reached CBRANCH. Operands: ['UNNAMED(s4)', 'fVar33(s0)'].   
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102144] Taint propagated from UNNAMED(s3) to UNNAMED(UniquePcode[0x100004d2]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100004d2, 1) FLOAT_LESSEQUAL (register, 0x5060, 4) , (register, 0x5080, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102148] Taint reached CBRANCH. Operands: ['UNNAMED(s3)', 'fVar42(s8)'].   
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010214c] Taint propagated from UNNAMED(s2) to UNNAMED(UniquePcode[0x100004e2]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100004e2, 1) FLOAT_LESSEQUAL (register, 0x5040, 4) , (register, 0x5060, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102150] Taint reached CBRANCH. Operands: ['UNNAMED(s2)', 'fVar33(s0)'].   
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102154] Taint propagated from UNNAMED(s1) to UNNAMED(UniquePcode[0x100004f2]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100004f2, 1) FLOAT_LESSEQUAL (register, 0x5020, 4) , (register, 0x5040, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102158] Taint reached CBRANCH. Operands: ['UNNAMED(s1)', 'fVar42(s8)'].   
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010215c] Taint propagated from UNNAMED(s0) to UNNAMED(UniquePcode[0x10000502]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x10000502, 1) FLOAT_LESSEQUAL (register, 0x5000, 4) , (unique, 0x1000098f, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102160] Taint reached CBRANCH. Operands: ['UNNAMED(s0)', 'fVar33(s0)'].   
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102168] Taint propagated from fVar42(s8) to UNNAMED(UniquePcode[0x2080]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x2080, 1) FLOAT_LESSEQUAL (register, 0x5120, 4) , (register, 0x5000, 4)  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102168] Taint reached CBRANCH. Operands: ['UNNAMED(s9)', 'fVar42(s8)'].   
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102180] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x7e400]) via PTRADD.  
+2025-07-16 17:34:17 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102184] Taint propagated from fVar33(s0) to UNNAMED(s0) via FLOAT_SUB.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> \n>>> Analyzing function: expf (Depth: 1) at 00101bc0 (Originating from: getSessionOutput) with initial taints: __x(s0)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: Starting taint analysis from the beginning of function expf.  
+2025-07-16 17:34:18 WARN  (DecompileCallback) Decompiling 00121118, pcode error at 00121118: Unable to disassemble EXTERNAL block location: 00121118  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> \n>>> Analyzing function: expf (Depth: 2) at 00121118 (Originating from: getSessionOutput) with initial taints: __x(s0)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: Starting taint analysis from the beginning of function expf.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> <<< Finished analyzing function: expf.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> <<< Finished analyzing function: expf.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (unique, 0x11f80, 8) , (const, 0xa, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 0010219c because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021a4] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x100012bd]) via CAST.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000, 1) INT_LESS (unique, 0x100012cd, 8) , (const, 0x9, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001021ac because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021bc] Taint propagated from fVar42(s8) to UNNAMED(s0) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021bc] Taint propagated from fVar42(s8) to UNNAMED(Register) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021bc] Taint propagated from fVar42(s8) to UNNAMED(Register) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021bc] Taint propagated from fVar42(s8) to UNNAMED(Register) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021c0] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x10000a5f]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021c0] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x10000a67]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021c0] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x10000a6f]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021c8] Taint propagated from fVar42(s8) to UNNAMED(s0) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021c8] Taint propagated from fVar42(s8) to UNNAMED(Register) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021c8] Taint propagated from fVar42(s8) to UNNAMED(Register) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021c8] Taint propagated from fVar42(s8) to UNNAMED(Register) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021cc] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6600]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021cc] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x10000a77]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021cc] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x10000a7f]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021cc] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x10000a87]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021d4] Taint propagated from fVar42(s8) to UNNAMED(s0) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021d4] Taint propagated from fVar42(s8) to UNNAMED(Register) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021d4] Taint propagated from UNNAMED(Register) to UNNAMED(d0) via PIECE.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021d8] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6500]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021d8] Taint propagated from UNNAMED(UniquePcode[0x6500]) to UNNAMED(UniquePcode[0x100012ed]) via CAST.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021e4] Taint propagated from UNNAMED(UniquePcode[0x7c800]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021e4] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x7c800]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021ec] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x1400]) via FLOAT_LESS.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (register, 0x5000, 4) , (register, 0x5020, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001021ec] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UNNAMED(s1)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021ec] Taint propagated from __dest(x0) to pfVar19(x0) via COPY.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021f4] Taint propagated from UNNAMED(UniquePcode[0x6400]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021f4] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001021f8] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x10000576]) via FLOAT_LESS.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x10000576, 1) FLOAT_LESS (unique, 0x1000099f, 4) , (register, 0x5020, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001021fc] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UNNAMED(s1)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102200] Taint propagated from UNNAMED(UniquePcode[0x6400]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102200] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102208] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x1400]) via FLOAT_LESS.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (unique, 0x100009d5, 4) , (register, 0x5020, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102208] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UNNAMED(s1)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010220c] Taint propagated from UNNAMED(UniquePcode[0x6400]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010220c] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102210] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x10000582]) via FLOAT_LESS.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x10000582, 1) FLOAT_LESS (unique, 0x100009d9, 4) , (register, 0x5020, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102214] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UNNAMED(s1)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102218] Taint propagated from UNNAMED(UniquePcode[0x6400]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102218] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102220] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x1400]) via FLOAT_LESS.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (unique, 0x100009dd, 4) , (register, 0x5020, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102220] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UNNAMED(s1)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102224] Taint propagated from UNNAMED(UniquePcode[0x6400]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102224] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102228] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x1000058e]) via FLOAT_LESS.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000058e, 1) FLOAT_LESS (unique, 0x100009e1, 4) , (register, 0x5020, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 0010222c] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UNNAMED(s1)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102230] Taint propagated from UNNAMED(UniquePcode[0x6400]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102230] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102238] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x1400]) via FLOAT_LESS.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (unique, 0x100009e5, 4) , (register, 0x5020, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102238] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UNNAMED(s1)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010223c] Taint propagated from UNNAMED(UniquePcode[0x6400]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010223c] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102244] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x1400]) via FLOAT_LESS.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (unique, 0x100009e9, 4) , (register, 0x5020, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102244] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UNNAMED(s1)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102248] Taint propagated from UNNAMED(UniquePcode[0x6400]) to UNNAMED(s1) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102248] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x6400]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102250] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x1400]) via FLOAT_LESS.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESS (unique, 0x100009ed, 4) , (register, 0x5020, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102250] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UNNAMED(s1)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102254] Taint propagated from pfVar19(x0) to UNNAMED(UniquePcode[0x100012fd]) via CAST.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102254] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x10001305]) via CAST.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (register, 0x4000, 8) , (const, 0x1c, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 0010225c because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102270] Taint propagated from fVar33(s0) to UNNAMED(UniquePcode[0x1400]) via FLOAT_LESSEQUAL.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1400, 1) FLOAT_LESSEQUAL (unique, 0x100009f1, 4) , (const, 0x3f4ccccd, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 00102270] Taint reached CBRANCH. Operands: ['fVar33(s0)', 'UnnamedHighVar(Constant: 0x3f4ccccd)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (register, 0x4008, 8) , (unique, 0x12480, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 0010235c because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (stack, 0xffffffffffffff34, 4) , (unique, 0x12580, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102364 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x100010d7, 4) , (unique, 0x100010db, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102380 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x100010f4, 4) , (unique, 0x100010f8, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001023a0 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x10001111, 4) , (unique, 0x10001115, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001023c0 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x1000112e, 4) , (unique, 0x10001132, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001023e0 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x1000114b, 4) , (unique, 0x1000114f, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102400 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x10001168, 4) , (unique, 0x1000116c, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102420 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x10001185, 4) , (unique, 0x10001189, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102440 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x100011a2, 4) , (unique, 0x100011a6, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102460 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x100011bf, 4) , (unique, 0x100011c3, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102484 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x100011dc, 4) , (unique, 0x100011e0, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001024a8 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x100011f9, 4) , (unique, 0x100011fd, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001024cc because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x10001216, 4) , (unique, 0x1000121a, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001024f0 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x11b80, 4) , (unique, 0x10001233, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102510 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1580, 1) INT_SLESS (unique, 0x11b80, 4) , (unique, 0x10001248, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102530 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102588] Taint propagated from UNNAMED(UniquePcode[0x6500]) to plVar31(x22) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010258c] Taint propagated from plVar31(x22) to UNNAMED(UniquePcode[0x18f80]) via INT_EQUAL.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18f80, 1) INT_EQUAL (register, 0x40b0, 8) , (const, 0x0, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 0010258c from instruction 'cbz'.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102590] Taint propagated from plVar31(x22) to UNNAMED(UniquePcode[0x6200]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102590] Taint propagated from UNNAMED(UniquePcode[0x6200]) to UNNAMED(UniquePcode[0x10001365]) via CAST.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18f00, 1) INT_EQUAL (unique, 0x25200, 1) , (const, 0x0, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102594 from instruction 'cbz'.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (stack, 0xffffffffffffff88, 8) , (ram, 0x1211a0, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 00102600 because it appears to be a stack canary check.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 0010261c] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0x11f80]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102634] Taint propagated from plVar31(x22) to UNNAMED(x2) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102640] Taint propagated from UNNAMED(x2) to UNNAMED(UniquePcode[0x1000136d]) via INT_ADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102640] Taint propagated from UNNAMED(UniquePcode[0x6500]) to UNNAMED(x2) via LOAD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 00102640] Taint propagated from UNNAMED(UniquePcode[0x1000136d]) to UNNAMED(UniquePcode[0x6500]) via CAST.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> WARN: [main @ 00102644] Tainted argument #0 (plVar31(x22)) passed to unresolved call (target: UNNAMED(x2)). (cannot explore target). Cannot recurse or explore further.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001026b8] Taint propagated from fVar42(s8) to UNNAMED(s0) via FLOAT_DIV.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [main @ 001026bc] Taint propagated from __dest(x0) to UNNAMED(UniquePcode[0xe3c00]) via PTRADD.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (unique, 0x11f80, 8) , (const, 0xa, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [FILTER] Skipping branch at 001026c8 because it is preceded by a 'cmp' instruction.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_EQUAL (unique, 0x3e480, 8) , (const, 0x0, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: [main @ 001026f0] Taint reached CBRANCH. Operands: ['UNNAMED(UniquePcode[0x3e480])', 'UnnamedHighVar(Constant: 0x0)'].   
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> <<< Finished analyzing function: main.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Stage 1 Complete. Checking for pending multi-stage analysis tasks... ---  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> --- No multi-stage analysis tasks were queued. ---  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> 
+--- Taint Analysis Run Complete ---  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> \n--- All Detected Tainted Value Usages (Interprocedural) ---  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #1:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001020f4  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CALL (ram, 0x101a10, 8) , (register, 0x4000, 8) , (unique, 0x10000ed6, 8) , (const, 0x28, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          TAINT_PROPAGATED_BY_RULE  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   __dest(x0)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Taint propagated from source (__src(UniquePcode[0x10000ed6])) to destination (__dest(x0)) by memmove rule.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #2:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 0010211c  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102120, 1) , (unique, 0x100004ae, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100004ae])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #3:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102130  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102134, 1) , (unique, 0x100004c6, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100004c6])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #4:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102138  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10213c, 1) , (unique, 0x100004ca, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100004ca])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #5:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102140  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102144, 1) , (unique, 0x100004ce, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100004ce])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #6:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102148  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10214c, 1) , (unique, 0x100004d2, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100004d2])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #7:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102150  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102154, 1) , (unique, 0x100004e2, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100004e2])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #8:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102158  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10215c, 1) , (unique, 0x100004f2, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x100004f2])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #9:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102160  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102164, 1) , (unique, 0x10000502, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x10000502])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #10:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102168  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10216c, 1) , (unique, 0x2080, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x2080])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #11:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102188  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:            (register, 0x5000, 4) CALL (ram, 0x101bc0, 8) , (register, 0x5000, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Recursive call to expf (CALL) with taints: __x(s0).  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #12:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   expf at 00101bc0  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00101bcc  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:            (register, 0x5000, 4) CALL (ram, 0x121118, 8) , (register, 0x5000, 4)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          TAINTED_ARG_TO_CALL_RECURSION  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Recursive call to expf (CALL) with taints: __x(s0).  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #13:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001021ec  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102618, 1) , (unique, 0x1400, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #14:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001021fc  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10265c, 1) , (unique, 0x10000576, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x10000576])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #15:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102208  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x10268c, 1) , (unique, 0x1400, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #16:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102214  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102680, 1) , (unique, 0x10000582, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x10000582])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #17:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102220  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102674, 1) , (unique, 0x1400, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #18:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 0010222c  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102668, 1) , (unique, 0x1000058e, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1000058e])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #19:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102238  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1026a4, 1) , (unique, 0x1400, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #20:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102244  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102698, 1) , (unique, 0x1400, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #21:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102250  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102650, 1) , (unique, 0x1400, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #22:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102270  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1026d0, 1) , (unique, 0x1400, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(UniquePcode[0x1400])  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #23:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 00102644  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CALLIND (register, 0x4010, 8) , (register, 0x40b0, 8) , (const, 0xa, 8)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          TAINTED_ARG_TO_UNRESOLVED_CALL  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   plVar31(x22)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted argument #0 (plVar31(x22)) passed to unresolved call (target: UNNAMED(x2)). (cannot explore target)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Usage #24:  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Originating Lib Call: getSessionOutput  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Found In Function:   main at 00101d00  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>   Instruction Address: 001026f0  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x102708, 1) , (register, 0x108, 1)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Tainted Component:   UNNAMED(tmpZR)  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py>     Details:             Tainted condition for branch.  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> ----------------------------------------  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> INFO: TAINT_ANALYSIS_JSON_OUTPUT env var found. Saving results to: /Users/chenkexin/Desktop/kk/test_taint/results/mnist_mnn_taint_analysis_results.json  
+2025-07-16 17:34:18 INFO  (GhidraScript) mnn_analyzer.py> Taint analysis results saved to: /Users/chenkexin/Desktop/kk/test_taint/results/mnist_mnn_taint_analysis_results.json  
+2025-07-16 17:34:19 INFO  (GhidraScript) mnn_analyzer.py> SUCCESS: Hook configuration saved to: /Users/chenkexin/Desktop/kk/test_taint/results/mnist_mnn_hook_config.json  
+2025-07-16 17:34:19 INFO  (GhidraScript) mnn_analyzer.py> MNN Taint Analyzer finished.  
+2025-07-16 17:34:19 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///Users/chenkexin/Desktop/kk/test_taint/assets/mnist_mnn  
+2025-07-16 17:34:19 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///Users/chenkexin/Desktop/kk/test_taint/assets/mnist_mnn  
+2025-07-16 17:34:19 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /mnist_mnn (HeadlessTaintAnalysis:/mnist_mnn)  
+2025-07-16 17:34:19 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
+2025-07-16 17:34:19 DEBUG (DefaultProjectData) Closing ProjectData: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/tmp.ZmDi6YJVqc/HeadlessTaintAnalysis.rep  
+2025-07-16 17:34:19 DEBUG (DefaultProjectData) Disposing ProjectData: /var/folders/kn/fw_2jn054bq5f73czrm_91nc0000gn/T/tmp.ZmDi6YJVqc/HeadlessTaintAnalysis.rep  

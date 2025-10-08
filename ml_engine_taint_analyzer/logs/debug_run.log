@@ -1,0 +1,391 @@
+openjdk version "19.0.1" 2022-10-18
+OpenJDK Runtime Environment (build 19.0.1+10-21)
+OpenJDK 64-Bit Server VM (build 19.0.1+10-21, mixed mode)
+Module manifest file error on line 2 of file: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/Extensions/GhidraMCP/Module.manifest
+	-> Invalid line encountered: GHIDRA_MODULE_NAME=GhidraMCP
+Module manifest file error on line 3 of file: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/Extensions/GhidraMCP/Module.manifest
+	-> Invalid line encountered: GHIDRA_MODULE_DESC=An HTTP server plugin for Ghidra
+Module manifest file error on line 2 of file: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/Extensions/GhidraMCP/Module.manifest
+	-> Invalid line encountered: GHIDRA_MODULE_NAME=GhidraMCP
+Module manifest file error on line 3 of file: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/Extensions/GhidraMCP/Module.manifest
+	-> Invalid line encountered: GHIDRA_MODULE_DESC=An HTTP server plugin for Ghidra
+INFO  Using log config file: jar:file:/Applications/ghidra_11.0.3_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /Users/chenkexin/.ghidra/.ghidra_11.0.3_PUBLIC/preferences (Preferences)  
+INFO  Loading previous preferences: /Users/chenkexin/.ghidra/.ghidra_10.4_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (1508 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (SSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (ApplicationTrustManagerFactory)  
+INFO  HEADLESS Script Paths:
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Python/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-frida/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /Users/chenkexin/ghidra_scripts
+    /Users/chenkexin/Desktop/kk/test_taint
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-agent-dbgmodel-traceloader/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /Applications/ghidra_11.0.3_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Opening existing project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/libInspireFace.so (HeadlessAnalyzer)  
+INFO  Opening project: /Users/chenkexin/Desktop/kk/test_taint/ghidra_projects/libInspireFace.so (HeadlessProject)  
+INFO  REPORT: Processing project file: /libInspireFace.so (HeadlessAnalyzer)  
+INFO  SCRIPT: /Users/chenkexin/Desktop/kk/test_taint/address_analyzer.py (HeadlessAnalyzer)  
+INFO  address_analyzer.py> INFO: Starting analysis from address: 001786dc (GhidraScript)  
+INFO  address_analyzer.py> INFO: Found call operation: (unique, 0x10000514, 4) CALL (ram, 0x18c6f8, 8) , (register, 0x4000, 8) , (unique, 0x11f80, 8) (GhidraScript)  
+INFO  address_analyzer.py> INFO: Tainting return value: UNNAMED(UniquePcode[0x10000514]) (GhidraScript)  
+INFO  address_analyzer.py> INFO: Tainting argument #0: UNNAMED(x0) (GhidraScript)  
+INFO  address_analyzer.py> INFO: Tainting argument #1: UNNAMED(UniquePcode[0x11f80]) (GhidraScript)  
+INFO  address_analyzer.py> 
+--- Initiating Taint Analysis for: Process (starting after call at 001786dc) --- (GhidraScript)  
+INFO  address_analyzer.py> \n>>> Analyzing function: Process (Depth: 0) at 00178438 (Originating from: address_001786dc) with initial taints: UNNAMED(UniquePcode[0x10000514]), UNNAMED(x0), UNNAMED(UniquePcode[0x11f80]) (GhidraScript)  
+INFO  address_analyzer.py> \nDEBUG: Reached specified start PcodeOp (unique, 0x100004fc, 4) CALL (ram, 0x18c6f8, 8) , (register, 0x4000, 8) , (unique, 0x11f80, 8) at 001786dc in Process, subsequent ops will be processed. (GhidraScript)  
+INFO  address_analyzer.py> INFO: [RULE address_analyzer] Ignoring initial call to prevent recursion: (unique, 0x100004fc, 4) CALL (ram, 0x18c6f8, 8) , (register, 0x4000, 8) , (unique, 0x11f80, 8) (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786f4] Processing P-Code Op: (unique, 0x2d00, 1) FLOAT_LESS (const, 0x3f6147ae, 4) , (register, 0x5000, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: UNNAMED(UniquePcode[0x2d00]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: UnnamedHighVar(Constant: 0x3f6147ae) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: fVar13(s0) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786f8] Processing P-Code Op: (unique, 0x6400, 8) PTRADD (register, 0x4010, 8) , (const, 0xec, 8) , (const, 0x1, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: UNNAMED(UniquePcode[0x6400]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: param_2(x2) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: UnnamedHighVar(Constant: 0xec) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #2: UnnamedHighVar(Constant: 0x1) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786f8] Processing P-Code Op:  ---  STORE (const, 0x1b1, 4) , (unique, 0x10000500, 8) , (register, 0x4008, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> No Output VN (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: Constant: 0x1b1 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: UNNAMED(UniquePcode[0x10000500]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #2: UNNAMED(w1) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786f8] Processing P-Code Op: (register, 0x4008, 4) INT_ZEXT (unique, 0x2d00, 1) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: UNNAMED(w1) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: UNNAMED(UniquePcode[0x2d00]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786f8] Processing P-Code Op: (ram, 0x5f8190, 8) INDIRECT (ram, 0x5f8190, 8) , (const, 0x22f, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: __stack_chk_guard(GlobalMem[ram:005f8190]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: __stack_chk_guard(GlobalMem[ram:005f8190]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x22f | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786f8] Processing P-Code Op: (unique, 0x10000500, 8) CAST (unique, 0x6400, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: UNNAMED(UniquePcode[0x10000500]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: UNNAMED(UniquePcode[0x6400]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786fc] Processing P-Code Op:  ---  CALL (ram, 0x149c60, 8) , (unique, 0x11f80, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> No Output VN (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: mem_vn:ram:00149c60 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: UNNAMED(UniquePcode[0x11f80]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786fc] Processing P-Code Op: (stack, 0xffffffffffffff90, 8) INDIRECT (stack, 0xffffffffffffff90, 8) , (const, 0x231, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_70(StackDirect[Stack[-0x70]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_70(StackDirect[Stack[-0x70]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x231 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786fc] Processing P-Code Op: (stack, 0xffffffffffffff98, 8) INDIRECT (stack, 0xffffffffffffff98, 8) , (const, 0x231, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: pPStack_68(StackDirect[Stack[-0x68]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: pPStack_68(StackDirect[Stack[-0x68]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x231 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786fc] Processing P-Code Op: (stack, 0xffffffffffffffa0, 8) INDIRECT (stack, 0xffffffffffffffa0, 8) , (const, 0x231, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_60(StackDirect[Stack[-0x60]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_60(StackDirect[Stack[-0x60]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x231 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786fc] Processing P-Code Op: (stack, 0xffffffffffffffb0, 8) INDIRECT (stack, 0xffffffffffffffb0, 8) , (const, 0x231, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_50(StackDirect[Stack[-0x50]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_50(StackDirect[Stack[-0x50]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x231 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786fc] Processing P-Code Op: (stack, 0xffffffffffffffb8, 8) INDIRECT (stack, 0xffffffffffffffb8, 8) , (const, 0x231, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_48(StackDirect[Stack[-0x48]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_48(StackDirect[Stack[-0x48]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x231 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786fc] Processing P-Code Op: (stack, 0xffffffffffffffc0, 8) INDIRECT (stack, 0xffffffffffffffc0, 8) , (const, 0x231, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_40(StackDirect[Stack[-0x40]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_40(StackDirect[Stack[-0x40]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x231 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786fc] Processing P-Code Op: (stack, 0xfffffffffffffff8, 8) INDIRECT (stack, 0xfffffffffffffff8, 8) , (const, 0x231, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_8(StackDirect[Stack[-0x8]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_8(StackDirect[Stack[-0x8]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x231 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 001786fc] Processing P-Code Op: (ram, 0x5f8190, 8) INDIRECT (ram, 0x5f8190, 8) , (const, 0x231, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: __stack_chk_guard(GlobalMem[ram:005f8190]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: __stack_chk_guard(GlobalMem[ram:005f8190]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x231 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178704] Processing P-Code Op:  ---  CALL (ram, 0x1476a0, 8) , (unique, 0x11f80, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> No Output VN (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: mem_vn:ram:001476a0 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: UNNAMED(UniquePcode[0x11f80]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178704] Processing P-Code Op: (stack, 0xffffffffffffff90, 8) INDIRECT (stack, 0xffffffffffffff90, 8) , (const, 0x234, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_70(StackDirect[Stack[-0x70]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_70(StackDirect[Stack[-0x70]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x234 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178704] Processing P-Code Op: (stack, 0xffffffffffffff98, 8) INDIRECT (stack, 0xffffffffffffff98, 8) , (const, 0x234, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: pPStack_68(StackDirect[Stack[-0x68]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: pPStack_68(StackDirect[Stack[-0x68]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x234 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178704] Processing P-Code Op: (stack, 0xffffffffffffffa0, 8) INDIRECT (stack, 0xffffffffffffffa0, 8) , (const, 0x234, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_60(StackDirect[Stack[-0x60]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_60(StackDirect[Stack[-0x60]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x234 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178704] Processing P-Code Op: (stack, 0xffffffffffffffb0, 8) INDIRECT (stack, 0xffffffffffffffb0, 8) , (const, 0x234, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_50(StackDirect[Stack[-0x50]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_50(StackDirect[Stack[-0x50]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x234 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178704] Processing P-Code Op: (stack, 0xffffffffffffffb8, 8) INDIRECT (stack, 0xffffffffffffffb8, 8) , (const, 0x234, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_48(StackDirect[Stack[-0x48]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_48(StackDirect[Stack[-0x48]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x234 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178704] Processing P-Code Op: (stack, 0xffffffffffffffc0, 8) INDIRECT (stack, 0xffffffffffffffc0, 8) , (const, 0x234, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_40(StackDirect[Stack[-0x40]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_40(StackDirect[Stack[-0x40]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x234 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178704] Processing P-Code Op: (stack, 0xfffffffffffffff8, 8) INDIRECT (stack, 0xfffffffffffffff8, 8) , (const, 0x234, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_8(StackDirect[Stack[-0x8]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_8(StackDirect[Stack[-0x8]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x234 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178704] Processing P-Code Op: (ram, 0x5f8190, 8) INDIRECT (ram, 0x5f8190, 8) , (const, 0x234, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: __stack_chk_guard(GlobalMem[ram:005f8190]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: __stack_chk_guard(GlobalMem[ram:005f8190]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x234 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017870c] Processing P-Code Op:  ---  CALL (ram, 0x1476a0, 8) , (unique, 0x11f80, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> No Output VN (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: mem_vn:ram:001476a0 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: UNNAMED(UniquePcode[0x11f80]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017870c] Processing P-Code Op: (stack, 0xffffffffffffff90, 8) INDIRECT (stack, 0xffffffffffffff90, 8) , (const, 0x237, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_70(StackDirect[Stack[-0x70]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_70(StackDirect[Stack[-0x70]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x237 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017870c] Processing P-Code Op: (stack, 0xffffffffffffff98, 8) INDIRECT (stack, 0xffffffffffffff98, 8) , (const, 0x237, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: pPStack_68(StackDirect[Stack[-0x68]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: pPStack_68(StackDirect[Stack[-0x68]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x237 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017870c] Processing P-Code Op: (stack, 0xffffffffffffffa0, 8) INDIRECT (stack, 0xffffffffffffffa0, 8) , (const, 0x237, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_60(StackDirect[Stack[-0x60]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_60(StackDirect[Stack[-0x60]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x237 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017870c] Processing P-Code Op: (stack, 0xffffffffffffffb0, 8) INDIRECT (stack, 0xffffffffffffffb0, 8) , (const, 0x237, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_50(StackDirect[Stack[-0x50]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_50(StackDirect[Stack[-0x50]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x237 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017870c] Processing P-Code Op: (stack, 0xffffffffffffffb8, 8) INDIRECT (stack, 0xffffffffffffffb8, 8) , (const, 0x237, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_48(StackDirect[Stack[-0x48]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_48(StackDirect[Stack[-0x48]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x237 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017870c] Processing P-Code Op: (stack, 0xffffffffffffffc0, 8) INDIRECT (stack, 0xffffffffffffffc0, 8) , (const, 0x237, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_40(StackDirect[Stack[-0x40]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_40(StackDirect[Stack[-0x40]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x237 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017870c] Processing P-Code Op: (stack, 0xfffffffffffffff8, 8) INDIRECT (stack, 0xfffffffffffffff8, 8) , (const, 0x237, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_8(StackDirect[Stack[-0x8]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_8(StackDirect[Stack[-0x8]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x237 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017870c] Processing P-Code Op: (ram, 0x5f8190, 8) INDIRECT (ram, 0x5f8190, 8) , (const, 0x237, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: __stack_chk_guard(GlobalMem[ram:005f8190]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: __stack_chk_guard(GlobalMem[ram:005f8190]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x237 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178714] Processing P-Code Op:  ---  CALL (ram, 0x149c60, 8) , (unique, 0x11f80, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> No Output VN (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: mem_vn:ram:00149c60 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: UNNAMED(UniquePcode[0x11f80]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178714] Processing P-Code Op: (stack, 0xffffffffffffff90, 8) INDIRECT (stack, 0xffffffffffffff90, 8) , (const, 0x23a, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_70(StackDirect[Stack[-0x70]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_70(StackDirect[Stack[-0x70]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23a | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178714] Processing P-Code Op: (stack, 0xffffffffffffff98, 8) INDIRECT (stack, 0xffffffffffffff98, 8) , (const, 0x23a, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: pPStack_68(StackDirect[Stack[-0x68]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: pPStack_68(StackDirect[Stack[-0x68]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23a | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178714] Processing P-Code Op: (stack, 0xffffffffffffffa0, 8) INDIRECT (stack, 0xffffffffffffffa0, 8) , (const, 0x23a, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_60(StackDirect[Stack[-0x60]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_60(StackDirect[Stack[-0x60]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23a | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178714] Processing P-Code Op: (stack, 0xffffffffffffffb0, 8) INDIRECT (stack, 0xffffffffffffffb0, 8) , (const, 0x23a, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_50(StackDirect[Stack[-0x50]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_50(StackDirect[Stack[-0x50]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23a | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178714] Processing P-Code Op: (stack, 0xffffffffffffffb8, 8) INDIRECT (stack, 0xffffffffffffffb8, 8) , (const, 0x23a, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_48(StackDirect[Stack[-0x48]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_48(StackDirect[Stack[-0x48]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23a | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178714] Processing P-Code Op: (stack, 0xffffffffffffffc0, 8) INDIRECT (stack, 0xffffffffffffffc0, 8) , (const, 0x23a, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_40(StackDirect[Stack[-0x40]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_40(StackDirect[Stack[-0x40]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23a | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178714] Processing P-Code Op: (stack, 0xfffffffffffffff8, 8) INDIRECT (stack, 0xfffffffffffffff8, 8) , (const, 0x23a, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_8(StackDirect[Stack[-0x8]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_8(StackDirect[Stack[-0x8]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23a | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178714] Processing P-Code Op: (ram, 0x5f8190, 8) INDIRECT (ram, 0x5f8190, 8) , (const, 0x23a, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: __stack_chk_guard(GlobalMem[ram:005f8190]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: __stack_chk_guard(GlobalMem[ram:005f8190]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23a | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178718] Processing P-Code Op: (stack, 0xffffffffffffff90, 8) MULTIEQUAL (stack, 0xffffffffffffff90, 8) , (stack, 0xffffffffffffff90, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_70(StackDirect[Stack[-0x70]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_70(StackDirect[Stack[-0x70]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: local_70(StackDirect[Stack[-0x70]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178718] Processing P-Code Op: (stack, 0xffffffffffffff98, 8) MULTIEQUAL (stack, 0xffffffffffffff98, 8) , (stack, 0xffffffffffffff98, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: pPStack_68(StackDirect[Stack[-0x68]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: pPStack_68(StackDirect[Stack[-0x68]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: pPStack_68(StackDirect[Stack[-0x68]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178718] Processing P-Code Op: (stack, 0xffffffffffffffa0, 8) MULTIEQUAL (stack, 0xffffffffffffffa0, 8) , (stack, 0xffffffffffffffa0, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_60(StackDirect[Stack[-0x60]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_60(StackDirect[Stack[-0x60]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: local_60(StackDirect[Stack[-0x60]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178718] Processing P-Code Op: (stack, 0xffffffffffffffb0, 8) MULTIEQUAL (stack, 0xffffffffffffffb0, 8) , (stack, 0xffffffffffffffb0, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_50(StackDirect[Stack[-0x50]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_50(StackDirect[Stack[-0x50]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: local_50(StackDirect[Stack[-0x50]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178718] Processing P-Code Op: (stack, 0xffffffffffffffb8, 8) MULTIEQUAL (stack, 0xffffffffffffffb8, 8) , (stack, 0xffffffffffffffb8, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_48(StackDirect[Stack[-0x48]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_48(StackDirect[Stack[-0x48]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: local_48(StackDirect[Stack[-0x48]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178718] Processing P-Code Op: (stack, 0xffffffffffffffc0, 8) MULTIEQUAL (stack, 0xffffffffffffffc0, 8) , (stack, 0xffffffffffffffc0, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_40(StackDirect[Stack[-0x40]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_40(StackDirect[Stack[-0x40]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: local_40(StackDirect[Stack[-0x40]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178718] Processing P-Code Op: (stack, 0xfffffffffffffff8, 8) MULTIEQUAL (stack, 0xfffffffffffffff8, 8) , (stack, 0xfffffffffffffff8, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_8(StackDirect[Stack[-0x8]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_8(StackDirect[Stack[-0x8]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: local_8(StackDirect[Stack[-0x8]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 00178718] Processing P-Code Op: (ram, 0x5f8190, 8) MULTIEQUAL (ram, 0x5f8190, 8) , (ram, 0x5f8190, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: __stack_chk_guard(GlobalMem[ram:005f8190]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: __stack_chk_guard(GlobalMem[ram:005f8190]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: __stack_chk_guard(GlobalMem[ram:005f8190]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017871c] Processing P-Code Op:  ---  CALL (ram, 0x149c60, 8) , (unique, 0x11f80, 8) (GhidraScript)  
+INFO  address_analyzer.py>   -> No Output VN (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: mem_vn:ram:00149c60 | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: UNNAMED(UniquePcode[0x11f80]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017871c] Processing P-Code Op: (stack, 0xffffffffffffff90, 8) INDIRECT (stack, 0xffffffffffffff90, 8) , (const, 0x23d, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_70(StackDirect[Stack[-0x70]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_70(StackDirect[Stack[-0x70]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23d | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017871c] Processing P-Code Op: (stack, 0xffffffffffffff98, 8) INDIRECT (stack, 0xffffffffffffff98, 8) , (const, 0x23d, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: pPStack_68(StackDirect[Stack[-0x68]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: pPStack_68(StackDirect[Stack[-0x68]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23d | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017871c] Processing P-Code Op: (stack, 0xffffffffffffffa0, 8) INDIRECT (stack, 0xffffffffffffffa0, 8) , (const, 0x23d, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_60(StackDirect[Stack[-0x60]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_60(StackDirect[Stack[-0x60]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23d | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017871c] Processing P-Code Op: (stack, 0xffffffffffffffb0, 8) INDIRECT (stack, 0xffffffffffffffb0, 8) , (const, 0x23d, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_50(StackDirect[Stack[-0x50]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_50(StackDirect[Stack[-0x50]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23d | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017871c] Processing P-Code Op: (stack, 0xffffffffffffffb8, 8) INDIRECT (stack, 0xffffffffffffffb8, 8) , (const, 0x23d, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_48(StackDirect[Stack[-0x48]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_48(StackDirect[Stack[-0x48]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23d | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017871c] Processing P-Code Op: (stack, 0xffffffffffffffc0, 8) INDIRECT (stack, 0xffffffffffffffc0, 8) , (const, 0x23d, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_40(StackDirect[Stack[-0x40]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_40(StackDirect[Stack[-0x40]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23d | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017871c] Processing P-Code Op: (stack, 0xfffffffffffffff8, 8) INDIRECT (stack, 0xfffffffffffffff8, 8) , (const, 0x23d, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: local_8(StackDirect[Stack[-0x8]]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: local_8(StackDirect[Stack[-0x8]]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23d | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> 
+VERIFY_DEBUG: [Process @ 0017871c] Processing P-Code Op: (ram, 0x5f8190, 8) INDIRECT (ram, 0x5f8190, 8) , (const, 0x23d, 4) (GhidraScript)  
+INFO  address_analyzer.py>   -> Output VN: __stack_chk_guard(GlobalMem[ram:005f8190]) | Has HighVar: YES (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #0: __stack_chk_guard(GlobalMem[ram:005f8190]) | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py>   -> Input #1: Constant: 0x23d | Tainted: NO (GhidraScript)  
+INFO  address_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x1000027b, 1) INT_NOTEQUAL (unique, 0x10000294, 8) , (unique, 0x10000328, 8) (GhidraScript)  
+INFO  address_analyzer.py> INFO: [FILTER] Skipping branch at 00178730 because it is preceded by a 'cmp' instruction. (GhidraScript)  
+INFO  address_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18f80, 1) INT_NOTEQUAL (unique, 0x100002a4, 8) , (const, 0x0, 8) (GhidraScript)  
+INFO  address_analyzer.py> INFO: [FILTER] Skipping branch at 00178750 from instruction 'cbz'. (GhidraScript)  
+INFO  address_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x100002cc, 1) INT_NOTEQUAL (unique, 0x100002cd, 8) , (stack, 0xffffffffffffff98, 8) (GhidraScript)  
+INFO  address_analyzer.py> INFO: [FILTER] Skipping branch at 00178764 because it is preceded by a 'cmp' instruction. (GhidraScript)  
+INFO  address_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (unique, 0x18f80, 1) INT_NOTEQUAL (unique, 0x100002dd, 8) , (const, 0x0, 8) (GhidraScript)  
+INFO  address_analyzer.py> INFO: [FILTER] Skipping branch at 00178780 from instruction 'cbz'. (GhidraScript)  
+INFO  address_analyzer.py> DEBUG: [CBRANCH] Found defining op for condition: (register, 0x108, 1) INT_NOTEQUAL (unique, 0x3e480, 8) , (const, 0x0, 8) (GhidraScript)  
+INFO  address_analyzer.py> INFO: [Process @ 001787a0] Taint reached CBRANCH. Operands: ['UNNAMED(UniquePcode[0x3e480])', 'UnnamedHighVar(Constant: 0x0)'].  (GhidraScript)  
+INFO  address_analyzer.py> DEBUG: [Process @ 001787c0] Analyzing potential tainted RETURN with value: UNNAMED(x0) (GhidraScript)  
+INFO  address_analyzer.py>     [DEBUG] --- Taint Check Details --- (GhidraScript)  
+INFO  address_analyzer.py>     [DEBUG]   > Return Varnode: (register, 0x4000, 8) (Size: 8, Def: (register, 0x4000, 8) COPY (const, 0x0, 8) at 001787a4) (GhidraScript)  
+INFO  address_analyzer.py>     [DEBUG]   > Currently Tainted HighVariables in this function: (GhidraScript)  
+INFO  address_analyzer.py>     [DEBUG]     1. UNNAMED(UniquePcode[0x10000514]) (GhidraScript)  
+INFO  address_analyzer.py>     [DEBUG]     2. UNNAMED(x0) (GhidraScript)  
+INFO  address_analyzer.py>     [DEBUG]     3. UNNAMED(UniquePcode[0x11f80]) (GhidraScript)  
+INFO  address_analyzer.py>     [DEBUG] --------------------------------- (GhidraScript)  
+INFO  address_analyzer.py> <<< Finished analyzing function: Process. (GhidraScript)  
+INFO  address_analyzer.py> 
+--- Taint Analysis Run Complete --- (GhidraScript)  
+INFO  address_analyzer.py> \n--- All Detected Tainted Value Usages (Interprocedural) --- (GhidraScript)  
+INFO  address_analyzer.py> Usage #1: (GhidraScript)  
+INFO  address_analyzer.py>   Originating Lib Call: address_001786dc (GhidraScript)  
+INFO  address_analyzer.py>   Found In Function:   Process at 00178438 (GhidraScript)  
+INFO  address_analyzer.py>   Instruction Address: 001787a0 (GhidraScript)  
+INFO  address_analyzer.py>     PCode Op:             ---  CBRANCH (ram, 0x1787c4, 1) , (register, 0x108, 1) (GhidraScript)  
+INFO  address_analyzer.py>     Usage Type:          BRANCH_CONDITION_TAINTED (GhidraScript)  
+INFO  address_analyzer.py>     Tainted Component:   UNNAMED(tmpZR) (GhidraScript)  
+INFO  address_analyzer.py>     Details:             Tainted condition for branch. (GhidraScript)  
+INFO  address_analyzer.py> ---------------------------------------- (GhidraScript)  
+INFO  address_analyzer.py> INFO: TAINT_ANALYSIS_JSON_OUTPUT env var found. Saving results to: test_taint/results/debug_run_results.json (GhidraScript)  
+INFO  address_analyzer.py> Taint analysis results saved to: test_taint/results/debug_run_results.json (GhidraScript)  
+INFO  address_analyzer.py> SUCCESS: Hook configuration saved to: /Users/chenkexin/Desktop/kk/test_taint/results/libInspireFace.so_address_hook_config.json (GhidraScript)  
+INFO  address_analyzer.py> Address Taint Analyzer finished. (GhidraScript)  
+INFO  REPORT: Save succeeded for processed file: /libInspireFace.so (HeadlessAnalyzer)  

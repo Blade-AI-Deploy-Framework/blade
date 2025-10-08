@@ -1,0 +1,67 @@
+7767517
+65 65
+Input            Input3                   0 1 Input3
+MemoryData       Parameter1368            0 1 Parameter1368 0=1024
+MemoryData       Parameter1404            0 1 Parameter1404 0=1024
+MemoryData       Parameter1694            0 1 Parameter1694 0=8
+MemoryData       Parameter24              0 1 Parameter24 0=1 1=1 2=64
+MemoryData       Parameter4               0 1 Parameter4 0=1 1=1 2=64
+MemoryData       Parameter576             0 1 Parameter576 0=1 1=1 2=256
+MemoryData       Parameter596             0 1 Parameter596 0=1 1=1 2=256
+MemoryData       Parameter616             0 1 Parameter616 0=1 1=1 2=256
+MemoryData       Parameter64              0 1 Parameter64 0=1 1=1 2=128
+MemoryData       Parameter656             0 1 Parameter656 0=1 1=1 2=256
+MemoryData       Parameter676             0 1 Parameter676 0=1 1=1 2=256
+MemoryData       Parameter696             0 1 Parameter696 0=1 1=1 2=256
+MemoryData       Parameter84              0 1 Parameter84 0=1 1=1 2=128
+BinaryOp         Minus340                 1 1 Input3 Minus340_Output_0 0=1 1=1 2=1.275000e+02
+BinaryOp         Block352                 1 1 Minus340_Output_0 Block352_Output_0 0=3 1=1 2=2.550000e+02
+Convolution      Convolution362           1 1 Block352_Output_0 Convolution362_Output_0 0=64 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=576
+BinaryOp         Plus364                  2 1 Convolution362_Output_0 Parameter4 Plus364_Output_0 0=0
+ReLU             ReLU366                  1 1 Plus364_Output_0 ReLU366_Output_0
+Convolution      Convolution380           1 1 ReLU366_Output_0 Convolution380_Output_0 0=64 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=36864
+BinaryOp         Plus382                  2 1 Convolution380_Output_0 Parameter24 Plus382_Output_0 0=0
+ReLU             ReLU384                  1 1 Plus382_Output_0 ReLU384_Output_0
+Pooling          Pooling398               1 1 ReLU384_Output_0 Pooling398_Output_0 0=0 1=2 11=2 2=2 12=2 3=0 13=0 14=0 15=0 5=1
+Dropout          Dropout408               1 1 Pooling398_Output_0 Dropout408_Output_0
+Convolution      Convolution418           1 1 Dropout408_Output_0 Convolution418_Output_0 0=128 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=73728
+BinaryOp         Plus420                  2 1 Convolution418_Output_0 Parameter64 Plus420_Output_0 0=0
+ReLU             ReLU422                  1 1 Plus420_Output_0 ReLU422_Output_0
+Convolution      Convolution436           1 1 ReLU422_Output_0 Convolution436_Output_0 0=128 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=147456
+BinaryOp         Plus438                  2 1 Convolution436_Output_0 Parameter84 Plus438_Output_0 0=0
+ReLU             ReLU440                  1 1 Plus438_Output_0 ReLU440_Output_0
+Pooling          Pooling454               1 1 ReLU440_Output_0 Pooling454_Output_0 0=0 1=2 11=2 2=2 12=2 3=0 13=0 14=0 15=0 5=1
+Dropout          Dropout464               1 1 Pooling454_Output_0 Dropout464_Output_0
+Convolution      Convolution474           1 1 Dropout464_Output_0 Convolution474_Output_0 0=256 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=294912
+BinaryOp         Plus476                  2 1 Convolution474_Output_0 Parameter576 Plus476_Output_0 0=0
+ReLU             ReLU478                  1 1 Plus476_Output_0 ReLU478_Output_0
+Convolution      Convolution492           1 1 ReLU478_Output_0 Convolution492_Output_0 0=256 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=589824
+BinaryOp         Plus494                  2 1 Convolution492_Output_0 Parameter596 Plus494_Output_0 0=0
+ReLU             ReLU496                  1 1 Plus494_Output_0 ReLU496_Output_0
+Convolution      Convolution510           1 1 ReLU496_Output_0 Convolution510_Output_0 0=256 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=589824
+BinaryOp         Plus512                  2 1 Convolution510_Output_0 Parameter616 Plus512_Output_0 0=0
+ReLU             ReLU514                  1 1 Plus512_Output_0 ReLU514_Output_0
+Pooling          Pooling528               1 1 ReLU514_Output_0 Pooling528_Output_0 0=0 1=2 11=2 2=2 12=2 3=0 13=0 14=0 15=0 5=1
+Dropout          Dropout538               1 1 Pooling528_Output_0 Dropout538_Output_0
+Convolution      Convolution548           1 1 Dropout538_Output_0 Convolution548_Output_0 0=256 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=589824
+BinaryOp         Plus550                  2 1 Convolution548_Output_0 Parameter656 Plus550_Output_0 0=0
+ReLU             ReLU552                  1 1 Plus550_Output_0 ReLU552_Output_0
+Convolution      Convolution566           1 1 ReLU552_Output_0 Convolution566_Output_0 0=256 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=589824
+BinaryOp         Plus568                  2 1 Convolution566_Output_0 Parameter676 Plus568_Output_0 0=0
+ReLU             ReLU570                  1 1 Plus568_Output_0 ReLU570_Output_0
+Convolution      Convolution584           1 1 ReLU570_Output_0 Convolution584_Output_0 0=256 1=3 11=3 2=1 12=1 3=1 13=1 4=-233 5=0 6=589824
+BinaryOp         Plus586                  2 1 Convolution584_Output_0 Parameter696 Plus586_Output_0 0=0
+ReLU             ReLU588                  1 1 Plus586_Output_0 ReLU588_Output_0
+Pooling          Pooling602               1 1 ReLU588_Output_0 Pooling602_Output_0 0=0 1=2 11=2 2=2 12=2 3=0 13=0 14=0 15=0 5=1
+Dropout          Dropout612               1 1 Pooling602_Output_0 Dropout612_Output_0
+Reshape          Times622_reshape0        1 1 Dropout612_Output_0 Dropout612_Output_0_reshape0 0=4096
+InnerProduct     Times622                 1 1 Dropout612_Output_0_reshape0 Times622_Output_0 0=1024 1=0 2=4194304
+BinaryOp         Plus624                  2 1 Times622_Output_0 Parameter1368 Plus624_Output_0 0=0
+ReLU             ReLU636                  1 1 Plus624_Output_0 ReLU636_Output_0
+Dropout          Dropout646               1 1 ReLU636_Output_0 Dropout646_Output_0
+InnerProduct     Times656                 1 1 Dropout646_Output_0 Times656_Output_0 0=1024 1=0 2=1048576
+BinaryOp         Plus658                  2 1 Times656_Output_0 Parameter1404 Plus658_Output_0 0=0
+ReLU             ReLU670                  1 1 Plus658_Output_0 ReLU670_Output_0
+Dropout          Dropout680               1 1 ReLU670_Output_0 Dropout680_Output_0
+InnerProduct     Times690                 1 1 Dropout680_Output_0 Times690_Output_0 0=8 1=0 2=8192
+BinaryOp         Plus692                  2 1 Times690_Output_0 Parameter1694 Plus692_Output_0 0=0
